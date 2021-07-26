@@ -24,9 +24,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+title: Cyber-Physical-Human Interaction Labolatory
 email: your-email@domain.com
-author: GitHub User
+author: Tsubasa Yumura
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -151,11 +151,11 @@ yat:
 #   - about.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+defaults:
+  home:
+    heading: "Cyber-Physical-Human Interaction Labolatory"
+    subheading: "北海道情報大学 情報メディア学部 情報メディア学科 湯村研究室"
+    banner: "/assets/images/banners/cyberkeyboard.jpeg"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
@@ -203,3 +203,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-spaceship
+
+#domain: yumulab.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+#url: https://yumulab.github.io  # the base hostname and protocol for your site, e.g. http://example.com
+#baseurl: /REPOSITORY-NAME/      # place folder name if the site is served in a subfolder   
