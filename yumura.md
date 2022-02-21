@@ -87,15 +87,15 @@ title: Tsubasa Yumura
 - 日経MJ 「寿司が止まって見える装置」, 2016/12/02
 
 #### Web掲載
-- a028データは誰のもの？04 市民と学術の世界のギャップをどう越える。 | サイエンスリポート [link](https://sr.rois.ac.jp/article/sr/028.html)
+- a028データは誰のもの？04 市民と学術の世界のギャップをどう越える。- サイエンスリポート [link](https://sr.rois.ac.jp/article/sr/028.html)
 - 【研究キャリアの生かし方#5】「アカデミアと民間企業を行き来するキャリアがあってもいい」 – 情報通信研究機構研究員・湯村翼氏 | academist Journal [link](https://academist-cf.com/journal/?p=10575)
-- 宇宙データを使ったオープンイノベーション！NICT SpaceHack2019に潜入！ | 宙畑 [link](https://sorabatake.jp/4442/)
+- 宇宙データを使ったオープンイノベーション！NICT SpaceHack2019に潜入！ - 宙畑 [link](https://sorabatake.jp/4442/)
 - 地方にテクノロジーを実装するために必要なこと──「CIVIC TECH FORUM 2017」で語られた「地方創生のカギ」｜WIRED.jp [link](https://wired.jp/2017/04/06/civic-tech-forum-2017/)
 - 『キミも宇宙研究者になれる』池澤あやか×湯村翼が語る 民間宇宙プロジェクト事情｜SENSORS（センサーズ）｜Technology×Entertainment [link](https://web.archive.org/web/20170425070306/http://www.sensors.jp/post/space-reseacher-gexpo.html)
 - レーザーカッターで燻製を作る！「普通じゃないプログラム」発表会 :: デイリーポータルZ [link](https://dailyportalz.jp/kiji/161019197846)
-- 石川で最先端の研究を！心地良い環境を得て、目指すその先の夢 | イシカワノオト [link](https://ishikawa-note.jp/note/492/)
+- 石川で最先端の研究を！心地良い環境を得て、目指すその先の夢 - イシカワノオト [link](https://ishikawa-note.jp/note/492/)
 - 個人の「熱」が社会を変える：Tech Plan グランプリで発表された10チーム｜WIRED.jp [link](https://wired.jp/2014/03/23/tech-plan-final/)
-- THE HUFFINGTON POST 日本語版「「一言で語れない人になりたい」科学者、クリエイター、経営者…湯村翼の枠を超える生き方」[https://www.huffingtonpost.jp/careerhack-enjapan/tsubasa-yumura_b_5636446.html [link]]
+- THE HUFFINGTON POST 日本語版「「一言で語れない人になりたい」科学者、クリエイター、経営者…湯村翼の枠を超える生き方」[link](https://www.huffingtonpost.jp/careerhack-enjapan/tsubasa-yumura_b_5636446.html)
 - CAREER HACK「科学者？クリエイター？経営者？｜湯村翼が挑む「野生の研究者」という生き方」[link](https://careerhack.en-japan.com/report/detail/348)
 - デイリーポータルZ「プログラムで笑わせろ！「普通じゃないプログラム」発表会」[link](https://dailyportalz.jp/kiji/140924165234/page/2)
 - Internet Watch「NASAやJAXAのデータ活用、宇宙アプリのハッカソン、44カ国で8200名が参加」 [link](https://internet.watch.impress.co.jp/docs/event/596950.html)
