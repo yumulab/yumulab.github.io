@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 4年生の久保田さんの作品がヒーローズリーグ2021で受賞
+title: 2021年度卒業研究発表会
 subtitle: 
 categories: event
 tags: [event]
