@@ -45,6 +45,9 @@ title: Tsubasa Yumura
 - 2016/04 - 2021/03 北陸先端科学技術大学院大学 高信頼IoT社会基盤研究拠点 プロジェクト研究員 (兼務)
 - 2021/04- 北海道情報大学 情報メディア学部 情報メディア学科 准教授
 
+### 業績
+[Researchmap](https://researchmap.jp/yumu/) および [湯村研究室 論文レポジトリ](https://dl.yumulab.org/) を参照
+
 ### 受賞
 #### 学術研究・学会貢献
 - 東京大学大学院 理学系研究科 研究奨励賞 (2008) [link](https://www.s.u-tokyo.ac.jp/ja/topics/2008/05/04.html)
