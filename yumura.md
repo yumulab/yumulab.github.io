@@ -9,11 +9,12 @@ title: Tsubasa Yumura
 
 北海道情報大学 情報メディア学部 情報メディア学科 准教授
 - Twitter: [@yumu19](https://twitter.com/yumu19)
-- GitHub: [yumu19](https://github.com/yumu19 )
-- blog: [yumulog](http://yumulog.hatenablog.com/ )
-- Researchmap: [湯村 翼](https://researchmap.jp/yumu/ )
-- Google Scholar: [Tsubasa Yumura](https://scholar.google.co.jp/citations?user=elQrjZoAAAAJ )
-- 大学教員ページ: [湯村　翼｜教員一覧｜北海道情報大学](https://www.do-johodai.ac.jp/teachers/tsubasayumura/ )
+- GitHub: [yumu19](https://github.com/yumu19)
+- blog: [yumulog](http://yumulog.hatenablog.com/)
+- Speaker Deck: [yumu19](https://speakerdeck.com/yumu19)
+- Researchmap: [湯村 翼](https://researchmap.jp/yumu/)
+- Google Scholar: [Tsubasa Yumura](https://scholar.google.co.jp/citations?user=elQrjZoAAAAJ)
+- 大学教員ページ: [湯村　翼｜教員一覧｜北海道情報大学](https://www.do-johodai.ac.jp/teachers/tsubasayumura/)
 
 
 ### 略歴
@@ -88,7 +89,7 @@ title: Tsubasa Yumura
 
 #### Web掲載
 - a028データは誰のもの？04 市民と学術の世界のギャップをどう越える。- サイエンスリポート [link](https://sr.rois.ac.jp/article/sr/028.html)
-- 【研究キャリアの生かし方#5】「アカデミアと民間企業を行き来するキャリアがあってもいい」 – 情報通信研究機構研究員・湯村翼氏 | academist Journal [link](https://academist-cf.com/journal/?p=10575)
+- 【研究キャリアの生かし方#5】「アカデミアと民間企業を行き来するキャリアがあってもいい」 – 情報通信研究機構研究員・湯村翼氏 - academist Journal [link](https://academist-cf.com/journal/?p=10575)
 - 宇宙データを使ったオープンイノベーション！NICT SpaceHack2019に潜入！ - 宙畑 [link](https://sorabatake.jp/4442/)
 - 地方にテクノロジーを実装するために必要なこと──「CIVIC TECH FORUM 2017」で語られた「地方創生のカギ」｜WIRED.jp [link](https://wired.jp/2017/04/06/civic-tech-forum-2017/)
 - 『キミも宇宙研究者になれる』池澤あやか×湯村翼が語る 民間宇宙プロジェクト事情｜SENSORS（センサーズ）｜Technology×Entertainment [link](https://web.archive.org/web/20170425070306/http://www.sensors.jp/post/space-reseacher-gexpo.html)
