@@ -5,7 +5,7 @@ title: People
 
 ## 研究室メンバー
 ### 教員
-- 准教授：[湯村 翼](({{ "yumura.html" | relative_url }}))
+- 准教授：[湯村 翼]({{ "yumura.html" | relative_url }})
 
 ### 学生
 #### 4年生
