@@ -9,14 +9,16 @@ title: Tsubasa Yumura
 博士(情報科学)
 
 北海道情報大学 情報メディア学部 情報メディア学科 准教授
+- 大学教員ページ: [湯村　翼｜教員一覧｜北海道情報大学](https://www.do-johodai.ac.jp/teachers/tsubasayumura/)
+- Researchmap: [湯村 翼](https://researchmap.jp/yumu/)
+- Google Scholar: [Tsubasa Yumura](https://scholar.google.co.jp/citations?user=elQrjZoAAAAJ)
 - Twitter: [@yumu19](https://twitter.com/yumu19)
 - GitHub: [yumu19](https://github.com/yumu19)
 - blog: [yumulog](http://yumulog.hatenablog.com/)
 - Speaker Deck: [yumu19](https://speakerdeck.com/yumu19)
-- Researchmap: [湯村 翼](https://researchmap.jp/yumu/)
-- Google Scholar: [Tsubasa Yumura](https://scholar.google.co.jp/citations?user=elQrjZoAAAAJ)
-- 大学教員ページ: [湯村　翼｜教員一覧｜北海道情報大学](https://www.do-johodai.ac.jp/teachers/tsubasayumura/)
-
+- ProtoPedia: [yumu19](https://protopedia.net/prototyper/yumu19)
+- Scrapbox: [yumu](https://scrapbox.io/yumu)
+- [品モノラジオ](http://shinamonoradio.github.io/)
 
 ### 略歴
 2006年北海道大学理学部卒業．2008年東京大学大学院理学系研究科修士課程修了．
