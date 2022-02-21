@@ -2,6 +2,7 @@
 layout: personal
 title: Tsubasa Yumura
 ---
+![Tsubasa Yumura]({{ "/assets/images/yumura.jpg" | relative_url }})
 
 湯村 翼　Tsubasa Yumura
 
