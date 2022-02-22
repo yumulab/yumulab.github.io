@@ -79,6 +79,32 @@ title: Tsubasa Yumura
 - Mashup Awards 11 おばかアプリ部門賞 (寝返りブロックくずし)
 - Geospatial Hackers Program 最優秀賞 (有料パーキングのカンタン支払い)
 
+### 講演 (主要なものを抜粋)
+#### 動画 + スライド
+ 20年後のソフトウェアテストの話をしよう, builderscon tokyo 2019, 2019年8月31日 [blog](http://yumulog.hatenablog.com/entry/2019/08/31/235727)
+ はじめてでもわかる！IoTの過去・現在・未来 （特にホームネットワーク）, 第48回情報科学若手の会, 2015年9月19日 [blog](http://yumulog.hatenablog.com/entry/2015/09/24/001853)
+ NASA主催の世界最大級ハッカソンSpaceAppsを運営した話, YAPC::Asia Tokyo 2015, 2015年8月22日 [blog](http://yumulog.hatenablog.com/entry/2015/08/22/233344)
+ 誰もが研究する時代の到来 〜これからの未来をつくる「野生の研究者」の生態に迫る〜, 第12回 Smips・研究現場の知財分科会, 2014年6月14日 [blog](http://yumulog.hatenablog.com/entry/2014/06/17/225028)
+ 屋内測位技術の現状, 情報科学若手の会冬の陣2014, 2014年1月25日 [blog](http://yumulog.hatenablog.com/entry/2014/01/26/102410)
+ 宇宙と情報科学, 情報科学若手の会冬の陣2013, 2013年1月26日 [blog](http://yumulog.hatenablog.com/entry/2013/01/27/043756)
+
+#### スライド
+- 地域社会に溶け込むメイカーイベント -NT札幌を事例として-, Tsukuba Mini Maker Faire 2020, 2020年2月15日 [slide](https://speakerdeck.com/yumu19/maker-events-blend-into-society)
+- フィジカルコンピューティングの話, Web×IoTメイカーズチャレンジ2019-20 in 石川 ハッカソン, 2019年12月7日 [slide](https://speakerdeck.com/yumu19/physical-computing)
+- これまでの作品からみるSpaceAppsの傾向, NASA Space Apps Challenge アイディアソン＆オープンデータ勉強会, 2018年9月24日 [slide](https://speakerdeck.com/yumu19/spaceapps-osaka-2018-ideathon)
+- IoTシステムの開発プロセスにテストベッドはどのように貢献できるか？, SIGPX4, 2018年3月2日 [blog](http://yumulog.hatenablog.com/entry/2018/03/08/000150 )
+- おうちハックの現在と未来, WASWDA-EDGE 未来創造デザイン, 2016年5月28日 [blog](http://yumulog.hatenablog.com/entry/2016/05/28/222056 )
+- 膨大なサーバ群を制御するソフトウェアと Infrastructure as Code, SIGPX, 2016年2月27日 [slide](https://speakerdeck.com/yumu19/peng-da-nasabaqun-wozhi-yu-surusohutoueato-infrastructure-as-code)
+- 野生の研究について, 情報科学若手の会冬の陣2015, 2015年1月24日 [blog](http://yumulog.hatenablog.com/entry/2015/01/25/020313)
+
+### 企画・司会・座長
+- メイカーズ文化とシチズンサイエンス, Japan Open Science Summit 2021 [YouTube](https://youtu.be/1yToQPcw2T8)
+- オープンサイエンスにおけるコミュニティ・情報・空間を考える, Japan Open Science Summit 2020 [YouTube](https://youtu.be/tMCSqJ5Xeuw)
+- 情報処理学会全国大会「先生質問です！」公開セッション [blog](https://yumulog.hatenablog.com/entry/2020/03/07/175037)
+- NT札幌2020
+
+
+
 ### メディア出演 
 #### テレビ番組
 - Antena 3 (Spanish Television), El Hormiguero 3.0, 2020/02/04放送 [link](https://twitter.com/El_Hormiguero/status/1224815443715727363)
