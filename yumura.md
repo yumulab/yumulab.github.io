@@ -81,12 +81,12 @@ title: Tsubasa Yumura
 
 ### 講演 (主要なものを抜粋)
 #### 動画 + スライド
- 20年後のソフトウェアテストの話をしよう, builderscon tokyo 2019, 2019年8月31日 [blog](http://yumulog.hatenablog.com/entry/2019/08/31/235727)
- はじめてでもわかる！IoTの過去・現在・未来 （特にホームネットワーク）, 第48回情報科学若手の会, 2015年9月19日 [blog](http://yumulog.hatenablog.com/entry/2015/09/24/001853)
- NASA主催の世界最大級ハッカソンSpaceAppsを運営した話, YAPC::Asia Tokyo 2015, 2015年8月22日 [blog](http://yumulog.hatenablog.com/entry/2015/08/22/233344)
- 誰もが研究する時代の到来 〜これからの未来をつくる「野生の研究者」の生態に迫る〜, 第12回 Smips・研究現場の知財分科会, 2014年6月14日 [blog](http://yumulog.hatenablog.com/entry/2014/06/17/225028)
- 屋内測位技術の現状, 情報科学若手の会冬の陣2014, 2014年1月25日 [blog](http://yumulog.hatenablog.com/entry/2014/01/26/102410)
- 宇宙と情報科学, 情報科学若手の会冬の陣2013, 2013年1月26日 [blog](http://yumulog.hatenablog.com/entry/2013/01/27/043756)
+- 20年後のソフトウェアテストの話をしよう, builderscon tokyo 2019, 2019年8月31日 [blog](http://yumulog.hatenablog.com/entry/2019/08/31/235727)
+- はじめてでもわかる！IoTの過去・現在・未来 （特にホームネットワーク）, 第48回情報科学若手の会, 2015年9月19日 [blog](http://yumulog.hatenablog.com/entry/2015/09/24/001853)
+- NASA主催の世界最大級ハッカソンSpaceAppsを運営した話, YAPC::Asia Tokyo 2015, 2015年8月22日 [blog](http://yumulog.hatenablog.com/entry/2015/08/22/233344)
+- 誰もが研究する時代の到来 〜これからの未来をつくる「野生の研究者」の生態に迫る〜, 第12回 Smips・研究現場の知財分科会, 2014年6月14日 [blog](http://yumulog.hatenablog.com/entry/2014/06/17/225028)
+- 屋内測位技術の現状, 情報科学若手の会冬の陣2014, 2014年1月25日 [blog](http://yumulog.hatenablog.com/entry/2014/01/26/102410)
+- 宇宙と情報科学, 情報科学若手の会冬の陣2013, 2013年1月26日 [blog](http://yumulog.hatenablog.com/entry/2013/01/27/043756)
 
 #### スライド
 - 地域社会に溶け込むメイカーイベント -NT札幌を事例として-, Tsukuba Mini Maker Faire 2020, 2020年2月15日 [slide](https://speakerdeck.com/yumu19/maker-events-blend-into-society)
@@ -101,9 +101,8 @@ title: Tsubasa Yumura
 - メイカーズ文化とシチズンサイエンス, Japan Open Science Summit 2021 [YouTube](https://youtu.be/1yToQPcw2T8)
 - オープンサイエンスにおけるコミュニティ・情報・空間を考える, Japan Open Science Summit 2020 [YouTube](https://youtu.be/tMCSqJ5Xeuw)
 - 情報処理学会全国大会「先生質問です！」公開セッション [blog](https://yumulog.hatenablog.com/entry/2020/03/07/175037)
-- NT札幌2020
-
-
+- NT札幌2020 [wiki](https://wiki.nicotech.jp/nico_tech/index.php?NT%E6%9C%AD%E5%B9%8C2020)
+- NT札幌2019 [wiki](https://wiki.nicotech.jp/nico_tech/index.php?NT%E6%9C%AD%E5%B9%8C2019)
 
 ### メディア出演 
 #### テレビ番組
