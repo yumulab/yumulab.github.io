@@ -153,8 +153,8 @@ yat:
 # Page default value
 defaults:
   home:
-    heading: "Cyber-Physical-Human Interaction Laboratory"
-    subheading: "北海道情報大学 情報メディア学部 情報メディア学科 湯村研究室"
+    heading: "北海道情報大学 情報メディア学部 情報メディア学科 湯村研究室"
+    subheading: "Cyber-Physical-Human Interaction Laboratory"
     banner: "/assets/images/banners/cyberkeyboard.jpeg"
 
 # Banner default settings

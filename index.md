@@ -7,7 +7,7 @@ title: Home
 banner: "/assets/images/banners/home.jpeg"
 ---
 
-北海道情報大学 情報メディア学部 情報メディア学科 Cyber-Physical-Human Interaction Laboratory (湯村研究室/315研究室) のWebサイトです
+北海道情報大学 情報メディア学部 情報メディア学科 湯村研究室 (Cyber-Physical-Human Interaction Laboratory/315研究室) のWebサイトです
 
 - [About: 研究室について]({{ "people.html" | relative_url }})
 - [People: 研究室メンバー]({{ "people.html" | relative_url }})
