@@ -119,6 +119,7 @@ title: Tsubasa Yumura
 - 日経MJ 「寿司が止まって見える装置」, 2016/12/02
 
 #### Web掲載
+- 物理学の視座から人とコンピュータをつなぐ研究を続ける湯村翼【A-Co-Labo研究者の履歴書 #8】 - flasko（フラスコ） [link](https://flasko.tech/posts/1264)
 - a028データは誰のもの？04 市民と学術の世界のギャップをどう越える。- サイエンスリポート [link](https://sr.rois.ac.jp/article/sr/028.html)
 - 【研究キャリアの生かし方#5】「アカデミアと民間企業を行き来するキャリアがあってもいい」 – 情報通信研究機構研究員・湯村翼氏 - academist Journal [link](https://academist-cf.com/journal/?p=10575)
 - 宇宙データを使ったオープンイノベーション！NICT SpaceHack2019に潜入！ - 宙畑 [link](https://sorabatake.jp/4442/)
@@ -163,7 +164,7 @@ title: Tsubasa Yumura
 - International Conference on Mobile Computing and Ubiquitous Networking (ICMU) Poster and Demo Co-Chairs (2020-)
 - エンターテインメントコンピューティング(EC) 実行委員会 (2020-)
 - マルチメディア通信と分散処理ワークショップ(DPSWS) プログラム委員 (2021)
-- NT札幌 発起人・実行委員会 (2019-)
+- NT札幌 発起人・実行委員会 (2019-2020)
 - 北海道Society5.0推進会議「データ利活用ワーキンググループ」メンバー (2021)
 
 ### その他
