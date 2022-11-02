@@ -2,8 +2,8 @@
 layout: post
 title: CODE BLUE 2022に多木さんの発表が採択
 subtitle: 
-categories: conference
-tags: [conference]
+categories: event
+tags: [event]
 ---
 ![codeblue-accept]({{ "/assets/images/2022/codeblue-accept.png" | relative_url }})
 
