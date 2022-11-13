@@ -3,7 +3,7 @@ layout: post
 title: 2021年度卒業研究発表会
 subtitle: 
 categories: event
-tags: [event][久保田千尋]
+tags: [event][c.kubota]
 ---
 ![GraduatePresentation2021]({{ "/assets/images/2022/presentation2022.jpg" | relative_url }})
 

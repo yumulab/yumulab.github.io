@@ -3,7 +3,7 @@ layout: post
 title: インタラクション2022で久保田さんがインタラクティブ発表
 subtitle: 
 categories: conference
-tags: [conference][久保田千尋]
+tags: [conference][c.kubota]
 ---
 ![インタラクション2022]({{ "/assets/images/2022/interaction2022.jpg" | relative_url }})
 
