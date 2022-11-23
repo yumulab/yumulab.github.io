@@ -12,6 +12,7 @@ banner: "/assets/images/banners/home.jpeg"
 - [About: 研究室について]({{ "about.html" | relative_url }})
 - [People: 研究室メンバー]({{ "people.html" | relative_url }})
 - [Publications: 研究成果(論文レポジトリ)](https://dl.yumulab.org/)
+- [共同研究募集]({{ "collaboration.html" | relative_url }})
 - [教員について]({{ "yumura.html" | relative_url }})
 
 リンク
