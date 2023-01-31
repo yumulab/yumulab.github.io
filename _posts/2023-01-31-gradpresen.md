@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 秋葉さん、辻永さんが第15回インターネットと運用技術シンポジウム(IOTS2022)で発表し学生奨励賞を受賞
+title: 2022年度 卒業研究発表会
 subtitle: 
 categories: event
 tags: [event]
