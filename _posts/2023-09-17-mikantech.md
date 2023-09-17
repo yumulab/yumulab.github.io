@@ -12,10 +12,10 @@ description: 2023年7月18日(火)および25日(火)に開催された情報メ
 [MIKAN TECH MEETUP 2023〜テクノロジーをテーマに人が集う１日〜](https://no-maps.jp/program/mikan-tech-meetup-2023/) のHARDWARE EXHIBITに、4年生の藤谷 梨生さん、岡 秀哉さんが卒業研究の作品を出展しました。
 
 Jadwelry：フィンガーブレスレット型疲労通知デバイス
-![mikantech-jadwerly]({{ "/assets/images/2023/mikantech-jadwerly.jpg" | relative_url }})
+![mikantech-jadwerly]({{ "/assets/images/2023/mikantech-jadwelry.jpg" | relative_url }})
 
 GRAB：VRコントローラを拡張する握力センサ
-![mikantech-jadwerly]({{ "/assets/images/2023/mikantech-jadwerly.jpg" | relative_url }})
+![mikantech-jadwerly]({{ "/assets/images/2023/mikantech-grab.jpg" | relative_url }})
 
 イベントのツイートまとめはこちら
 - [MIKAN TECH MEETUP 2023ツイートまとめ #MIKANTECHMEETUP #NoMaps2023 - min.t (ミント)](https://min.togetter.com/ScGrv0n)
