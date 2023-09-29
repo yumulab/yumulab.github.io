@@ -11,13 +11,13 @@ title: About
 
 といった研究に取り組んでいきます。
 
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 74.9296%;"><iframe src="https://speakerdeck.com/player/12c9a42806934221a65ef40f6fcd1d49" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+<script defer class="speakerdeck-embed" data-id="87e9e503319548b0bcd94e165d5d51fe" data-ratio="1.7777777777777777" src="//speakerdeck.com/assets/embed.js"></script>
 
 
 
 ## 配属を希望する情報メディア学科の1〜2年生へ
 ### 希望者多数の場合の選考
-情報メディア学科では、2年生の12月頃から研究室配属のための面談が行われます。研究室に配属される学生の数には上限があり、希望者が定員を超える場合があります。2022年度(2021年度の2年生)の配属では定員を超えました。
+情報メディア学科では、2年生の12月頃から研究室配属のための面談が行われます。研究室に配属される学生の数には上限があり、希望者が定員を超える場合があります。過去の配属では定員を超えました。
 その場合には、湯村研究室では
 
 - GPA
