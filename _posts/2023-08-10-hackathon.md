@@ -13,19 +13,19 @@ description: 2023年7月18日(火)および25日(火)に開催された情報メ
 3,4年生の16名が4チームに分かれ、「駆け引き」をテーマに、M5Stackとp5.jsを組み合わせた作品を1日で制作しました。完成した作品は以下の通りです。
 
 ### サッカーしようぜ！M5stackとp5.jsを使ってPK勝負
-- [サッカーしようぜ！M5stackとp5.jsを使ってPK勝負](https://protopedia.net/prototype/4200)
+- [サッカーしようぜ！M5stackとp5.jsを使ってPK勝負 - ProtoPedia](https://protopedia.net/prototype/4200)
 ![soccer]({{ "/assets/images/2023/hackathon/soccer.jpg" | relative_url }})
 
 ### 距離センサを利用した2人用対戦ゲーム
-- [距離センサを利用した2人用対戦ゲーム](https://protopedia.net/prototype/4198)
+- [距離センサを利用した2人用対戦ゲーム - ProtoPedia](https://protopedia.net/prototype/4198)
 ![distance]({{ "/assets/images/2023/hackathon/distance.jpg" | relative_url }})
 
 ### フラッシュナンバー
-- [フラッシュナンバー](https://protopedia.net/prototype/4226)
+- [フラッシュナンバー - ProtoPedia](https://protopedia.net/prototype/4226)
 ![flash]({{ "/assets/images/2023/hackathon/flash.jpg" | relative_url }})
 
 ### M5Stackを使った野球ゲーム
-- [M5Stackを使った野球ゲーム](https://protopedia.net/prototype/4665)
+- [M5Stackを使った野球ゲーム - ProtoPedia](https://protopedia.net/prototype/4665)
 ![baseball]({{ "/assets/images/2023/hackathon/baseball.jpg" | relative_url }})
 
 会場に到着。
