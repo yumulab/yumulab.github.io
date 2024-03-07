@@ -11,7 +11,11 @@ tags: [report]
 * [秋葉さん、辻永さんが第15回インターネットと運用技術シンポジウム(IOTS2022)で発表し学生奨励賞を受賞](https://www.yumulab.org/award/2022/12/09/iots.html)
 
 ## 秋葉
-IOTS2022では、ポスター発表を行いました。私がポスター発表した「画面転送式デジタルサイネージの開発に向けたVNCトラフィックの計測」は、多くの方に来ていただき、トラフィック計測について今後の方針や計測の方法について意見を頂くことができました。頂いた主なコメントは以下の通りです。
+IOTS2022では、ポスター発表を行いました。私がポスター発表した「画面転送式デジタルサイネージの開発に向けたVNCトラフィックの計測」は、多くの方に来ていただき、トラフィック計測について今後の方針や計測の方法について意見を頂くことができました。
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/77486534b77041d4b2cc2214b78944b3" title="画面転送式デジタルサイネージの開発に向けたVNCトラフィックの計測 / IOTS2022-akiba" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 746;" data-ratio="0.7506702412868632"></iframe>
+
+頂いた主なコメントは以下の通りです。
 
 - 無線環境でのトラフィック変化がどうなるかを調べてみると良い
 - VNC以外の画面転送プロトコルとのトラフィック比較もあると良い
@@ -38,6 +42,9 @@ QoS制御という技術があるということを知ることができた。�
 
 ## 辻永
 IOTSで「Furm: 家具移動アプリケーションの提案」というテーマで、ポスター発表を行ってきました。ポスター発表の中で、開発したアプリケーションとtoioというロボットトイを利用して、toioの上にのせた家具の模型を動かすデモンストレーションを行いました。多くの方に足を止めていただき、議論を行ったり、コメントをもらうことができました。
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/5092cb54e0d24a428f6e3d225e2b8ac4" title="Furm: 家具移動アプリケーションの提案 / IOTS2022-tsujinaga" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 746;" data-ratio="0.7506702412868632"></iframe>
+
 発表に対するコメント
 
 - 実際に移動しなくても、家具の配置案を提示する機能があれば良い
