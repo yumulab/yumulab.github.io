@@ -1,0 +1,6267 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c"></meta><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Home | 北海道情報大学 湯村研究室 - Cyber-Physical-Human Interaction Laboratory</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Home" />
+<meta name="author" content="Tsubasa Yumura" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="北海道情報大学 湯村研究室" />
+<meta property="og:description" content="北海道情報大学 湯村研究室" />
+<link rel="canonical" href="https://yumulab.org/" />
+<meta property="og:url" content="https://yumulab.org/" />
+<meta property="og:site_name" content="北海道情報大学 湯村研究室 - Cyber-Physical-Human Interaction Laboratory" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Home" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Tsubasa Yumura"},"description":"北海道情報大学 湯村研究室","headline":"Home","@type":"WebSite","url":"https://yumulab.org/","name":"北海道情報大学 湯村研究室 - Cyber-Physical-Human Interaction Laboratory","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://yumulab.org/feed.xml" title="北海道情報大学 湯村研究室 - Cyber-Physical-Human Interaction Laboratory" /><link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header site-header-transparent" role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner"><span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="北海道情報大学 湯村研究室 - Cyber-Physical-Human Interaction Laboratory" src="" onerror="this.style.display='none'">
+  北海道情報大学 湯村研究室
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+            <a class="page-link" href="/">HOME</a>
+            <a class="page-link" href="/about.html">ABOUT</a>
+            <a class="page-link" href="/people.html">PEOPLE</a>
+            <a class="page-link" href="https://dl.yumulab.org/">PUBLICATIONS</a>
+            <a class="page-link" href="/collaboration.md">COLLABORATION</a>
+            
+
+
+
+
+<!-- <span class="page-link">
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<span class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="fr">
+          
+          <img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" title="French">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="zh-CN">
+          
+          <img src="https://cdn.countryflags.com/thumbs/china/flag-400.png" title="Chinese(Simple)">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ja">
+          
+          <img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" title="Japanese">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ko">
+          
+          <img src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png" title="Korean">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ru">
+          
+          <img src="https://cdn.countryflags.com/thumbs/russia/flag-400.png" title="Russian">
+          
+        </a>
+      </li>
+    
+  </ul>
+</span>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: '',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</span> --></div>
+        </nav></div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;documentElement.setAttribute("data-header-transparent", "");var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="page-banner">
+    <div class="page-banner-img"><div style="background-image: url(/assets/images/banners/home.jpeg)"></div>
+        <img class="img-placeholder" src="/assets/images/banners/home.jpeg"></div>
+    <div class="wrapper">
+      <div class="page-banner-inner"><div class="page-banner-default">
+            <h1 class="page-banner-heading">
+              北海道情報大学 情報メディア学部 情報メディア学科 湯村研究室
+            </h1>
+            <h2 class="page-banner-subheading">
+              Cyber-Physical-Human Interaction Laboratory
+            </h2>
+          </div></div>
+    </div>
+  </section><script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<!--<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+-->
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="articles">
+  
+
+  <p>北海道情報大学 情報メディア学部 情報メディア学科 湯村研究室 (Cyber-Physical-Human Interaction Laboratory/315研究室) のWebサイトです</p>
+
+<ul>
+  <li><a href="/about.html">About: 研究室について</a></li>
+  <li><a href="/people.html">People: 研究室メンバー</a></li>
+  <li><a href="https://dl.yumulab.org/">Publications: 研究成果(論文レポジトリ)</a></li>
+  <li><a href="/collaboration.html">共同研究募集</a></li>
+  <li><a href="/yumura.html">教員について</a></li>
+</ul>
+
+<p>リンク</p>
+<ul>
+  <li><a href="https://twitter.com/yumulab">Twitter @yumulab</a></li>
+  <li><a href="https://www.facebook.com/yumulab">Facebookページ</a></li>
+  <li><a href="https://speakerdeck.com/yumulab">Speaker Deck</a></li>
+  <li><a href="https://www.youtube.com/channel/UCZ695lUfZBkcefXyVv5D9oA">YouTube</a></li>
+</ul>
+
+<hr />
+
+
+
+  <div class="pagination">
+  <!-- Post list links -->
+  <ul class="post-list"><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/conference/2024/03/19/ec71.html">
+          小泉さん、乾さん、辻永さんが第71回情報処理学会エンタテインメントコンピューティング(EC)研究会で発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 19, 2024</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/conference/2024/03/19/ec71.html">
+        <p>
+        
+
+2024年3月17日(日)〜19日(火)に京都府京都市の京都学・歴彩館で開催された第71回情報処理学会エンタテインメントコンピューティング(EC)研究会にて4年生の小泉 翔平さん、乾 泰河さん、辻永 泰輔さんが研究発表を行いました。
+
+発表題目は以下のとおりです。リンク先の論文レポジトリにて論文、スライドを公開しています。
+
+
+  小泉 翔平, 湯村 翼. サウナでのプロジェクションマッピングの可能性の検討
+  乾 泰河, 湯村 翼. 眠眠ガチャ：ガチャを活用した睡眠意欲向上アプリの開発
+  辻永 泰輔, 湯村 翼. LTooL: 思い立った時にLTができるプレゼンテーションツールの開発と評価
+
+
+発表では、多くの方に聴講していただき、コメントを頂きました。頂いたフィードバックを参... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/award/2024/03/14/iot64.html">
+          秋葉さんが第64回情報処理学会インターネットと運用技術(IOT)研究会で発表、学生奨励賞受賞
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 14, 2024</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/award/2024/03/14/iot64.html">
+        <p>
+        
+
+2024年3月12日(火)〜14日(木)に宮古島市未来創造センターで開催された第64回情報処理学会インターネットと運用技術(IOT)研究会にて4年生の秋葉さんが研究発表を行いました。また、本発表が学生奨励賞を受賞しました。
+
+発表題目は以下のとおりです。リンク先の論文レポジトリにて論文、スライドを公開しています。
+
+
+  秋葉 貴文, 湯村 翼. 待機電力を削減したネットワーク更新型電子ペーパーサイネージの開発と評価
+
+
+発表では、多くの方に聴講していただき、コメントを頂きました。頂いたフィードバックを参考にして今後の研究を進めていきます。ありがとうございました。
+
+
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a><a class="post-tag" href="/tags.html#award">#award</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/conference/2024/03/08/i2024.html">
+          インタラクション2024にて5件発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 08, 2024</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/conference/2024/03/08/i2024.html">
+        <p>
+        
+
+2024年3月6日(水)〜8日(金)に一橋記念講堂で開催された第28回一般社団法人情報処理学会シンポジウムインタラクション2024にて4年生の岡 秀哉さん、鎌田 峻輔さん、藤谷 梨生さん、3年生の井上 慎之介さん、清水 怜良さん、1年生の上村 宙さんが研究発表を行いました。
+
+発表題目は以下のとおりです。リンク先の論文レポジトリにて論文、ポスターを公開しています。
+
+
+  井上 慎之介, 清水 怜良, 金子 直矢, 阿部 博, 湯村 翼. CARMUI：自動運転車遠隔監視システムのUI検討のためのバーチャル都市プラットフォームの開発
+  岡 秀哉, 湯村 翼. GRAB：VRコントローラに握力感知機能を追加する拡張センサ
+  鎌田 峻輔, 湯村 翼. RolBo - 巻ける電光掲示... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2024/02/29/sotsuten.html">
+          湯村研究室2023年度卒業研究展を開催
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Feb 29, 2024</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2024/02/29/sotsuten.html">
+        <p>
+        
+
+2024年2月29日(木)〜3月1日(金)に札幌市民交流プラザ1階SCARTSモールA・Bにて、湯村研究室2023年度卒業研究展を開催しました。展示・ステージともに多くの方にお越しいただきまして、ありがとうございました。来年度も開催予定ですので、ぜひまたお越しください。
+
+開催中のX(旧Twitter)のポストをまとめました。
+
+
+  北海道情報大学 湯村研究室 2023年度卒業研究展 #johodai #yumulab - min.t (ミント)
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2024/02/23/nomaps.html">
+          NoMapsローカル・クリエイティブ・エキシビションに出展
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Feb 23, 2024</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2024/02/23/nomaps.html">
+        <p>
+        
+
+2024年2月23日(金)〜24日(土)に札幌のD-LIFEPARKで開催された NoMapsローカル・クリエイターズ・エキシビジョン にて、湯村研究室から4件、安田研究室から2件の展示を行いました。
+
+
+
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2024/02/01/gradpresen.html">
+          2023年度卒業研究発表会にて4年生7名が発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Feb 01, 2024</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2024/02/01/gradpresen.html">
+        <p>
+        2024年1月30日(火)〜2月1日(木)に開催された情報メディア学科合同の卒業研究発表会にて、湯村研究室から7名が以下のとおり発表を行いました。
+
+口頭セッション
+
+  秋葉 貴文『ネットワーク更新型電子ペーパーサイネージの待機電力削減』
+  小泉 翔平『サウナ内でのプロジェクションマッピング -サウナでの新たな楽しみ方を探る-』
+  乾 泰河『楽しく睡眠管理ができるヘルスケアアプリ「眠眠ガチャ」の制作』
+  辻永 泰輔『LTooL: 思い立った時にLTができるプレゼンテーションツール』
+
+
+
+
+
+
+
+インタラクティブセッション
+
+  岡 秀哉『VRコントローラに握力感知機能を加える拡張センサ GRAB』
+  鎌田 峻輔『RolBo – 巻ける電光掲示板の開発』
+  藤谷 梨生『Ja... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2024/01/20/shinsetsu.html">
+          秋葉さん、辻永さんが北海道ITクリエータ発掘・育成事業（新雪プログラム）成果報告会で発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jan 20, 2024</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2024/01/20/shinsetsu.html">
+        <p>
+        
+
+2024年1月20日(土)にSTVホールで開催された2023年度北海道ITクリエータ発掘・育成事業（新雪プログラム）成果報告会にて、4年生の秋葉 貴文さんと辻永 泰輔さんが発表しました。
+
+発表タイトルのリンクから成果報告会のアーカイブ動画を視聴できます。
+
+
+  秋葉 貴文「待機電力不要なネットワーク更新型電子ペーパーサイネージ」
+  辻永 泰輔「LTooL: 思い立ったときにLTができるプレゼンテーションツールの開発」
+
+
+成果報告会では多くの方に発表を聴講して頂きました。新雪プログラムを通じて、多くの機会と支援を頂きました。担当PMをはじめとした新雪関係者の皆様、ありがとうございました。
+
+
+秋葉さんの発表
+
+
+辻永さんの発表
+
+
+クリエータ交流会での秋葉さんの展示
+
+
+秋葉... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/conference/2023/12/01/wiss.html">
+          WISS2023にてデモ発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 01, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/conference/2023/12/01/wiss.html">
+        <p>
+        
+
+2023年11月29日(水)〜12月1日(金)にロイヤルホテル八ヶ岳（山梨県北杜市）で開催された第31回インタラクティブシステムとソフトウェアに関するワークショップ(WISS2023)にて、教員の湯村と情報メディア学科1年生の上村 宙さんがデモセッションにて発表を行いました。
+
+
+  上村 宙, 由谷 哲夫, 渋谷 敦子, 湯村 翼. 床面圧力センサ開発における感圧導電シート分離方式の検討
+
+
+本研究は、First Four Notes合同会社との共同研究の成果です。リンク先の論文レポジトリにて論文、ポスターを公開しています。
+
+
+  床面圧力センサ開発における感圧導電シート分離方式の検討 - 北海道情報大学 湯村研究室 論文レポジトリ
+
+
+シンポジウムでは、多くの来場者に発表を聴... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/conference/2023/12/01/ncss23.html">
+          卒業生の多木さんがNCSS&#39;23にて発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 01, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/conference/2023/12/01/ncss23.html">
+        <p>
+        
+
+2023年11月28日(火)〜12月1日(金)に開催されたThe 11th International Symposium on Computing and Networking (CANDAR’23)の併催ワークショップThe 14th International Workshop on Networking, Computing, Systems, and Software (NCSS’23) にて、本学情報メディア学科卒業生 (現・GMOサイバーセキュリティ byイエラエ株式会社) の多木優馬さんが発表を行いました。発表内容は、本学での卒業研究をベースとしてまとめたものです。
+
+
+  Yuuma Taki, Masayuki Fukumitsu, Tsubasa Yumura... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/11/07/sakura.html">
+          さくらインターネット石狩データセンターを見学
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Nov 07, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/11/07/sakura.html">
+        <p>
+        
+
+2023年11月7日(火)に研究室メンバーでさくらインターネット石狩データセンターを見学しました。
+
+
+
+
+石狩データセンターは、2011年に竣工され、北海道の冷涼な外気を空調に活用して運用されています。
+
+
+  石狩データセンター｜さくらインターネットのデータセンター・ハウジング
+
+
+湯村研究室でも、論文レポジトリ や研究用サーバに、さくらインターネットの石狩データセンターのサーバを利用しています。
+
+データセンター内は、執行役員の江草 陽太さんにご案内いただきました。普段見ることのできないデータセンター内部を詳しく説明していただき、大変貴重な体験をさせて頂きました。ありがとうございました！！
+
+
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/10/29/u16procon.html">
+          第6回U-16プログラミングコンテスト札幌大会に協賛
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Oct 29, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/10/29/u16procon.html">
+        <p>
+        
+
+2023年10月29日(日)にSapporo Business HUBにて開催された第6回U-16プログラミングコンテスト札幌大会に、北海道情報大学湯村研究室としてシルバースポンサーに協賛しました。
+
+
+
+競技部門はCHaserというエージェント型対戦プログラムで競います。決められた行動パターンのうちどの行動を選択するかプログラムが決定します。シンプルなルールですが考慮することが多く、非常に奥が深い内容です。今大会でも熱戦が繰り広げられました。
+
+
+
+作品部門は湯村が審査委員長を務めました。ScratchやUnity、Unreal Engineなどを駆使してつくられた7作品はどの作品もクオリティが高く、金賞受賞作品のひとつ「にぎにぎ」は、おにぎりに具を入れてから撃ち落とすというゲー... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/10/24/donuts.html">
+          DONUTSとの交流ゼミを開催
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Oct 24, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/10/24/donuts.html">
+        <p>
+        
+
+2023年10月24日(火)に、株式会社DONUTS札幌オフィスの社員4名をお迎えして交流ゼミを開催しました。DONUTSさんの事業紹介や、ITエンジニア・マネージャのお仕事について幅広くお話しいただきました。後半は、DONUTSさんの社員とゼミ生が4グループに分かれて座談会。就活に関する相談や、大学生活についての雑談など、いろんな話で盛り上がりました。現役エンジニアのお話は学生にとって大きな刺激になりました。DONUTSのみなさまありがとうございました！
+
+
+
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/award/2023/10/18/shinsetsu.html">
+          秋葉さん、辻永さんが北海道ITクリエータ発掘・育成事業「新雪」に採択
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Oct 18, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/award/2023/10/18/shinsetsu.html">
+        <p>
+        
+
+2023年度 北海道ITクリエータ発掘・育成事業（新雪プログラム）にて4年生の秋葉 貴文さんと辻永 泰輔さんの提案プロジェクトが採択されました。
+
+
+  秋葉 貴文「待機電力不要なネットワーク更新型電子ペーパーサイネージ」
+  辻永 泰輔「LTooL: 思い立ったときにLTができるプレゼンテーションツールの開発」
+
+
+　新雪プログラムは、北海道在住の25歳未満の若手クリエータから開発・制作テーマを募集するITクリエータ発掘・育成事業です。独立行政法人情報処理推進機構（IPA）の実施する未踏事業をモデルとし、採択テーマ1件あたり最大150万円が支給されます。採択後6ヶ月の開発・制作期間を経て2024年1月の成果報告会で新雪プログラムでの取り組みについて報告します。新雪プログラムは今年... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#award">#award</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/conference/2023/10/14/info2023.html">
+          鎌田さん、秋葉さん、岡さん、辻永さん、藤谷さんが情報処理北海道シンポジウム2023にて発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Oct 14, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/conference/2023/10/14/info2023.html">
+        <p>
+        
+
+2023年10月14日(土)に北海道大学で開催された情報処理北海道シンポジウム2023にて、4年生の鎌田 峻輔さん、秋葉 貴文さん、岡 秀哉さん、辻永 泰輔さん、藤谷 梨生さんが研究発表を行いました。発表題目は以下のとおりです。リンク先の論文レポジトリにて論文、ポスターを公開しています。
+
+
+  鎌田 峻輔, 湯村 翼 巻ける電光掲示板の開発
+  秋葉 貴文, 湯村 翼 ネットワーク更新型電子ペーパーサイネージの待機電力削減
+  岡 秀哉, 湯村 翼 VRコントローラに握力検出機能を拡張するセンサの開発
+  辻永 泰輔, 湯村 翼 思い立った時にLTができるプレゼンテーションツールの提案
+  藤谷 梨生, 湯村 翼 フィンガーブレスレット型疲労通知デバイスの開発
+
+
+
+
+
+
+
+
+シ... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/10/08/sotensai.html">
+          蒼天祭2023で卒業研究を展示
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Oct 08, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/10/08/sotensai.html">
+        <p>
+        
+
+
+
+2023年10月7日(土)〜8日(日)に開催された北海道情報大学 蒼天祭2023にて、卒業研究作品の展示を行いました。
+
+4年生8名の卒業研究のパネル展示・デモ展示を行いました。3,4年生みんなでゼミの時間を使って準備し、当日も2日間シフトを組んで説明対応を行いました。
+
+私達の展示の様子も含めた、蒼天祭のツイートはこちらにまとめています。
+
+
+  北海道情報大学 蒼天祭2023ツイートまとめ #蒼天祭 #johodai - min.t (ミント)
+
+
+また、2日目は、来場者数の大まかな調査のため、超音波センサを用いた来場者カウンタを製作して設置しました。ドア間の距離をモニタリングし、閾値を下回った際にカウントするというシンプルな仕組みのものです。1日で延べ354名の入室があり... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/09/29/mierunebbq04.html">
+          秋葉さんがMIERUNE BBQで登壇
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 29, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/09/29/mierunebbq04.html">
+        <p>
+        
+4年生の秋葉貴文さんが、2023年9月29日(金)に札幌市中央区のAssocie Rental Spaceで開催されたMIERUNE BBQ #04 で登壇しました。
+
+MIERUNE BBQは、株式会社MIERUNE主催の・エンジニア・デザイナー向けのオフライン勉強会で、秋葉さんは卒業研究で取り組んでいる電子ペーパーサイネージの研究について発表しました。
+
+
+  MIERUNE BBQ #04 - connpass
+  9月も焼かないBBQ！ 4回目の開催となったMIERUNE BBQ開催まとめ - Togetter
+
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/09/17/mikantech.html">
+          NoMaps MIKAN TECH MEETUP 2023 HARDWARE EXHIBITに藤谷さん、岡さんが出展
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 17, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/09/17/mikantech.html">
+        <p>
+        
+
+2023年9月17日(日)に、BYYARDで開催されたNoMaps 2023の企画
+MIKAN TECH MEETUP 2023〜テクノロジーをテーマに人が集う１日〜 のHARDWARE EXHIBITに、4年生の藤谷 梨生さん、岡 秀哉さんが卒業研究の作品を出展しました。
+
+Jadwelry：フィンガーブレスレット型疲労通知デバイス
+
+
+GRAB：VRコントローラを拡張する握力センサ
+
+
+イベントのツイートまとめはこちら
+
+  MIKAN TECH MEETUP 2023ツイートまとめ #MIKANTECHMEETUP #NoMaps2023 - min.t (ミント)
+
+
+多くの方に展示を見て頂き、フィードバックを頂きました。ありがとうございました！
+
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/08/10/hackathon.html">
+          エスコンフィールドHOKKAIDOで研究室ハッカソンを実施
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 10, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/08/10/hackathon.html">
+        <p>
+        
+
+2023年8月10日(木)に、エスコンフィールドHOKKAIDO TOWER11内のWORK × ation Site 北海道ボールパークFビレッジにて、研究室ハッカソンを実施しました。
+
+3,4年生の16名が4チームに分かれ、「駆け引き」をテーマに、M5Stackとp5.jsを組み合わせた作品を1日で制作しました。完成した作品は以下の通りです。
+
+サッカーしようぜ！M5stackとp5.jsを使ってPK勝負
+
+  サッカーしようぜ！M5stackとp5.jsを使ってPK勝負 - ProtoPedia
+
+
+
+距離センサを利用した2人用対戦ゲーム
+
+  距離センサを利用した2人用対戦ゲーム - ProtoPedia
+
+
+
+フラッシュナンバー
+
+  フラッシュナンバー - ProtoP... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/08/07/joint.html">
+          明治大学中村聡史研究室、北海道情報大学伊藤正彦研究室と合同研究発表会を実施
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Aug 07, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/08/07/joint.html">
+        <p>
+        
+
+2023年8月7日(月)に、明治大学中村聡史研究室、北海道情報大学伊藤正彦研究室との合同研究発表会を北海道情報大学eDCタワー10Fにて実施しました。湯村研究室からは4年生8名、3年生1名の計9名がデモ・ポスター展示を行いました。
+
+
+  岡 秀哉「GRAB:握力を使用したVRコントローラ」
+  鎌田 峻輔「RolBo：巻ける電光掲示板」
+  秋葉 貴文「ネットワーク更新型電子ペーパーサイネージの待機電力削減」
+  石橋 陸「ぬいぐるみと3Dモデルの連動」
+  藤谷 梨生「Jadwelry：フィンガーブレスレット型疲労通知デバイスの制作」
+  乾 泰河「楽しく睡眠管理ができるヘルスケアアプリ「眠眠ガチャ」の制作」
+  小泉 翔平「サウナ内でのプロジェクションマッピング」
+  辻永 ... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/07/27/mierunebbq03.html">
+          辻永さんがMIERUNE BBQで登壇
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 27, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/07/27/mierunebbq03.html">
+        <p>
+        
+4年生の辻永泰輔さんが、2023年7月27日(木)に札幌市中央区のAssocie Rental Spaceで開催されたMIERUNE BBQ #03 で登壇しました。
+
+MIERUNE BBQは、株式会社MIERUNE主催の・エンジニア・デザイナー向けのオフライン勉強会で、辻永さんは卒業研究で取り組んでいるプレゼンテーションツールの研究について発表しました。
+
+
+  MIERUNE BBQ #03 - connpass
+  猛暑下で焼かないBBQ！ MIERUNE BBQ #03開催まとめ！ - Togetter
+
+
+
+LTooL: 思い立った時にLTができるプレゼンテーションツール (MIERUNEBBQ発表資料) from Taisuke Tsujinaga
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/07/25/plan.html">
+          2023年度卒業研究企画発表会で4年生8名が発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 25, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/07/25/plan.html">
+        <p>
+        2023年7月18日(火)および25日(火)に開催された情報メディア学科2023年度卒業研究企画発表会で4年生8名が発表しました。
+
+
+  小泉 翔平「サウナ内でのプロジェクションマッピング」
+  藤谷 梨生「Jadwelry：フィンガーブレスレット型疲労通知デバイス」
+  乾 泰河「楽しく睡眠管理ができるヘルスケアアプリ
+「眠眠ガチャ」の制作」
+  岡 秀哉「Grip Recognizable Attachment Belt: GRAB」
+  鎌田 峻輔「RolBo：巻ける電光掲示板」
+  秋葉 貴文「ネットワーク更新型電子ペーパーサイネージの待機電力削減」
+  辻永 泰輔「LTooL:思い立った時にLTができる プレゼンテーションツールの開発」
+  石橋 陸「ぬいぐるみと3Dモデル... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/publish/2023/07/15/snow.html">
+          教員の湯村が情報処理学会誌にて「雪×情報処理」を執筆
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 15, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/publish/2023/07/15/snow.html">
+        <p>
+        教員の湯村が、情報処理学会誌「情報処理」Vol.64 No.8 の特集「○○×情報処理」にて、「雪×情報処理」を執筆しました。
+
+情報処理学会著作権規程 第5条 5.「著作者は、投稿した論文等について本学会の出版物発行前後にかかわらず、いつでも著作者個人のWebサイト（著作者所属組織のサイトを含む。以下同じ。）において自ら創作した著作物を掲載することができる。」に基づき、原稿の内容を掲載します。
+
+
+　北海道では毎年たくさんの雪が降ります．特に私がいま住んでいる札幌市は，人口が200万人近い大都市ですが豪雪地域となっており，この規模の都市でこれほど雪が降ることは世界でも他に類を見ません．現在，情報処理技術は我々の生活にとけこんでいます．もちろん雪国でもその事実は変わらないのですが，その... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#publish">#publish</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/07/12/sauna.html">
+          小泉さんがHappy Hacking Sauna#1で登壇
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 12, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/07/12/sauna.html">
+        <p>
+        
+4年生の小泉翔平さんが、2023年7月12日(水)にガーデンズキャビンで開催されたHappy Hacking Sauna#1 で登壇しました。
+
+Happy Hacking Saunaは、サウナ好きエンジニアがサウナに集まってサウナやITについて語るミートアップイベントで、小泉さんは卒業研究で取り組んでいるサウナ内でのプロジェクションマッピングの研究について紹介しました。
+
+
+  Happy Hacking Sauna#1 @ガーデンズキャビン - connpass
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/award/2023/06/01/wdc.html">
+          清水さんがウェブデザインコンテスト2023で優秀賞を受賞
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jun 01, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/award/2023/06/01/wdc.html">
+        <p>
+        
+
+第23回北海道情報大学ウェブデザインコンテストにて、3年生の清水怜良さんが参加するチームの作品「ウェブ・アドベンチャー - 危険なサイトを体験して学ぼう」がフリー部門優秀賞を受賞しました。おめでとうございます。
+
+作品の解説と講評、デモサイトへのリンクは以下のサイトにまとめられてます。
+
+
+  ウェブ・アドベンチャー HIU Web Design Contest
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#award">#award</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/05/11/ebitech.html">
+          辻永さんがえびてく＃0を開催
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> May 11, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/05/11/ebitech.html">
+        <p>
+        
+4年生の辻永泰輔さんが中心となり、2023年5月11日(木)に野幌公民館でIT系勉強会「えびてく #0」を開催しました。
+
+
+  えびてく #0 - IT 系の勉強会を江別でやる - connpass
+
+
+オンライン参加も含めて、14名が参加登録し、7名が発表しました。イベントの様子は、以下のページにツイートがまとめられています。
+
+
+  えびてく #0 ツイートまとめ #えびてく - min.t (ミント)
+
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/info/2023/04/18/start.html">
+          2023年度の研究室が始動
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Apr 18, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/info/2023/04/18/start.html">
+        <p>
+        
+2023年度の初回ゼミを行いました。今年度の湯村研究室は4年生8名、3年生8名の計16名(本配属)で活動を行います。アクティブに活動し、研究成果もたくさん発表していきます！よろしくお願いします！
+
+
+  メンバー
+
+
+今年の自己紹介はChatGPTを使って行いました。各自が予め用意しておいたスクリプトをChatGPTに投げて自己紹介を作成し、それを読み上げます。とても個性的な自己紹介ばかりでした。
+
+
+アイスブレイクとしてマシュマロチャレンジを行いました。パスタと紐とテープを使ってチームでタワーをつくりあげます。1回目は全チーム記録無しでしたが、その経験を生かして2回目は高いタワーをつくりあげていました。
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#info">#info</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/info/2023/03/30/nanakamado.html">
+          大学広報誌「ななかまど」に多木さんのインタビュー記事掲載
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 30, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/info/2023/03/30/nanakamado.html">
+        <p>
+        
+
+本年卒業した多木優馬さんのインタビュー記事が大学広報誌「ななかまど」第79号に掲載されました。ななかまどはリンク先ページにてPDFにて公開されています。
+
+
+  https://do-johodai.ac.jp/nanakamado/
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#info">#info</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/03/17/grad.html">
+          2022年度卒業式で4年生8名が卒業
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 17, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/03/17/grad.html">
+        <p>
+        
+
+2023年3月17日(金)に開催された2022年度卒業式で卒業生8名を送り出しました。この卒業生は湯村の大学着任と同時に配属された研究室一期生で、セキュリティ研究、UI研究、ゲーム開発、映像制作など様々な方面で幅広く活躍し、8名全員が卒業しました。卒業おめでとうございます。
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/conference/2023/03/10/i2023.html">
+          大栁さん、岡さんがインタラクション2023にて発表を行いました
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 10, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/conference/2023/03/10/i2023.html">
+        <p>
+        
+
+2023年3月8日(水)〜10日(金)に一橋記念講堂で開催された第27回一般社団法人情報処理学会シンポジウムインタラクション2023にて4年生の大栁剣汰さん、3年生の岡秀哉さんが研究発表を行いました。
+
+発表題目は以下のとおりです。リンク先の論文レポジトリにて論文、発表スライドを公開しています。
+
+
+  大栁 剣汰, 湯村 翼. TOSHIATE:実在都市をコースとした都市当てレースゲーム
+  岡 秀哉, 由谷 哲夫, 渋谷 敦子, 湯村 翼. SRIPY: 氷雪路面歩行技術の向上のためのトレーニングゲーム
+
+
+インタラクティブ発表では、多くの方にデモを体験していただきました。頂いたフィードバックを参考にして今後の研究を進めていきます。ありがとうございました。
+
+
+
+
+
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/award/2023/03/09/ubiaward.html">
+          教員の湯村が情報処理学会第77回UBI研究会優秀論文賞を受賞
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 09, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/award/2023/03/09/ubiaward.html">
+        <p>
+        
+
+教員の湯村が情報処理学会第77回ユビキタスコンピューティングシステム(UBI)研究会に投稿した論文が、優秀論文賞を受賞しました。
+
+
+  優秀論文 | IPSJ SIGUBI
+
+
+リンク先の論文レポジトリにて論文、発表スライドを公開しています。
+
+
+  湯村 翼. 熱を用いた2次元マーカの検討
+
+
+この研究は今後も継続していく予定ですので、大変励みになります。ありがとうございました。
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#award">#award</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/conference/2023/03/06/csec100.html">
+          多木さんが情報処理学会第100回CSEC研究会にて発表を行いました
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 06, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/conference/2023/03/06/csec100.html">
+        <p>
+        
+
+2023年3月6日(月)〜7日(火)に東海大学高輪キャンパスで開催された情報処理学会第100回コンピュータセキュリティ(CSEC)研究会にて4年生の多木優馬さんが研究発表を行いました。
+
+発表題目は以下のとおりです。リンク先の論文レポジトリにて論文、発表スライドを公開しています。
+
+
+  多木 優馬, 福光 正幸, 湯村 翼. 様々なCPUアーキテクチャにおけるROP攻撃可能性の検証
+
+
+発表の質疑応答では、多くの質問とコメントを頂きました。ありがとうございました。
+
+
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/03/04/hic.html">
+          教員の湯村が超異分野学会東京大会2023にて発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 04, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/03/04/hic.html">
+        <p>
+        
+
+2023年3月3日(金)〜4日(土)に九段会館テラスで開催された超異分野学会東京大会2023にて教員の湯村が「Cyber-Physical-Human-Interaction研究の紹介 〜 熱赤外線マーカ, VRサッカー作戦盤 etc.」を発表しました。熱赤外線マーカ および VRサッカー作戦盤 の2つの研究のデモンストレーションを行いました。
+
+研究会では、非常に多くの来場者に発表を聴講して頂きました。今後の共同研究に繋がればと思います。ありがとうございました。
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/conference/2023/03/01/ubi77.html">
+          教員の湯村が情報処理学会第77回UBI研究会にて発表を行いました
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 01, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/conference/2023/03/01/ubi77.html">
+        <p>
+        
+
+2023年2月28日(火)〜3月1日(水)に名古屋大学で開催された情報処理学会第77回ユビキタスコンピューティングシステム(UBI)研究会にて教員の湯村が研究発表を行いました。
+
+発表題目は以下のとおりです。リンク先の論文レポジトリにて論文、発表スライドを公開しています。
+
+
+  湯村 翼. 熱を用いた2次元マーカの検討
+
+
+研究会では、多くの来場者に発表を聴講して頂き、有益な議論やコメントを頂きました。ありがとうございました。
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2023/01/31/gradpresen.html">
+          2022年度 卒業研究発表会
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jan 31, 2023</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2023/01/31/gradpresen.html">
+        <p>
+        
+
+2023年1月31日(火)に
+2023年1月31日(火)に開催された情報メディア学科合同の卒業研究発表会にて、湯村研究室から以下の発表を行いました。
+
+口頭発表セッション
+
+  多木 優馬 「組込み機器へのROP攻撃検証」
+
+
+インタラクティブセッション
+
+  湯木 祥平 「IMUを用いた打撃力向上の支援」
+  吉村 祐亮 「センサーを用いた能動的な3Dホログラムの可能性」
+  堀井 星成 「AR グラスにおけるTouchDesignerを用いた手へのエフェクト重畳表示アプリケーションの制作」
+  兼子 裕遵 「No Cleaning Robot 〜 守銭奴ルンバ」
+
+
+ゲームセッション
+
+  大栁 剣汰 「TOSHIATE: 実在都市をコースとした都市当てレースゲーム」
+  飯酒... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/award/2022/12/09/iots.html">
+          秋葉さん、辻永さんが第15回インターネットと運用技術シンポジウム(IOTS2022)で発表し学生奨励賞を受賞
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 09, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/award/2022/12/09/iots.html">
+        <p>
+        
+
+2022年12月8日(木)〜9日(金)に九州工業大学 百周年中村記念館で開催された第15回インターネットと運用技術シンポジウム(IOTS2022)で3年生の秋葉貴文さんと辻永泰輔さんがポスターセッションにて研究発表を行いました。秋葉さん、辻永さんの発表がともにIOTS2022学生奨励賞を受賞しました。
+
+発表題目は以下のとおりです。リンク先の論文レポジトリにて論文、ポスターを公開しています。
+
+
+  秋葉 貴文, 湯村 翼. 画面転送式デジタルサイネージの開発に向けたVNCトラフィックの計測
+  辻永 泰輔, 湯村 翼. Furm: 家具移動アプリケーションの提案
+
+
+シンポジウムでは、多くの来場者に発表を聴講して頂き、有益な議論やコメントを頂きました。ありがとうございました。
+
+... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a><a class="post-tag" href="/tags.html#award">#award</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/report/2022/12/09/iots-report.html">
+          IOTS2022参加記
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 09, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/report/2022/12/09/iots-report.html">
+        <p>
+        3年生の秋葉 貴文、辻永 泰輔です。12月8〜9日に情報処理学会第15回インターネットと運用技術シンポジウム(IOTS2022)参加してきたので、参加記をまとめます。
+
+関連記事
+
+  秋葉さん、辻永さんが第15回インターネットと運用技術シンポジウム(IOTS2022)で発表し学生奨励賞を受賞
+
+
+秋葉
+IOTS2022では、ポスター発表を行いました。私がポスター発表した「画面転送式デジタルサイネージの開発に向けたVNCトラフィックの計測」は、多くの方に来ていただき、トラフィック計測について今後の方針や計測の方法について意見を頂くことができました。
+
+
+
+頂いた主なコメントは以下の通りです。
+
+
+  無線環境でのトラフィック変化がどうなるかを調べてみると良い
+  VNC以外の画面転送プ... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#report">#report</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/award/2022/11/26/hic.html">
+          超異分野学会北海道フォーラム2022にて発表・受賞
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Nov 26, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/award/2022/11/26/hic.html">
+        <p>
+        
+
+2022年11月26日(土)に北海道大学フード&amp;メディカルイノベーション国際拠点で開催された超異分野学会北海道フォーラム2022にて、教員の湯村が「Cyber-Physical-Human-Interaction研究の紹介 〜 熱赤外線マーカ, VRサッカー作戦盤 etc.」をポスター発表しました。以前より実施していた 熱赤外線マーカ および VRサッカー作戦盤 の2つの研究のデモンストレーションを行いました。また、本発表が北海道フォーラム2022賞を受賞しました。発表を聞いて頂いた皆様、ありがとうございました。
+
+関連記事
+
+  超異分野学会 北海道フォーラム2022 | 超異分野学会
+  【開催報告】2022年11月26日（土）超異分野学会 北海道フォーラム2022を開... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a><a class="post-tag" href="/tags.html#award">#award</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/report/2022/10/28/css-codeblue-report.html">
+          Computer Security Symposium2022 ＆ CODEBLUE2022参加記
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Oct 28, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/report/2022/10/28/css-codeblue-report.html">
+        <p>
+        4年生の多木優馬です。10月24日から10月28日までComputer Security Symposium(CSS)とCODEBLUEに参加してきたので、参加記をまとめます。
+
+関連記事
+
+  多木さんがコンピュータセキュリティシンポジウム2022(CSS2022)にて発表
+  多木さんがCODE BLUE 2022にて発表
+
+
+CSS2022参加記
+CSS2022では、デモンストレーションセッションで発表を行いました。自分がデモセッションで発表した 「プロセッサエミュレータQEMUを用いた組込み機器へのROP攻撃のデモンストレーション」は、多くの方に来ていただき、ROP対策のセキュリティ機構や今後の研究方針について、意見を交換することができました。頂いた主なコメントは以下の通りです... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#report">#report</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2022/10/27/codeblue.html">
+          多木さんがCODE BLUE 2022にて発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Oct 27, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2022/10/27/codeblue.html">
+        <p>
+        
+
+2022年10月27日(木)〜28日(金)に開催されたCODE BLUE 2022のU25セッションにて、4年生の多木優馬さんが「組込み機器はROP攻撃に対応できているか？ -低スペックな組込み機器へのROP検証- 」を発表しました。CODE BLUEは世界トップクラスの専門家によるサイバーセキュリティ国際会議で、U25セッションに採択されたのは2名のみ(日本人は多木さんのみ)です。
+
+発表資料は湯村研究室 論文レポジトリにて公開しています https://dl.yumulab.org/papers/31
+
+
+  Webサイト 世界トップクラスの専門家による情報セキュリティ国際会議「CODE BLUE（コードブルー）」
+  講演概要 https://codeblue.jp/2022... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/conference/2022/10/26/css2022.html">
+          多木さんがコンピュータセキュリティシンポジウム2022(CSS2022)にて発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Oct 26, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/conference/2022/10/26/css2022.html">
+        <p>
+        
+
+2022年10月24日(月)〜27日(木)に熊本城ホールで開催されたコンピュータセキュリティシンポジウム2022(CSS2022)のデモンストレーションセッションにて、4年生の多木優馬さんが「プロセッサエミュレータQEMUを用いた組込み機器へのROP攻撃のデモンストレーション」を発表しました。本研究発表は長崎県立大学の福光 正幸准教授との共同研究の成果です。
+シンポジウムでは、多くの来場者に発表を聴講して頂きました。頂いたコメントは今後の研究に生かしていきたいと思います。ありがとうございました。
+
+ポスターは湯村研究室 論文レポジトリにて公開しています https://dl.yumulab.org/papers/28
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2022/10/22/sechackreturns.html">
+          辻永さんがSecHack365 ReturnsにてLT登壇
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Oct 22, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2022/10/22/sechackreturns.html">
+        <p>
+        2022年10月22日(土)に開催されたSecHack365 Returnsにて、3年生の辻永泰輔さんが「家具を動かすセキュリティ」というタイトルでLT(ライトニングトーク)登壇しました。
+
+報告記事はこちら
+
+  SecHack365 ReturnsでLTしてきました！
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/conference/2022/10/15/ipsjhokkaido.html">
+          多木さんが情報処理北海道シンポジウム2022にて発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Oct 15, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/conference/2022/10/15/ipsjhokkaido.html">
+        <p>
+        
+
+2022年10月15日(土)に開催された情報処理北海道シンポジウムにて、4年生の多木優馬さんが「組込み機器へのROP攻撃の検証のためのプロセッサエミュレータを用いた調査」を発表しました。本研究発表は長崎県立大学の福光 正幸准教授との共同研究の成果です。
+シンポジウムでは、多くの来場者に発表を聴講して頂きました。頂いたコメントは今後の研究に生かしていきたいと思います。ありがとうございました。
+
+論文・ポスターは湯村研究室 論文レポジトリにて公開しています https://dl.yumulab.org/papers/27
+
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2022/09/25/demola.html">
+          藤谷さんがDEMOLA HOKKAIDOに参加
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 25, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2022/09/25/demola.html">
+        <p>
+        
+
+3年生の藤谷梨生さんがDEMOLA HOKKAIDOに参加し、プログラムを修了しました。
+DEMOLAは、学生がチームを組んで企業の課題解決に取り組むプログラムで、DEMOLA HOKKAIDOには北海道大学をはじめとする道内の様々な大学の学生が参加しています。
+
+DEMOLA HOKKAIDO
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2022/09/14/codeblueaccept.html">
+          CODE BLUE 2022に多木さんの発表が採択
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 14, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2022/09/14/codeblueaccept.html">
+        <p>
+        
+
+世界トップクラスの専門家によるサイバーセキュリティ国際会議CODE BLUE 2022に湯村研究室4年生の多木優馬さんの発表「組込み機器はROP攻撃に対応できているか？ -低スペックな組込み機器へのROP検証- 」が採択されました。採択されたのはU25セッションで、2名のみ(日本人は多木さんのみ)の採択です。
+CODE BLUE 2022は2022年10月27日(木)～10月28日(金)に東京で開催されます。
+
+
+  Webサイト 世界トップクラスの専門家による情報セキュリティ国際会議「CODE BLUE（コードブルー）」
+  講演概要 https://codeblue.jp/2022/talks/?content=talks_22
+  プレスリリース 世界トップクラスの専門家によ... <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/conference/2022/09/01/ec2022.html">
+          教員の湯村がEC2022にてデモ発表を行いました
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Sep 01, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/conference/2022/09/01/ec2022.html">
+        <p>
+        
+
+2022年9月1日(木)〜3日(土)に開催されたエンタテインメントコンピューティング(EC2022)シンポジウムにて、教員の湯村が「一人称視点映像を提示するVRサッカー作戦盤システムの検討」のデモ発表を行いました。ほぼ絶え間なく常に体験者いるくらい盛況で、多くの方に体験していただき、様々なコメントをいただきました。評価実験や追加機能の実装も進めていきたいと思います。ありがとうございました。
+
+論文レポジトリへのリンク：https://dl.yumulab.org/papers/26
+
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2022/07/26/plan.html">
+          2022年度卒業研究企画発表会で4年生8名が発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 26, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2022/07/26/plan.html">
+        <p>
+        2022年7月19日(火)および26日(火)に開催された情報メディア学科2022年度卒業研究企画発表会で4年生8名が発表しました。
+
+
+  湯木 祥平「IMUを用いた打撃力向上の支援」
+  多木 優馬「組込み機器へのROP攻撃検証」
+  兼子 裕遵「No Cleaning Robot 守銭奴ルンバ」
+  大栁 剣汰「現実の都市を舞台にしたゲーム開発と都市ごとの比較」
+  西村 春日「PLATEAUを使用した映像作品」
+  飯酒盃 羽兼「スライムカー 変形する自動車」
+  吉村 祐亮「センサーに反応して動く3Dホログラムの制作」
+  堀井 星成「ARグラスにおけるTouchDesignerを用いた手へのエフェクト重畳表示アプリケーションの制作」
+
+
+
+
+
+
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2022/07/23/ldd22sec.html">
+          辻永さんがLOCAL Developer Day Online ’22 /Security で発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 23, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2022/07/23/ldd22sec.html">
+        <p>
+        
+
+
+
+2022年7月23日(土)に開催されたLOCAL Developer Day Online ’22 /Security (#ldd22sec) の Session. 2「LOCALの若者によるSecHack365経験談」に、湯村研究室3年生の辻永泰輔さんが登壇し発表を行いました。
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/info/2022/04/12/start.html">
+          2022年度のゼミがスタート
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Apr 12, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/info/2022/04/12/start.html">
+        <p>
+        
+
+
+今年度のゼミが始まりました。今年度は4年生が8名、3年生が10名配属されました。初回ゼミは3・4年生合同で行いました。キャプテン任命(湯村研究室ではゼミ長ではなくキャプテンを選出しています)、研究室ガイダンスの後、スライドを使った自己紹介と、少人数に分かれてグループトークを行いました。これからの活躍に期待しています！
+(集合写真撮影時のみマスクを外しています)
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#info">#info</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/grant/2022/04/01/gmo.html">
+          2022年度GMO研究助成制度に採択
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Apr 01, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/grant/2022/04/01/gmo.html">
+        <p>
+        公益財団法人GMOインターネット財団の2022年度GMO研究助成制度に「熱赤外線を用いた通信に関する研究」という題目にて採択されました。活動期間は1年間、助成金額は50万円です。
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#grant">#grant</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2022/03/18/graduate.html">
+          4年生1名が卒業
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 18, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2022/03/18/graduate.html">
+        <p>
+        
+
+本日の卒業式で湯村研究室初の卒業生1名を送り出しました。卒業生の久保田さんは卒業研究で優秀賞受賞、インタラクションにて発表、ヒーローズリーグに応募して受賞するなど、学内外で活躍されました。卒業おめでとうございます。
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a><a class="post-tag" href="/tags.html#c.kubota">#c.kubota</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/award/2022/03/11/award.html">
+          卒業研究発表会で4年生の久保田さんが優秀賞を受賞
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 11, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/award/2022/03/11/award.html">
+        <p>
+        2022年1月27日(木)に開催された2021年度情報メディア学科卒業研究発表会で4年生の久保田さんが優秀賞を受賞しました。
+受賞者一覧は こちら
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#award">#award</a><a class="post-tag" href="/tags.html#c.kubota">#c.kubota</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2022/03/06/md.html">
+          メディアデザイン展でゼミ制作・卒業研究を展示
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 06, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2022/03/06/md.html">
+        <p>
+        
+
+
+
+
+03/05(土)〜06(日)に札幌文化芸術交流センターSCARTSにて北海道情報大学メディアデザイン展のパネル・動画の展示が開催されました。湯村研究室からは、3年生ゼミチーム制作作品「チョーク当てゲーム」「遠いゴミ箱」、4年生卒業研究「ヘッドマウントディスプレイにおける指文字を用いた文字入力手法の提案」の3作品の動画を展示しました。
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2022/03/05/sechack.html">
+          多木さん、辻永さんがSecHack365修了
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Mar 05, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2022/03/05/sechack.html">
+        <p>
+        
+
+
+3年生の多木優馬さん、2年生の辻永泰輔さんが SecHack365 2021年度成果発表会で発表を行い、SecHack365を修了しました。SecHack365は国立研究開発法人情報通信研究機構(NICT)が主催する若手セキュリティイノベーター育成プログラムで、1年かけて実施されました。
+
+成果発表会では以下の発表を行いました。リンクから発表資料(ポスター)をダウンロードできます。
+
+  KASLR実装に向けて(多木)
+  攻撃しない人を育てるNort(辻永)
+
+
+他の修了生の全作品は SecHack365: 2021 作品一覧 から閲覧できます。
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/conference/2022/02/28/interaction.html">
+          インタラクション2022で久保田さんがインタラクティブ発表
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Feb 28, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/conference/2022/02/28/interaction.html">
+        <p>
+        
+
+4年生の久保田千尋さんが情報処理学会インタラクション2022シンポジウムにて「ヘッドマウントディスプレイにおける指文字を用いた文字入力手法の提案」のインタラクティブ発表を行いました。多くの方にデモを見ていただきコメントをいただきました。ありがとうございます！
+
+論文は論文リポジトリにて公開しています：https://dl.yumulab.org/papers/25
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a><a class="post-tag" href="/tags.html#c.kubota">#c.kubota</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2022/02/01/team.html">
+          2021年度3年ゼミチーム制作発表会
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Feb 01, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2022/02/01/team.html">
+        <p>
+        後期の3年生ゼミで行っていたチーム開発プロジェクトの成果発表会を行いました。2チームに分かれ、それぞれ「チョーク投げ」と「玉入れ」のゲームを作成しました。どちらもUnityとM5Stackを組み合わせてつくりました。
+
+
+
+
+
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/event/2022/01/27/presentation.html">
+          2021年度卒業研究発表会
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jan 27, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/event/2022/01/27/presentation.html">
+        <p>
+        
+
+情報メディア学科の卒業研究発表会を行いました。湯村研究室から、久保田千尋さんが「ヘッドマウントディスプレイにおける指文字を用いた文字入力手法の提案」を発表しました。
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#event">#event</a><a class="post-tag" href="/tags.html#c.kubota">#c.kubota</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/info/2022/01/01/repository.html">
+          論文レポジトリを公開しました
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jan 01, 2022</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/info/2022/01/01/repository.html">
+        <p>
+        北海道情報大学 湯村研究室 論文レポジトリを公開しました。現在は教員の論文を抜粋して掲載していますが、これから学生発表論文をどんどん載せていきます！
+論文レポジトリは、明治大学 中村聡史研究室で利用しているものを使わせていただきました。ありがとうございます！
+
+論文レポジトリへのリンク：https://dl.yumulab.org/
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#info">#info</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/award/2021/12/11/heroes.html">
+          4年生の久保田さんの作品がヒーローズリーグ2021で受賞
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 11, 2021</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/award/2021/12/11/heroes.html">
+        <p>
+        
+
+湯村研究室4年生の久保田 千尋さんの作品「ARグラスにおける指文字を用いた新たな文字入力手法」がヒーローズリーグ2021決勝に進出し、アプリカルチャー株式会社様のスポンサー賞「時代を先取りしてるで賞」を受賞しました！
+
+応募作品サイト： ARグラスにおける指文字を用いた新たな文字入力手法 - ProtoPedia
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#award">#award</a><a class="post-tag" href="/tags.html#c.kubota">#c.kubota</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/conference/2021/12/10/wiss2021.html">
+          WISS2021にてデモ・ロングティザー発表しました
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Dec 10, 2021</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/conference/2021/12/10/wiss2021.html">
+        <p>
+        
+
+教員の湯村が第29回インタラクティブシステムとソフトウェアに関するワークショップ(WISS2021)にて「熱は情報の伝達媒体になり得るか？熱赤外線を用いた2次元マーカの開発」をデモ(1日目)およびロングティザー(2日目)にて発表しました。多くの方に熱マーカのデモを見ていただき、いろんな意見をいただきました。ありがとうございます！
+
+論文レポジトリへのリンク：https://dl.yumulab.org/papers/1
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#conference">#conference</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/info/2021/07/26/web.html">
+          Webサイトを立ち上げました
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Jul 26, 2021</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/info/2021/07/26/web.html">
+        <p>
+        研究室Webサイトを立ち上げました。これから更新していきます。
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#info">#info</a></div>
+    </li><li>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="post-title">
+        <a class="post-link" href="/info/2021/04/01/hello.html">
+          研究室を立ち上げました
+        </a>
+      </h2>
+      <div class="post-meta">
+        <span class="post-date"><i class="fa fa-calendar"></i> Apr 01, 2021</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+      </div>
+      <a class="post-excerpt" href="/info/2021/04/01/hello.html">
+        <p>
+        北海道情報大学 情報メディア学部 情報メディア学科に着任し、研究室を立ち上げます。よろしくお願いします。
+ <span class="read_more">Read More</span>
+        </p>
+      </a>
+      <div class="post-tags"><a class="post-tag" href="/tags.html#info">#info</a></div>
+    </li></ul>
+
+  <!-- Pagination links --></div>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="common-list">
+  <ul>
+    <li>
+      <a href="/index.html">
+        All<span>61</span>
+      </a>
+    </li>
+
+    
+      <li>
+        <a href="/categories.html#h-award">
+          award <span>8</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/categories.html#h-conference">
+          conference <span>13</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/categories.html#h-event">
+          event <span>30</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/categories.html#h-grant">
+          grant <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/categories.html#h-info">
+          info <span>6</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/categories.html#h-publish">
+          publish <span>1</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="/categories.html#h-report">
+          report <span>2</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner"><div>Unpublished Work <span class="copyleft">&copy;</span> 2017-2024 Tsubasa Yumura</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="http://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

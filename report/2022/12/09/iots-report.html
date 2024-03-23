@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c"></meta><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>IOTS2022参加記 | 北海道情報大学 湯村研究室 - Cyber-Physical-Human Interaction Laboratory</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="IOTS2022参加記" />
+<meta name="author" content="Tsubasa Yumura" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="3年生の秋葉 貴文、辻永 泰輔です。12月8〜9日に情報処理学会第15回インターネットと運用技術シンポジウム(IOTS2022)参加してきたので、参加記をまとめます。" />
+<meta property="og:description" content="3年生の秋葉 貴文、辻永 泰輔です。12月8〜9日に情報処理学会第15回インターネットと運用技術シンポジウム(IOTS2022)参加してきたので、参加記をまとめます。" />
+<link rel="canonical" href="https://yumulab.org/report/2022/12/09/iots-report.html" />
+<meta property="og:url" content="https://yumulab.org/report/2022/12/09/iots-report.html" />
+<meta property="og:site_name" content="北海道情報大学 湯村研究室 - Cyber-Physical-Human Interaction Laboratory" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-09T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="IOTS2022参加記" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Tsubasa Yumura"},"description":"3年生の秋葉 貴文、辻永 泰輔です。12月8〜9日に情報処理学会第15回インターネットと運用技術シンポジウム(IOTS2022)参加してきたので、参加記をまとめます。","headline":"IOTS2022参加記","@type":"BlogPosting","dateModified":"2022-12-09T00:00:00+00:00","datePublished":"2022-12-09T00:00:00+00:00","url":"https://yumulab.org/report/2022/12/09/iots-report.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://yumulab.org/report/2022/12/09/iots-report.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://yumulab.org/feed.xml" title="北海道情報大学 湯村研究室 - Cyber-Physical-Human Interaction Laboratory" /><link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner"><span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="北海道情報大学 湯村研究室 - Cyber-Physical-Human Interaction Laboratory" src="" onerror="this.style.display='none'">
+  北海道情報大学 湯村研究室
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+            <a class="page-link" href="/">HOME</a>
+            <a class="page-link" href="/about.html">ABOUT</a>
+            <a class="page-link" href="/people.html">PEOPLE</a>
+            <a class="page-link" href="https://dl.yumulab.org/">PUBLICATIONS</a>
+            <a class="page-link" href="/collaboration.md">COLLABORATION</a>
+            
+
+
+
+
+<!-- <span class="page-link">
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<span class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="fr">
+          
+          <img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" title="French">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="zh-CN">
+          
+          <img src="https://cdn.countryflags.com/thumbs/china/flag-400.png" title="Chinese(Simple)">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ja">
+          
+          <img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" title="Japanese">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ko">
+          
+          <img src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png" title="Korean">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ru">
+          
+          <img src="https://cdn.countryflags.com/thumbs/russia/flag-400.png" title="Russian">
+          
+        </a>
+      </li>
+    
+  </ul>
+</span>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: '',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</span> --></div>
+        </nav></div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<!--<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+-->
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">IOTS2022参加記</h1>
+  <h2 class="post-subtitle"></h2>
+
+  <p class="post-meta">
+    <time class="dt-published" datetime="2022-12-09T00:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Dec 09, 2022
+    </time>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+  </p><div class="post-tags"><a class="post-tag" href="/tags.html#report">#report</a></div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <p>3年生の秋葉 貴文、辻永 泰輔です。12月8〜9日に情報処理学会第15回インターネットと運用技術シンポジウム(IOTS2022)参加してきたので、参加記をまとめます。</p>
+
+<p>関連記事</p>
+<ul>
+  <li><a href="https://www.yumulab.org/award/2022/12/09/iots.html">秋葉さん、辻永さんが第15回インターネットと運用技術シンポジウム(IOTS2022)で発表し学生奨励賞を受賞</a></li>
+</ul>
+
+<h2 id="秋葉">秋葉</h2>
+<p>IOTS2022では、ポスター発表を行いました。私がポスター発表した「画面転送式デジタルサイネージの開発に向けたVNCトラフィックの計測」は、多くの方に来ていただき、トラフィック計測について今後の方針や計測の方法について意見を頂くことができました。</p>
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/77486534b77041d4b2cc2214b78944b3" title="画面転送式デジタルサイネージの開発に向けたVNCトラフィックの計測 / IOTS2022-akiba" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 746;" data-ratio="0.7506702412868632"></iframe>
+
+<p>頂いた主なコメントは以下の通りです。</p>
+
+<ul>
+  <li>無線環境でのトラフィック変化がどうなるかを調べてみると良い</li>
+  <li>VNC以外の画面転送プロトコルとのトラフィック比較もあると良い</li>
+  <li>色数、暗号化方式のトラフックに対してもすべてのエンコード方式を調べると良い</li>
+</ul>
+
+<p>今回頂いたコメントを参考にしつつ、今後の開発・研究を進めていきたいと考えています</p>
+
+<p>また、発表を聴講し、特に印象に残ったのは以下の発表です</p>
+
+<h3 id="藤井-勝央-吉原-和明-井口-信-ルータ内部の-qos-制御可視化システムの実装">藤井 勝央, 吉原 和明, 井口 信. ルータ内部の QoS 制御可視化システムの実装</h3>
+<h4 id="概要">概要</h4>
+<p>様々な要因によりデータトラフィック量が増加し続けているため，ネットワークの通信品質を保証する必要性が高まっている。通信品質を保証するための技術としてQoS制御があり、ネットワーク機器に設定することで需要に合わせて通信品質を提供できる。しかし、QoS制御は意図して動作しているか判断するために統計情報などを確認し判断する必要がある。そこでアニメーションを用いて視覚的に確認することを可能とした。ネットワークの動作検証システムや学習システムとしての利用を想定しており、視覚的情報を用いることで効果的な検証、学習に活用できる。</p>
+
+<h4 id="感想">感想</h4>
+<p>QoS制御という技術があるということを知ることができた。トラフィックを可視化することで学習システムとして有用なものになるだろうと感じた。トラフィックの流れが分かりやすく表示されていたため、従来の確認手段よりも確認しやすく学習、動作検証の場面で役立つのだろうと感じた。</p>
+
+<h3 id="眞鍋-督-井口-信和-クラウド環境を標的とするddos攻撃の対策演習システムの開発と評価">眞鍋 督, 井口 信和. クラウド環境を標的とするDDoS攻撃の対策演習システムの開発と評価</h3>
+<h4 id="概要-1">概要</h4>
+<p>クラウド環境を標的とするDDoS攻撃の対策訓練を実施できる環境を提供することを目的としている。攻撃者の支店を取り入れたDDoS攻撃の対策演習システムを開発した。システムによる演習を通して、攻撃視点と対策視点からDDoS攻撃の対策手法に関する理解と知識の定着を期待できる。</p>
+
+<h4 id="感想-1">感想　　　　　　　　　　　　　　　</h4>
+<p>クラウド環境を標的とするDDoS攻撃に対する対策訓練を目的として演習を実施するため、テキストでの学習よりも効果があるという結果が得られていた。こういった演習システムを活用し対策訓練を行うことでインシデントに即座に対応できるように訓練する環境が整うのだろうかと考えた。</p>
+
+<h2 id="辻永">辻永</h2>
+<p>IOTSで「Furm: 家具移動アプリケーションの提案」というテーマで、ポスター発表を行ってきました。ポスター発表の中で、開発したアプリケーションとtoioというロボットトイを利用して、toioの上にのせた家具の模型を動かすデモンストレーションを行いました。多くの方に足を止めていただき、議論を行ったり、コメントをもらうことができました。</p>
+
+<iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/5092cb54e0d24a428f6e3d225e2b8ac4" title="Furm: 家具移動アプリケーションの提案 / IOTS2022-tsujinaga" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 746;" data-ratio="0.7506702412868632"></iframe>
+
+<p>発表に対するコメント</p>
+
+<ul>
+  <li>実際に移動しなくても、家具の配置案を提示する機能があれば良い</li>
+  <li>SNSみたいに家具配置を共有して、「いいね」をする機能があれば面白い</li>
+  <li>取得できるデータを仮定して、仮定したデータがあればどんなことができるのかで、開発を進めてみると良い</li>
+  <li>会議室などの家具を実際に動かすところからやってみると良い</li>
+</ul>
+
+<p>これらの意見をいただき、現状の課題を理解することができたので、これを基に今後の研究活動を進めていきたいと思います。</p>
+
+<p>また、以下の2つの発表に興味を持ちました。</p>
+
+<h3 id="嶋吉-隆夫-笠原-義晃-小田-知央-電子メールにおける送信者側スパム判定値のヘッダ付与に関する一検討">嶋吉 隆夫, 笠原 義晃, 小田 知央. 電子メールにおける送信者側スパム判定値のヘッダ付与に関する一検討</h3>
+<h4 id="概要-2">概要</h4>
+<p>SMTPサーバーで送信するメールが悪質なものか評価し、評価値と報告先のアドレスを付与して、メールを送信する。POPサーバーでは、その評価値を基に悪質メールを判断する。POPサーバーで悪質と判定できなかったメールを受信者が付与されている報告先に報告を行う。報告が行われると、SMTPサーバーが学習を行い、次回以降迷惑メールとして判断できる。</p>
+
+<h4 id="感想-2">感想</h4>
+<p>今まで、メールのフィルタリングに関して考えたことがありませんでしたが、よく考えると、メールの内容が悪質かどうかを評価するのは大変で、正当なメールを悪質と評価してしまったり、逆に悪質なメールを正当なものと評価して送られてくることがよくあるので、受け取った人が報告を上げることで、学習していくシステムは面白いと思いました。</p>
+
+<h3 id="竹島-和哉-水谷-后宏-井口-信和-異なるベンダ間におけるネットワーク機器設定移行支援システムの評価実験">竹島 和哉, 水谷 后宏, 井口 信和. 異なるベンダ間におけるネットワーク機器設定移行支援システムの評価実験</h3>
+<h4 id="概要-3">概要</h4>
+<p>ネットワーク機器を設定する際、ベンダが異なると利用するコマンドも異なるため、ネットワークエンジニアがミスをしてしまう可能性が高くなる。そこで、GUIツールを使って、設定項目を選択し、ツールがベンダに応じたコマンドを発行し、設定を行うというツール。それを利用して設定した場合とコマンドを打ち込んで設定した場合のミスの量や時間を比較してツール評価した。</p>
+
+<h4 id="感想-3">感想</h4>
+<p>ネットワーク演習の講義で、ネットワーク機器の設定を行い、同じコマンドでIPアドレスだけを変更して入力するなど、間違えやすいことがわかりました。さらに、ベンダによるコマンドの違いから、利用するコマンドを調べるのが大変でした。このツールを利用することで、直感的に操作できるため、調べる時間を短縮し、短時間で多くのネットワーク機器を設定できるのはとても便利だと思いました。</p>
+
+
+    </div>
+
+</article>
+<div class="post-nav"><a class="previous" href="/award/2022/11/26/hic.html" title="超異分野学会北海道フォーラム2022にて発表・受賞">超異分野学会北海道フォーラム2022にて発表・受賞</a><a class="next" href="/award/2022/12/09/iots.html" title="秋葉さん、辻永さんが第15回インターネットと運用技術シンポジウム(IOTS2022)で発表し学生奨励賞を受賞">秋葉さん、辻永さんが第15回インターネットと運用技術シンポジウム(IOTS2022)で発表し学生奨励賞を受賞</a></div><div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li><a class="post-link" href="/event/2024/02/23/nomaps.html" title="秋葉さん、辻永さんが第15回インターネットと運用技術シンポジウム(IOTS2022)で発表し学生奨励賞を受賞">NoMapsローカル・クリエイティブ・エキシビションに出展</a></li><li><a class="post-link" href="/event/2022/01/27/presentation.html" title="秋葉さん、辻永さんが第15回インターネットと運用技術シンポジウム(IOTS2022)で発表し学生奨励賞を受賞">2021年度卒業研究発表会</a></li><li><a class="post-link" href="/info/2023/03/30/nanakamado.html" title="秋葉さん、辻永さんが第15回インターネットと運用技術シンポジウム(IOTS2022)で発表し学生奨励賞を受賞">大学広報誌「ななかまど」に多木さんのインタビュー記事掲載</a></li><li><a class="post-link" href="/award/2023/03/09/ubiaward.html" title="秋葉さん、辻永さんが第15回インターネットと運用技術シンポジウム(IOTS2022)で発表し学生奨励賞を受賞">教員の湯村が情報処理学会第77回UBI研究会優秀論文賞を受賞</a></li></ul>
+    </div><div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">TOC</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner"><div>Unpublished Work <span class="copyleft">&copy;</span> 2017-2024 Tsubasa Yumura</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="http://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

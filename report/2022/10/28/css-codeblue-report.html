@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c"></meta><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Computer Security Symposium2022 ＆ CODEBLUE2022参加記 | 北海道情報大学 湯村研究室 - Cyber-Physical-Human Interaction Laboratory</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Computer Security Symposium2022 ＆ CODEBLUE2022参加記" />
+<meta name="author" content="Tsubasa Yumura" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="4年生の多木優馬です。10月24日から10月28日までComputer Security Symposium(CSS)とCODEBLUEに参加してきたので、参加記をまとめます。" />
+<meta property="og:description" content="4年生の多木優馬です。10月24日から10月28日までComputer Security Symposium(CSS)とCODEBLUEに参加してきたので、参加記をまとめます。" />
+<link rel="canonical" href="https://yumulab.org/report/2022/10/28/css-codeblue-report.html" />
+<meta property="og:url" content="https://yumulab.org/report/2022/10/28/css-codeblue-report.html" />
+<meta property="og:site_name" content="北海道情報大学 湯村研究室 - Cyber-Physical-Human Interaction Laboratory" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-10-28T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Computer Security Symposium2022 ＆ CODEBLUE2022参加記" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Tsubasa Yumura"},"description":"4年生の多木優馬です。10月24日から10月28日までComputer Security Symposium(CSS)とCODEBLUEに参加してきたので、参加記をまとめます。","headline":"Computer Security Symposium2022 ＆ CODEBLUE2022参加記","@type":"BlogPosting","dateModified":"2022-10-28T00:00:00+00:00","datePublished":"2022-10-28T00:00:00+00:00","url":"https://yumulab.org/report/2022/10/28/css-codeblue-report.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://yumulab.org/report/2022/10/28/css-codeblue-report.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://yumulab.org/feed.xml" title="北海道情報大学 湯村研究室 - Cyber-Physical-Human Interaction Laboratory" /><link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8"
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner"><span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="北海道情報大学 湯村研究室 - Cyber-Physical-Human Interaction Laboratory" src="" onerror="this.style.display='none'">
+  北海道情報大学 湯村研究室
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewBox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+            <a class="page-link" href="/">HOME</a>
+            <a class="page-link" href="/about.html">ABOUT</a>
+            <a class="page-link" href="/people.html">PEOPLE</a>
+            <a class="page-link" href="https://dl.yumulab.org/">PUBLICATIONS</a>
+            <a class="page-link" href="/collaboration.md">COLLABORATION</a>
+            
+
+
+
+
+<!-- <span class="page-link">
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<span class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="fr">
+          
+          <img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" title="French">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="zh-CN">
+          
+          <img src="https://cdn.countryflags.com/thumbs/china/flag-400.png" title="Chinese(Simple)">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ja">
+          
+          <img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" title="Japanese">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ko">
+          
+          <img src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png" title="Korean">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ru">
+          
+          <img src="https://cdn.countryflags.com/thumbs/russia/flag-400.png" title="Russian">
+          
+        </a>
+      </li>
+    
+  </ul>
+</span>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: '',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</span> --></div>
+        </nav></div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<!--<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+-->
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">Computer Security Symposium2022 ＆ CODEBLUE2022参加記</h1>
+  <h2 class="post-subtitle"></h2>
+
+  <p class="post-meta">
+    <time class="dt-published" datetime="2022-10-28T00:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Oct 28, 2022
+    </time>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 1 min</span>
+  </p><div class="post-tags"><a class="post-tag" href="/tags.html#report">#report</a></div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <p>4年生の多木優馬です。10月24日から10月28日までComputer Security Symposium(CSS)とCODEBLUEに参加してきたので、参加記をまとめます。</p>
+
+<p>関連記事</p>
+<ul>
+  <li><a href="https://www.yumulab.org/conference/2022/10/26/css2022.html">多木さんがコンピュータセキュリティシンポジウム2022(CSS2022)にて発表</a></li>
+  <li><a href="https://www.yumulab.org/event/2022/10/27/codeblue.html">多木さんがCODE BLUE 2022にて発表</a></li>
+</ul>
+
+<h2 id="css2022参加記">CSS2022参加記</h2>
+<p>CSS2022では、デモンストレーションセッションで発表を行いました。自分がデモセッションで発表した 「プロセッサエミュレータQEMUを用いた組込み機器へのROP攻撃のデモンストレーション」は、多くの方に来ていただき、ROP対策のセキュリティ機構や今後の研究方針について、意見を交換することができました。頂いた主なコメントは以下の通りです。</p>
+<ul>
+  <li>より多くのアーキテクチャにROP検証を行えると良いかも</li>
+  <li>QEMUでは、-d EASMオプションを使うとデバッグしやすくなる</li>
+  <li>環境構築にBuildrootを使うと便利</li>
+  <li>ROP検証はいろんなアーキテクチャに応用すると喜ぶ人が多いけど、ROP対策はサーベイを重ねないと厳しいかも</li>
+  <li>ROP対策として、スタック保護を実装するといいかも
+    <ul>
+      <li>リターンアドレスの異常検知</li>
+      <li>制御フローのログを取り、簡易CFIのようなものの実装</li>
+    </ul>
+  </li>
+</ul>
+
+<p>また、IoTセキュリティTrackやシステムソフトウェアTrackに参加し、多くの発表を聴くことができました。セキュリティ機構の実装方法がメインの発表から、攻撃手法の解説がメインの発表まで、様々な発表を聴けて本当に楽しかったです。参加したTrackは下記のとおりです。</p>
+<ul>
+  <li>CSIRT・脆弱性分析</li>
+  <li>IoTセキュリティ</li>
+  <li>ハードウェアセキュリティ</li>
+  <li>システムソフトウェア</li>
+  <li>ソフトウェアセキュリティ</li>
+  <li>耐量子計算機暗号</li>
+  <li>OSS開発</li>
+  <li>脅威インテリジェンス</li>
+</ul>
+
+<p>特に印象に残ったのは以下の発表です。</p>
+
+<h3 id="iotマルウェアの感染処理に着目したアクセス制御手法の提案">IoTマルウェアの感染処理に着目したアクセス制御手法の提案</h3>
+<h4 id="まとめ">まとめ</h4>
+<p>近年、IoT機器のソフトウェア脆弱性を突いたマルウェアが増加している。LinuxベースのOSを搭載したIoT機器にはアプリケーションプログラムのバイナリに適用可能なセキュリティ機構の実装率が低い。対策として、侵入防止、侵入されても抑制できるものが必要。
+そこで、LinuxベースのOSを搭載したIoT機器へのセキュリティ対策を提案する。
+システムコール単位でのアクセス制御を行うことで、シェルの起動を検知して第一引数を確認したり、execveによるシェルの起動を禁止したりと、マルウェア特有のシステムコール呼び出しを検知する。</p>
+
+<h4 id="感想">感想</h4>
+<p>マルウェア対策として、システムコールの制限を行うという手法があるのだと学べた。自分もx86へのROPの際にexecve(/bin/sh)によるシェルの奪取を行っていたため、低スペックな組込み機器へのROP対策にも応用できるかもしれない。</p>
+
+<h3 id="xltrace-クロスアーキテクチャに対応したライブラリ関数のトレース手法">xltrace: クロスアーキテクチャに対応したライブラリ関数のトレース手法</h3>
+<h4 id="まとめ-1">まとめ</h4>
+<p>IoTマルウェアが増加しており、効率的な解析技術が求められている。IoTマルウェアの特徴として、対応アーキテクチャが豊富、シンボル情報が消去されている、ライブラリ関数を静的統合している、といったものが上げられる。IoTマルウェア解析では、ライブラリ関数レベルでの解析手法が不足している。ライブラリ関数の分析は、そのプログラムの動作内容の分析に大きく役立つため重要。
+そこで、ライブラリ関数の呼び出し検知と、引数の取得を自動で行うツールを開発した。</p>
+
+<h4 id="感想-1">感想</h4>
+<p>脆弱性対策の研究として、解析しやすくするツールの作成を行っている研究。ROPを直接的に防ぐのではなく、解析しやすくすることで発生させにくくする、脆弱性の早期発見を行うという方向性も自分の中で生まれた。</p>
+
+<h3 id="最新のlinuxカーネルに対するエクスプロイト可能性">最新のLinuxカーネルに対するエクスプロイト可能性</h3>
+<h4 id="まとめ-2">まとめ</h4>
+<p>カーネルに対してのセキュリティ機構として、SMEP, SMAP, KASLRが存在する。上記が有効であり、かつFUSEが無効であっても実用可能なエクスプロイトを発見。heapの脆弱性を利用し、KASLRを回避し、msg_msgを利用した任意読み込みを行わせる。
+対策として、FGKASLR(関数単位でのランダマイズ)の実装、Rustを用いたメモリ安全の確保が有効そう。</p>
+
+<h4 id="感想-2">感想</h4>
+<p>内容が難しく、あまり理解することができなかったので、まとめに書いてあることも少しズレているかもしれない。CTFのPwnの知識が使われていて、すごく難しいPwnの問題を解いて、それを発表し、対策法を提示したような発表で、将来こんな発表ができたら、と思った発表だった。</p>
+
+<h2 id="codeblue参加記">CODEBLUE参加記</h2>
+<p>CODEBLUEでは、セキュリティ業界の第一線で活躍している人の講演を生で聴くことができ、またU25枠での発表も行いました。講演では初見の技術や用語が多く、ほとんど理解することができませんでしたが、自分がやっていることを極めるとこんな結果がだせるという1つの指標になりました。
+U25枠で採択された、「組込み機器はROP攻撃に対応できているか?」ですが、かなり緊張して、予定の10分ほど早く発表を終えてしまったり、頂いた質問にうまく答えられなかったりと、全体的に悔いが残る発表となってしまいました。発表内容は何らかの形で公開したいと考えているので、是非ご覧いただければと思います。</p>
+
+<p>Contestブースでは、GMOサイバーセキュリティ byイエラエさんのWebハッキング体験 forビギナーズに参加させていただきました。Webセキュリティの知識は全くありませんでしたが、攻撃の観点からのWebの知識をすこし学ぶことができました。
+また、ネットワーキングパーティーでは、学生スタッフの方々、SecHack365の同期、OSセキュリティについて研究している方、CSSのデモ発表でも来てくださった方など、多くの人と交流することができました。</p>
+
+<p>印象に残っている講演は以下の通りです。</p>
+
+<h3 id="偽プレリリースの背後に認知作戦の影サイバー情報戦の謎に迫る">偽プレリリースの背後に「認知作戦」の影　サイバー情報戦の謎に迫る</h3>
+<h4 id="まとめ-3">まとめ</h4>
+<p>現代では偽情報は大敵。2020年9月にはカスペルスキー社を騙った偽のプレリリースが出回り問題になった。これらの偽情報は中国による認知作戦の可能性が高く、また国家レベルのハッカーの関与の可能性も存在する。</p>
+
+<h4 id="感想-3">感想</h4>
+<p>SNSやWebサイトで偽情報が横行している今、重要性の高い話題だと感じた。自分も知らず知らずのうちに偽情報を掴まされているかもしれないので、今後SNSやWebサイトでの情報収集は慎重に行う。</p>
+
+<h3 id="pwn2ownでプリンタをハッキング">Pwn2Ownでプリンタをハッキング</h3>
+<h4 id="まとめ-4">まとめ</h4>
+<p>Pwn2Ownというイベントで、インターネット接続されているCanon、HPのプリンタをハッキングした。ファームウェア解析が困難だったが、なんとか解析出来て、Canonには、スタックバッファオーバーフローによる攻撃、HPには、難しい攻撃手法で攻撃し、制御を奪うことができた。</p>
+
+<h4 id="感想-4">感想</h4>
+<p>攻撃手法、解析手法に関して詳しく発表されていたが、そのほとんどが理解できなかった。
+ただ、ROP, メモリ管理(ページング), SSPやNX bitといったメモリ保護,CPUアーキテクチャについてなど、これまで自分が勉強してきたことが全て出てきて、それらの知識を極めると、こうなるんだという目標になった。</p>
+
+<h2 id="おわりに">おわりに</h2>
+<p>10月24日から28日までの5日間、多くの実りがありました。CSS2022では、現在行っている研究の改善案を頂けたこと、CODEBLUEでは、将来の目標となる講演を聴くことができたこと、この5日間を振り返ってみて、本当に良い経験をさせていただいたと思います。
+この経験は、担当教員の方のご支援がなければ得られませんでした。夜遅くまでミーティングや論文の確認に付き合っていただいた湯村先生、福光先生にこの場をお借りしてお礼申し上げます。</p>
+
+
+    </div>
+
+</article>
+<div class="post-nav"><a class="previous" href="/event/2022/10/27/codeblue.html" title="多木さんがCODE BLUE 2022にて発表">多木さんがCODE BLUE 2022にて発表</a><a class="next" href="/award/2022/11/26/hic.html" title="超異分野学会北海道フォーラム2022にて発表・受賞">超異分野学会北海道フォーラム2022にて発表・受賞</a></div><div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li><a class="post-link" href="/conference/2023/03/10/i2023.html" title="超異分野学会北海道フォーラム2022にて発表・受賞">大栁さん、岡さんがインタラクション2023にて発表を行いました</a></li><li><a class="post-link" href="/info/2023/04/18/start.html" title="超異分野学会北海道フォーラム2022にて発表・受賞">2023年度の研究室が始動</a></li><li><a class="post-link" href="/conference/2022/02/28/interaction.html" title="超異分野学会北海道フォーラム2022にて発表・受賞">インタラクション2022で久保田さんがインタラクティブ発表</a></li><li><a class="post-link" href="/conference/2021/12/10/wiss2021.html" title="超異分野学会北海道フォーラム2022にて発表・受賞">WISS2021にてデモ・ロングティザー発表しました</a></li></ul>
+    </div><div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">TOC</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner"><div>Unpublished Work <span class="copyleft">&copy;</span> 2017-2024 Tsubasa Yumura</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="http://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
