@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2024年度卒業研究発表会にて4年生7名が発表
+title: 2023年度卒業研究発表会にて4年生7名が発表
 subtitle: 
 categories: event
 tags: [event]
