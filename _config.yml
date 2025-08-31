@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 北海道情報大学 湯村研究室 - Cyber-Physical-Human Interaction Laboratory
+title: 北海道情報大学 湯村研究室 - Spatial Interaction Laboratory
 email: your-email@domain.com
 author: Tsubasa Yumura
 
@@ -152,7 +152,7 @@ yat:
 defaults:
   home:
     heading: "北海道情報大学 情報メディア学部 情報メディア学科 湯村研究室"
-    subheading: "Cyber-Physical-Human Interaction Laboratory"
+    subheading: "Spatial Interaction Laboratory"
     banner: "/assets/images/banners/cyberkeyboard.jpeg"
 
 # Banner default settings
