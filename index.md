@@ -17,6 +17,7 @@ banner: "/assets/images/banners/home.jpeg"
 
 リンク
 - [Twitter @yumulab](https://twitter.com/yumulab)
+- [Instagram @yumulab](https://www.instagram.com/yumulab)
 - [Facebookページ](https://www.facebook.com/yumulab)
 - [Speaker Deck](https://speakerdeck.com/yumulab)
 - [YouTube](https://www.youtube.com/channel/UCZ695lUfZBkcefXyVv5D9oA)
