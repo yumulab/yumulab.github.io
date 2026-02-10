@@ -20,7 +20,7 @@ tags: [event]
 - 玉堀 舜『リン酸二水素アンモニウム結晶のコンピュテーショナルデザイン』
 - 宮崎 創太『ARホームランボールキャッチ体験』
 
-なお、卒業研究の内容は、片岡さん、中山さん、早坂さんは3月7日(土)に開催される [第25回 複雑系マイクロシンポジウム](https://www.ipsj.or.jp/kenkyukai/event/ec75.html) にて、太田さん、小山田さん、寳金さん、玉堀さん、宮崎さんは3月9日(月)〜10(火)に開催される [第79回 情報処理学会エンタテインメントコンピューティング(EC)研究発表会](https://www.ipsj.or.jp/kenkyukai/event/ec79.html) にて発表を予定しています。
+なお、卒業研究の内容は、片岡さん、中山さん、早坂さんは3月7日(土)に開催される [第25回 複雑系マイクロシンポジウム](https://cs-micro.github.io/2026/) にて、太田さん、小山田さん、寳金さん、玉堀さん、宮崎さんは3月9日(月)〜10(火)に開催される [第79回 情報処理学会エンタテインメントコンピューティング(EC)研究発表会](https://www.ipsj.or.jp/kenkyukai/event/ec79.html) にて発表を予定しています。
 
 ![gradpresen2025-01]({{ "/assets/images/2026/gradpresen/01.jpg" | relative_url }})
 ![gradpresen2025-02]({{ "/assets/images/2026/gradpresen/02.jpg" | relative_url }})
