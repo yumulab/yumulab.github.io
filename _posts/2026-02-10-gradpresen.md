@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2025年度卒業研究発表会にて4年生6名が発表
+title: 2025年度卒業研究発表会にて4年生8名が発表
 subtitle: 
 categories: event
 tags: [event]
