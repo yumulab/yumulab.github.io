@@ -62,6 +62,16 @@ tags: [event]
 
 画像などの静的ファイルは、従来どおりルートの `assets/` に置きます。準備スクリプトが開発・ビルド時に `public/` へコピーします。`public/` と `dist/` は生成物のため、直接編集しないでください。開発サーバー起動中に静的ファイルを変更した場合は、サーバーを再起動するとコピーが更新されます。
 
+## トップページの動画
+
+`src/components/HomeHero.astro` が、`assets/yumulab-top.mp4` を無音・ループで再生し、`assets/images/yumulab-logo-transparent.png` を重ねて表示します。ロゴは CSS で白く表示し、元画像は保持しています。一時停止・再生ボタンがあり、端末の「動きを減らす」設定が有効な場合は、動画を自動で読み込まず静止画を表示します。JavaScript が無効な場合や動画を再生できない場合も静止画を表示します。
+
+静止画は `assets/images/yumulab-top-poster.jpg` です。動画を差し替える際は、静止画も差し替えてください。FFmpeg が利用できる環境では、次のコマンドで生成できます（ビルド時に FFmpeg は不要です）。
+
+```sh
+ffmpeg -y -ss 0.7 -i assets/yumulab-top.mp4 -frames:v 1 -q:v 3 assets/images/yumulab-top-poster.jpg
+```
+
 ## 実装と URL の互換性
 
 サイト名や説明などの設定は `src/site.config.ts`、Astro のビルド設定は `astro.config.mjs` にあります。ページとレイアウトは `src/pages/`、`src/layouts/` で管理し、ナビゲーションは `src/layouts/SiteLayout.astro` で編集します。
