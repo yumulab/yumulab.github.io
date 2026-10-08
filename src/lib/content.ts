@@ -1,6 +1,7 @@
 import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 import MarkdownIt from 'markdown-it';
+import { load } from 'cheerio';
 import { parse } from 'yaml';
 
 export interface Heading { depth: number; id: string; text: string }
@@ -13,7 +14,34 @@ export interface Page {
   banner?: string;
   headings: Heading[];
 }
-export interface Post extends Page { date: string; categories: string[]; tags: string[] }
+export interface Post extends Page { date: string; categories: string[]; tags: string[]; thumbnail: string }
+
+export const placeholderThumbnail = '/assets/images/placeholders/post-thumbnail.jpg';
+
+function thumbnailUrl(value: string, articleUrl: string): string | undefined {
+  if (!value.trim()) return undefined;
+  const localOrigin = 'https://local.invalid';
+  try {
+    const url = new URL(resolveLiquid(value.trim()), localOrigin + articleUrl);
+    if (!['http:', 'https:'].includes(url.protocol)) return undefined;
+    return url.origin === localOrigin ? url.pathname + url.search + url.hash : url.href;
+  } catch {
+    return undefined;
+  }
+}
+
+function postThumbnail(explicit: unknown, html: string, articleUrl: string): string {
+  if (typeof explicit === 'string') {
+    const selected = thumbnailUrl(explicit, articleUrl);
+    if (selected) return selected;
+  }
+  const $ = load(html);
+  for (const image of $('img[src]').toArray()) {
+    const selected = thumbnailUrl($(image).attr('src') ?? '', articleUrl);
+    if (selected) return selected;
+  }
+  return placeholderThumbnail;
+}
 
 // Content stays in its original location. Read at build time (and on dev reload).
 const root = process.cwd();
@@ -89,6 +117,7 @@ export function parsePost(raw: string, source: string): Post | null {
   const rendered = renderBody(body);
   return {
     source, url, title: String(data.title), date, categories, tags: list(data.tags), ...rendered,
+    thumbnail: postThumbnail(data.thumbnail, rendered.html, url),
     description: typeof data.description === 'string' && data.description.trim() ? data.description : rendered.description,
   };
 }

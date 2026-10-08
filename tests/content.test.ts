@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import { load } from 'cheerio';
-import { getHome, getPages, getPosts, parsePost, renderBody, resolveLiquid } from '../src/lib/content';
+import { getHome, getPages, getPosts, parsePost, placeholderThumbnail, renderBody, resolveLiquid } from '../src/lib/content';
 
 interface LegacyEntry { path: string; url: string; sha256: string }
 const fixture = JSON.parse(await readFile(new URL('./fixtures/legacy-content.json', import.meta.url), 'utf8')) as {
@@ -104,4 +104,24 @@ test('invalid dates and unsafe or incompatible article URLs fail the build', () 
 test('an authored description takes precedence over the generated excerpt', () => {
   assert.equal(parsePost(example('description: Authored summary\n', 'Different article content'), '_posts/2020-01-02-described.md')?.description, 'Authored summary');
   assert.equal(parsePost(example('description: \"\"\n', 'Generated fallback'), '_posts/2020-01-02-described.md')?.description, 'Generated fallback');
+});
+
+test('thumbnails use the first rendered article image and retain legacy image fixes', () => {
+  const post = parsePost(example('', '![First]({{ "/assets/images/2021/WISS2021.png" | relative_url }})\n\n![Second](/assets/images/second.jpg)'), '_posts/2020-01-02-photos.md')!;
+  assert.equal(post.thumbnail, '/assets/images/2021/WISS2021.jpg');
+  assert.ok(post.html.includes('/assets/images/second.jpg'));
+});
+
+test('an optional thumbnail overrides the article image and image-free posts get a placeholder', () => {
+  const body = '![Article photo](/assets/images/body.jpg)';
+  assert.equal(parsePost(example('thumbnail: /assets/images/cover.jpg\n', body), '_posts/2020-01-02-cover.md')?.thumbnail, '/assets/images/cover.jpg');
+  assert.equal(parsePost(example(), '_posts/2020-01-02-no-photo.md')?.thumbnail, placeholderThumbnail);
+  assert.equal(parsePost(example('thumbnail: \"\"\n', body), '_posts/2020-01-02-empty.md')?.thumbnail, '/assets/images/body.jpg');
+});
+
+test('HTML and relative thumbnail URLs resolve correctly and unsupported schemes are ignored', () => {
+  const post = parsePost(example('', '<img src="../photo.jpg?size=small&amp;v=2" alt="Photo">'), '_posts/2020-01-02-html.md')!;
+  assert.equal(post.thumbnail, '/research/events/2020/01/photo.jpg?size=small&v=2');
+  assert.equal(parsePost(example('thumbnail: https://example.com/cover.jpg\n'), '_posts/2020-01-02-external.md')?.thumbnail, 'https://example.com/cover.jpg');
+  assert.equal(parsePost(example('thumbnail: javascript:alert(1)\n'), '_posts/2020-01-02-invalid.md')?.thumbnail, placeholderThumbnail);
 });
