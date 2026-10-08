@@ -32,35 +32,23 @@ const heroPoster = '/assets/images/yumulab-top-poster.jpg';
       {links.map(({ href, label }) => (
         <a href={href}><span>{label}</span><span aria-hidden="true">↗</span></a>
       ))}
-      <a href="#home-news">最新のお知らせ <span aria-hidden="true">↓</span></a>
     </nav>
   </div>
-  <button class="hero-playback" type="button" aria-controls="home-video" hidden>
-    <svg class="play-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m8 5 11 7-11 7z" fill="currentColor" /></svg>
-    <svg class="pause-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 5h4v14H7zm6 0h4v14h-4z" fill="currentColor" /></svg>
-    <span>動画を再生</span>
-  </button>
 </section>
 
 <script>
   const video = document.querySelector<HTMLVideoElement>('#home-video');
-  const button = document.querySelector<HTMLButtonElement>('.hero-playback');
-  if (video && button) {
+  if (video) {
     const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
     let failed = false;
-    const updateButton = () => {
-      button.classList.toggle('is-playing', !video.paused);
-      button.querySelector('span')!.textContent = video.paused ? '動画を再生' : '動画を一時停止';
-    };
     const play = async () => {
       if (failed) return;
       if (!video.getAttribute('src')) video.src = video.dataset.src!;
       try {
         await video.play();
       } catch {
-        // Autoplay may be blocked. Keep the poster and let the visitor start it.
+        // Autoplay may be blocked. Keep displaying the poster.
       }
-      updateButton();
     };
     const applyMotionPreference = () => {
       video.autoplay = !motionPreference.matches;
@@ -68,19 +56,11 @@ const heroPoster = '/assets/images/yumulab-top-poster.jpg';
       else void play();
     };
     video.muted = true;
-    video.addEventListener('play', updateButton);
-    video.addEventListener('pause', updateButton);
     video.addEventListener('error', () => {
       failed = true;
       video.hidden = true;
-      button.hidden = true;
-    });
-    button.addEventListener('click', () => {
-      if (video.paused) void play();
-      else video.pause();
     });
     motionPreference.addEventListener('change', applyMotionPreference);
-    button.hidden = false;
     applyMotionPreference();
   }
 </script>
@@ -109,40 +89,20 @@ const heroPoster = '/assets/images/yumulab-top-poster.jpg';
     background: linear-gradient(0deg, rgb(11 10 24 / 80%), transparent 75%), linear-gradient(90deg, rgb(11 10 24 / 25%), transparent 70%);
     pointer-events: none;
   }
-  .hero-content { padding-block: 56px 104px; }
+  .hero-content { padding-block: 56px; }
   .hero-content h1 { margin: 0 0 20px; line-height: 1; }
   .hero-logo { display: block; width: min(560px, 100%); height: auto; filter: brightness(0) invert(1); }
   .hero-content p { margin: 0; font-size: clamp(0.75rem, 1.1vw, 0.95rem); letter-spacing: 0.06em; text-shadow: 0 1px 4px rgb(0 0 0 / 40%); }
   .hero-links { display: flex; flex-wrap: wrap; gap: 16px 28px; margin-top: 28px; }
   .hero-links a { display: flex; align-items: center; justify-content: space-between; gap: 22px; min-height: 44px; padding-bottom: 8px; border-bottom: 1px solid rgb(255 255 255 / 65%); color: #fff; font-size: 0.9rem; }
   .hero-links a:hover { text-decoration: none; border-bottom-color: #fff; }
-  .hero-links a:focus-visible, .hero-playback:focus-visible { outline: 2px solid #fff; outline-offset: 5px; }
-  .hero-playback {
-    position: absolute;
-    right: 40px;
-    bottom: 32px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    min-height: 44px;
-    padding: 10px 16px;
-    border: 1px solid rgb(255 255 255 / 65%);
-    border-radius: 24px;
-    background: rgb(11 10 24 / 50%);
-    color: #fff;
-    font: inherit;
-    font-size: 0.8rem;
-    cursor: pointer;
-  }
-  .hero-playback:hover { background: rgb(11 10 24 / 75%); }
-  .hero-playback[hidden], .hero-video[hidden], .pause-icon, .is-playing .play-icon { display: none; }
-  .is-playing .pause-icon { display: block; }
+  .hero-links a:focus-visible { outline: 2px solid #fff; outline-offset: 5px; }
+  .hero-video[hidden] { display: none; }
   @media (max-width: 760px) {
     .home-hero { aspect-ratio: 4 / 3; min-height: 540px; max-height: none; }
-    .hero-content { padding-block: 40px 112px; }
+    .hero-content { padding-block: 40px; }
     .hero-content h1 { margin-bottom: 16px; }
     .hero-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 20px; margin-top: 24px; }
     .hero-links a { font-size: 0.8rem; gap: 10px; }
-    .hero-playback { right: 20px; bottom: 24px; }
   }
 </style>
