@@ -2,7 +2,7 @@
 layout: post
 title: 2023年度情報メディア学部卒業研究発表会で7名が優秀賞・奨励賞を受賞
 subtitle: 
-categories: award
+permalink: /award/2024/03/15/gradaward.html
 tags: [award]
 ---
 

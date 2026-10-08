@@ -139,6 +139,27 @@ assert.equal(new URL($news('link[rel="canonical"]').attr('href')!).pathname, '/n
 assert.ok(homeLinks.has('/collaboration.html'), 'Homepage navigation must use the published collaboration URL.');
 assert.ok(!homeLinks.has('/collaboration.md'), 'Homepage still links to unpublished collaboration Markdown.');
 
+const tags = [...new Set(posts.flatMap(post => post.tags))].sort();
+for (const file of ['tags.html', 'categories.html']) {
+  const $ = documents.get(file);
+  assert.ok($, `Missing tag listing: ${file}`);
+  assert.deepEqual($('.archive-section h2').toArray().map(heading => $(heading).attr('id')), tags,
+    `${file} must use the unified tags.`);
+  const sections = $('.archive-section').toArray();
+  for (const tag of tags) {
+    const section: (typeof sections)[number] | undefined = sections.find(node => $(node).attr('aria-labelledby') === tag);
+    assert.ok(section, `Missing tag group ${tag} in ${file}`);
+    assert.deepEqual($(section).find('.post-link').toArray().map(link => $(link).attr('href')),
+      posts.filter(post => post.tags.includes(tag)).map(post => post.url),
+      `Wrong article membership/order for ${tag} in ${file}`);
+  }
+}
+const $legacyTags = documents.get('categories.html')!;
+const legacyAnchors = new Set($legacyTags('[id]').toArray().map(node => $legacyTags(node).attr('id')));
+for (const category of new Set(fixture.posts.map(post => post.url.split('/')[1]))) {
+  assert.ok(legacyAnchors.has(category), `Old category anchor missing: ${category}`);
+}
+
 function parseXml(source: string, name: string) {
   const parser = sax.parser(true, { xmlns: true });
   parser.onerror = error => { throw new Error(`Invalid ${name}: ${error.message}`); };
@@ -167,6 +188,8 @@ for (const [index, node] of entries.entries()) {
   assert.equal(entry.find('id').text(), `https://yumulab.org${post.url.replace(/\.html$/, '')}`,
     `Existing Atom identity changed for ${post.url}`);
   assert.equal(entry.find('title').text(), post.title);
+  assert.deepEqual(entry.find('category').toArray().map(category => $feed(category).attr('term')), post.tags,
+    `Feed must include all tags for ${post.url}`);
   assert.equal(entry.find('content').text(), post.html, `Feed HTML did not round-trip XML escaping: ${post.url}`);
   assert.ok(Number.isFinite(Date.parse(entry.find('published').text())), `Invalid feed date: ${post.url}`);
   checkReference(href, 'feed.xml', 'feed');
@@ -193,4 +216,5 @@ async function verifyAssets(directory: string): Promise<void> {
 }
 await verifyAssets(path.join(root, 'assets'));
 console.log(`Verified ${fixture.posts.length} legacy article URLs, ${fixture.pages.length} content-page URLs, ${homepagePosts.length} homepage articles, ${posts.length} news articles, ${documents.size} HTML pages, ${references} local references and ${assetCount} unchanged assets.`);
+console.log(`All ${tags.length} tag groups and old category anchors are valid; Atom feed includes all article tags.`);
 console.log('Atom feed and sitemap are valid XML; CNAME, robots.txt, 404.html and .nojekyll are present.');

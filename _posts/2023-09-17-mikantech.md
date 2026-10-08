@@ -2,7 +2,7 @@
 layout: post
 title: NoMaps MIKAN TECH MEETUP 2023 HARDWARE EXHIBITに藤谷さん、岡さんが出展
 subtitle: 
-categories: event
+permalink: /event/2023/09/17/mikantech.html
 tags: [event]
 description: 2023年7月18日(火)および25日(火)に開催された情報メディア学科2023年度卒業研究企画発表会で4年生8名が発表しました。
 ---

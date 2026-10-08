@@ -2,7 +2,7 @@
 layout: post
 title: 秋葉さん、辻永さんが北海道ITクリエータ発掘・育成事業（新雪プログラム）成果報告会で発表
 subtitle: 
-categories: event
+permalink: /event/2024/01/20/shinsetsu.html
 tags: [event]
 ---
 ![shinsetsu-1]({{ "/assets/images/2024/shinsetsu/1.jpg" | relative_url }})

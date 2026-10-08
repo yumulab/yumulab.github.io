@@ -2,7 +2,7 @@
 layout: post
 title: 大学広報誌「ななかまど」に多木さんのインタビュー記事掲載
 subtitle: 
-categories: info
+permalink: /info/2023/03/30/nanakamado.html
 tags: [info]
 ---
 ![nanakamado]({{ "/assets/images/2023/nanakamado.jpg" | relative_url }})

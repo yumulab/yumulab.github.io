@@ -1,0 +1,17 @@
+---
+import PostList from './PostList.astro';
+import type { Post } from '../lib/content';
+
+interface Props { posts: Post[]; legacyAnchors?: boolean }
+const { posts, legacyAnchors = false } = Astro.props;
+const tags = [...new Set(posts.flatMap(post => post.tags))].sort();
+---
+
+<ul class="index-links">{tags.map(tag => <li><a href={`#${encodeURIComponent(tag)}`}>#{tag}</a></li>)}</ul>
+{tags.map(tag => (
+  <section class="archive-section" aria-labelledby={tag}>
+    {legacyAnchors && tag === 'event' && !tags.includes('cevent') && <span id="cevent" aria-hidden="true" />}
+    <h2 id={tag}>#{tag}</h2>
+    <PostList compact posts={posts.filter(post => post.tags.includes(tag))} />
+  </section>
+))}

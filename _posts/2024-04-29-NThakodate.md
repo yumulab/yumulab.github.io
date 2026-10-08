@@ -2,7 +2,7 @@
 layout: post
 title: NT函館2024に出展
 subtitle: 
-categories: event
+permalink: /event/2024/04/29/NThakodate.html
 tags: [event]
 ---
 

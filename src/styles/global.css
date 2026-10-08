@@ -39,10 +39,6 @@ p, ul, ol { margin-top: 0; }
 .sidebar { position: sticky; top: 28px; font-size: 0.9rem; }
 .sidebar-title { font-size: 1.05rem; margin: 0 0 14px; font-weight: 500; }
 .sidebar ul { padding: 0; list-style: none; }
-.category-list li { border-bottom: 1px solid var(--line); }
-.category-list a { display: flex; justify-content: space-between; gap: 14px; padding-block: 8px; color: #555; }
-.category-list span { color: var(--muted); }
-.sidebar-more { display: inline-block; margin-top: 4px; }
 .article-contents li { margin-bottom: 9px; line-height: 1.65; }
 .article-contents a { color: var(--muted); }
 .article-contents .subheading { padding-left: 14px; font-size: 0.92em; }

@@ -2,7 +2,7 @@
 layout: post
 title: 情報処理北海道シンポジウム2024で発表
 subtitle: 
-categories: conference
+permalink: /conference/2024/12/01/ipsjhokkaido.html
 tags: [conference]
 ---
 ![ipsjhokkaido2024-1]({{ "/assets/images/2024/ipsjhokkaido/01.jpg" | relative_url }})

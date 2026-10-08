@@ -2,7 +2,7 @@
 layout: post
 title: NoMaps GEEK/NT札幌mini2024に出展
 subtitle: 
-categories: event
+permalink: /event/2024/09/15/nomaps-geek.html
 tags: [event]
 ---
 

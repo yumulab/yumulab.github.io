@@ -14,7 +14,7 @@ export interface Page {
   banner?: string;
   headings: Heading[];
 }
-export interface Post extends Page { date: string; categories: string[]; tags: string[]; thumbnail: string }
+export interface Post extends Page { date: string; tags: string[]; thumbnail: string }
 
 export const placeholderThumbnail = '/assets/images/placeholders/post-thumbnail.jpg';
 
@@ -107,16 +107,21 @@ export function parsePost(raw: string, source: string): Post | null {
     throw new Error(`Invalid post date: ${source}`);
   }
   if (data.published === false || date > new Date().toISOString().slice(0, 10)) return null;
-  const categories = [...new Set(list(data.categories ?? data.category))];
+  // Read old category fields only for URL compatibility and importing legacy posts.
+  const legacyCategories = [...new Set(list(data.categories ?? data.category))];
+  const tags = [...new Set([
+    ...list(data.tags),
+    ...legacyCategories.map(category => category === 'cevent' ? 'event' : category),
+  ].map(tag => tag.trim()).filter(Boolean))];
   const slug = typeof data.slug === 'string' ? data.slug : match[4];
   // Jekyll's default `date` permalink, including original filename case.
-  const url = typeof data.permalink === 'string' ? data.permalink : `/${[...categories, ...date.split('-'), slug].join('/')}.html`;
+  const url = typeof data.permalink === 'string' ? data.permalink : `/${[...legacyCategories, ...date.split('-'), slug].join('/')}.html`;
   if (!url.startsWith('/') || !url.endsWith('.html') || url.includes('..') || /[?#]/.test(url)) {
     throw new Error(`Posts must use an absolute .html permalink: ${source}`);
   }
   const rendered = renderBody(body);
   return {
-    source, url, title: String(data.title), date, categories, tags: list(data.tags), ...rendered,
+    source, url, title: String(data.title), date, tags, ...rendered,
     thumbnail: postThumbnail(data.thumbnail, rendered.html, url),
     description: typeof data.description === 'string' && data.description.trim() ? data.description : rendered.description,
   };

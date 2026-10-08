@@ -2,7 +2,7 @@
 layout: post
 title: 2024年度卒業研究発表会にて4年生6名が発表
 subtitle: 
-categories: event
+permalink: /event/2025/01/31/gradpresen.html
 tags: [event]
 ---
 

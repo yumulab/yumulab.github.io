@@ -2,7 +2,7 @@
 layout: post
 title: 多木さんが情報処理北海道シンポジウム2022にて発表
 subtitle: 
-categories: conference
+permalink: /conference/2022/10/15/ipsjhokkaido.html
 tags: [conference]
 ---
 ![ipsjhokkaido-1]({{ "/assets/images/2022/ipsjhokkaido-1.jpg" | relative_url }})
