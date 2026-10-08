@@ -52,13 +52,15 @@ tags: [event]
 ![写真](/assets/images/2026/example.jpg)
 ```
 
-この記事を `_posts/2026-10-08-example.md` として保存すると、公開 URL は `/event/2026/10/08/example.html` になります。既存記事の URL を維持するため、公開済み記事のファイル名、日付、`categories`、`permalink` は変更しないでください。任意の `description` を指定すると、一覧の抜粋やページの説明に使用します。未指定の場合は本文から生成します。
+この記事を `_posts/2026-10-08-example.md` として保存すると、公開 URL は `/event/2026/10/08/example.html` になります。既存記事の URL を維持するため、公開済み記事のファイル名、日付、`categories`、`permalink` は変更しないでください。任意の `description` を指定すると、ページの説明（メタデータ）に使用します。未指定の場合は本文から生成します。
 
 `about.md`、`people.md`、`collaboration.md`、`yumura.md` などの固定ページ、および `research.html`、`publications.html` も元の場所で編集します。`index.md` のフロントマターはホームページに使用します。開発サーバーはこれらのコンテンツファイルの変更を監視し、ページを自動で再読み込みします。
 
 既存記事の `{{ "/assets/images/example.jpg" | relative_url }}` も読み込み時に解釈します。引用符付きのパスに対する `relative_url` に対応しており、元の Markdown ファイルを書き換えません。新規の記事では `/assets/...` 形式のパスを直接使用できます。
 
-トップページのサムネイルは、本文にある最初の画像を自動で使います。画像がない記事には共通のプレースホルダーを表示します。別の画像を使う場合だけ、フロントマターに `thumbnail: /assets/images/2026/example.jpg` を追加してください。
+トップページの News は最新5件を表示し、概要は表示しません。「すべてのニュースを見る」から `/news.html` の全記事一覧を開けます。記事一覧は日付順で、年ごとに整理します。
+
+トップページのサムネイルは 4:3 で表示し、本文にある最初の画像を自動で使います。画像がない記事には共通のプレースホルダーを表示します。別の画像を使う場合だけ、フロントマターに `thumbnail: /assets/images/2026/example.jpg` を追加してください。
 
 トップページのリンク先とラベルは `index.md` の2つのリンク一覧で管理します。`src/lib/home-links.ts` が一覧を読み込み、`src/components/HomeHero.astro` が研究室案内を動画上に、`src/components/SocialLinks.astro` が SNS・外部サービスを動画の下に表示します。`index.md` の紹介文はトップページには表示しません。リンクのデザインは各コンポーネントで編集できます。
 
