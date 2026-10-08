@@ -20,6 +20,7 @@ banner: "/assets/images/banners/home.jpeg"
 - [Instagram @yumulab](https://www.instagram.com/yumulab)
 - [Facebookページ](https://www.facebook.com/yumulab)
 - [Speaker Deck](https://speakerdeck.com/yumulab)
+- [note](https://note.com/yumulab)
 - [YouTube](https://www.youtube.com/channel/UCZ695lUfZBkcefXyVv5D9oA)
 
 ----
