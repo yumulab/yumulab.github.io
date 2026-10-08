@@ -61,7 +61,6 @@ p, ul, ol { margin-top: 0; }
 .prose td, .prose th { padding: 10px 14px; border: 1px solid #ddd; text-align: left; }
 .prose th { background: #f6f6f6; }
 .prose hr { border: 0; border-top: 1px solid var(--line); margin-block: 36px; }
-.home-introduction { margin-bottom: 40px; }
 .home-news-heading { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 18px; margin: 0 0 28px; font-size: 2rem; font-weight: 500; }
 .home-news-heading span { color: var(--muted); font-size: 0.9rem; font-weight: 400; }
 .post-list { list-style: none; margin: 0; padding: 0; }

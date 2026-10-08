@@ -2,6 +2,7 @@
 import SiteLayout from '../layouts/SiteLayout.astro';
 import PostList from '../components/PostList.astro';
 import HomeHero from '../components/HomeHero.astro';
+import HomeIntroduction from '../components/HomeIntroduction.astro';
 import { getHome, getPosts } from '../lib/content';
 
 const [home, posts] = await Promise.all([getHome(), getPosts()]);
@@ -10,9 +11,9 @@ const categories = [...new Set(posts.flatMap(post => post.categories))].sort();
 
 <SiteLayout title={home.title} description={home.description} url="/" image="/assets/images/yumulab-top-poster.jpg">
   <HomeHero slot="banner" />
+  <HomeIntroduction html={home.html} />
   <div class="content-grid">
     <div class="main-column">
-      <div class="prose home-introduction" set:html={home.html} />
       <section id="home-news" aria-labelledby="home-news-heading">
         <h2 id="home-news-heading" class="home-news-heading">News <span>研究室からのお知らせ</span></h2>
         <PostList posts={posts} />
