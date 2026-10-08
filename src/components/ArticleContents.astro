@@ -1,0 +1,19 @@
+---
+interface Props {
+  headings: { depth: number; id: string; text: string }[];
+}
+const headings = Astro.props.headings.filter(heading => heading.depth <= 3);
+---
+
+{headings.length > 1 && (
+  <aside class="sidebar article-contents">
+    <nav aria-label="目次">
+      <h2 class="sidebar-title">目次</h2>
+      <ul>
+        {headings.map(heading => (
+          <li class:list={{ 'subheading': heading.depth === 3 }}><a href={`#${encodeURIComponent(heading.id)}`}>{heading.text}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </aside>
+)}
