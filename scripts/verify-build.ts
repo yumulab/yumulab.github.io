@@ -116,15 +116,26 @@ for (const [file, $] of documents) {
 
 const $home = documents.get('index.html')!;
 const homeLinks = new Set($home('a[href]').toArray().map(link => $home(link).attr('href')));
-for (const post of posts) assert.ok(homeLinks.has(post.url), `Homepage omits ${post.url}`);
-assert.equal($home('.post-thumbnail img').length, posts.length, 'Every homepage article must have a thumbnail.');
-for (const post of posts) {
+const homepagePosts = posts.slice(0, 5);
+assert.deepEqual($home('#home-news .post-list-title a').toArray().map(link => $home(link).attr('href')),
+  homepagePosts.map(post => post.url), 'Homepage must list only the latest five articles in order.');
+assert.equal($home('.post-thumbnail img').length, homepagePosts.length, 'Every homepage article must have a thumbnail.');
+assert.equal($home('#home-news .post-excerpt').length, 0, 'Homepage must not display article summaries.');
+assert.equal($home('.sidebar').length, 0, 'Homepage must not display a category sidebar.');
+assert.ok(homeLinks.has('/news.html'), 'Homepage must link to the full news listing.');
+for (const post of homepagePosts) {
   const thumbnail = $home('.post-thumbnail').toArray().find(link => $home(link).attr('href') === post.url);
   assert.ok(thumbnail, `Missing thumbnail link for ${post.url}`);
   const image = $home(thumbnail).find('img');
   assert.equal(image.attr('src'), post.thumbnail, `Wrong thumbnail for ${post.url}`);
   assert.equal(image.attr('loading'), 'lazy', `Thumbnail must load lazily: ${post.url}`);
+  assert.equal(Number(image.attr('width')) / Number(image.attr('height')), 4 / 3, `Thumbnail must be 4:3: ${post.url}`);
 }
+const $news = documents.get('news.html');
+assert.ok($news, 'Missing full news listing.');
+assert.deepEqual($news('.post-link').toArray().map(link => $news(link).attr('href')),
+  posts.map(post => post.url), 'News page must list every article in date order.');
+assert.equal(new URL($news('link[rel="canonical"]').attr('href')!).pathname, '/news.html');
 assert.ok(homeLinks.has('/collaboration.html'), 'Homepage navigation must use the published collaboration URL.');
 assert.ok(!homeLinks.has('/collaboration.md'), 'Homepage still links to unpublished collaboration Markdown.');
 
@@ -139,6 +150,7 @@ assert.equal($sitemap('urlset').attr('xmlns'), 'http://www.sitemaps.org/schemas/
 const sitemapLocations = $sitemap('url > loc').toArray().map(node => $sitemap(node).text());
 assert.equal(new Set(sitemapLocations).size, sitemapLocations.length, 'Duplicate sitemap entries.');
 const sitemapPaths = new Set(sitemapLocations.map(url => new URL(url).pathname));
+assert.ok(sitemapPaths.has('/news.html'), 'Sitemap omits the news listing.');
 for (const page of content) assert.ok(sitemapPaths.has(page.url), `Sitemap omits ${page.url}`);
 for (const url of sitemapLocations) checkReference(url, 'sitemap.xml', 'sitemap');
 
@@ -180,5 +192,5 @@ async function verifyAssets(directory: string): Promise<void> {
   }
 }
 await verifyAssets(path.join(root, 'assets'));
-console.log(`Verified ${fixture.posts.length} legacy article URLs, ${fixture.pages.length} content-page URLs, ${posts.length} listed articles, ${documents.size} HTML pages, ${references} local references and ${assetCount} unchanged assets.`);
+console.log(`Verified ${fixture.posts.length} legacy article URLs, ${fixture.pages.length} content-page URLs, ${homepagePosts.length} homepage articles, ${posts.length} news articles, ${documents.size} HTML pages, ${references} local references and ${assetCount} unchanged assets.`);
 console.log('Atom feed and sitemap are valid XML; CNAME, robots.txt, 404.html and .nojekyll are present.');

@@ -8,29 +8,16 @@ import { getHomeLinks } from '../lib/home-links';
 import { site } from '../site.config';
 
 const [home, posts] = await Promise.all([getHome(), getPosts()]);
-const categories = [...new Set(posts.flatMap(post => post.categories))].sort();
+const latestPosts = posts.slice(0, 5);
 const links = getHomeLinks(home.html);
 ---
 
 <SiteLayout title={home.title} description={site.description} url="/" image="/assets/images/yumulab-top-poster.jpg">
   <HomeHero slot="banner" links={links.navigation} />
   <SocialLinks links={links.social} />
-  <div class="content-grid">
-    <div class="main-column">
-      <section id="home-news" aria-labelledby="home-news-heading">
-        <h2 id="home-news-heading" class="home-news-heading">News <span>研究室からのお知らせ</span></h2>
-        <PostList posts={posts} />
-      </section>
-    </div>
-    <aside class="sidebar">
-      <nav aria-label="記事の分類">
-        <h2 class="sidebar-title">Categories</h2>
-        <ul class="category-list">
-          <li><a href="/archives.html">すべての記事 <span>{posts.length}</span></a></li>
-          {categories.map(category => <li><a href={`/categories.html#${encodeURIComponent(category)}`}>{category}<span>{posts.filter(post => post.categories.includes(category)).length}</span></a></li>)}
-        </ul>
-        <a class="sidebar-more" href="/tags.html">Tags →</a>
-      </nav>
-    </aside>
-  </div>
+  <section id="home-news" aria-labelledby="home-news-heading">
+    <h2 id="home-news-heading" class="home-news-heading">News <span>研究室からのお知らせ</span></h2>
+    <PostList posts={latestPosts} />
+    <a class="archive-link" href="/news.html">すべてのニュースを見る <span aria-hidden="true">→</span></a>
+  </section>
 </SiteLayout>

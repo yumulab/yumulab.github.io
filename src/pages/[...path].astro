@@ -7,7 +7,7 @@ import ArticleContents from '../components/ArticleContents.astro';
 
 export const getStaticPaths = (async () => {
   const [pages, posts] = await Promise.all([getPages(), getPosts()]);
-  const specialPages = new Set(['/404.html', '/archives.html', '/categories.html', '/tags.html']);
+  const specialPages = new Set(['/404.html', '/news.html', '/archives.html', '/categories.html', '/tags.html']);
   return [
     ...pages.filter(page => !specialPages.has(page.url)).map(page => ({ page })),
     ...posts.map((page, index) => ({ page, previous: posts[index + 1], next: posts[index - 1] })),
