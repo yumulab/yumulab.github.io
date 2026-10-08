@@ -76,11 +76,13 @@ Jekyll 用の設定、テンプレート、Ruby 依存関係は削除済みで�
 
 ## GitHub Pages への公開
 
-`.github/workflows/deploy.yml` が `master` 向けの Pull Request と `master` への push を検証します。検査、テスト、ビルド、生成結果の検証が成功した `master` のみを GitHub Pages に公開します。Actions 画面から手動実行する場合も、公開対象は `master` に限定しています。
+`.github/workflows/deploy.yml` が `main` 向けの Pull Request と `main` への push を検証します。検査、テスト、ビルド、生成結果の検証が成功した `main` のみを GitHub Pages に公開します。Actions 画面から手動実行する場合も、公開対象は `main` に限定しています。
 
 リポジトリの **Settings → Pages → Build and deployment → Source** は **GitHub Actions** に設定します。カスタムドメインは既存の `www.yumulab.org` を維持してください。ルートの `CNAME` が準備スクリプトによって `public/CNAME` にコピーされます。設定方法の詳細は [Astro の GitHub Pages 公開ガイド](https://docs.astro.build/en/guides/deploy/github/) を参照してください。
 
-公開には GitHub Actions の `GITHUB_TOKEN` を使用します。従来の `GH_TOKEN` を使う Jekyll ワークフローと、`gh-pages` ブランチへのビルド結果の push は使用しません。ローカルでのビルドや `master` への merge だけでは、リモートの公開は実行されません。GitHub への push 後に Actions の実行結果を確認してください。
+公開には GitHub Actions の `GITHUB_TOKEN` を使用します。従来の `GH_TOKEN` を使う Jekyll ワークフローと、`gh-pages` ブランチへのビルド結果の push は使用しません。ローカルでのビルドや `main` への merge だけでは、リモートの公開は実行されません。GitHub への push 後に Actions の実行結果を確認してください。
+
+GitHub のデフォルトブランチと、Settings → Environments → `github-pages` のデプロイ許可ブランチも `main` に設定します。
 
 ## ライセンス
 
