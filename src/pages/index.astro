@@ -2,16 +2,19 @@
 import SiteLayout from '../layouts/SiteLayout.astro';
 import PostList from '../components/PostList.astro';
 import HomeHero from '../components/HomeHero.astro';
-import HomeIntroduction from '../components/HomeIntroduction.astro';
+import SocialLinks from '../components/SocialLinks.astro';
 import { getHome, getPosts } from '../lib/content';
+import { getHomeLinks } from '../lib/home-links';
+import { site } from '../site.config';
 
 const [home, posts] = await Promise.all([getHome(), getPosts()]);
 const categories = [...new Set(posts.flatMap(post => post.categories))].sort();
+const links = getHomeLinks(home.html);
 ---
 
-<SiteLayout title={home.title} description={home.description} url="/" image="/assets/images/yumulab-top-poster.jpg">
-  <HomeHero slot="banner" />
-  <HomeIntroduction html={home.html} />
+<SiteLayout title={home.title} description={site.description} url="/" image="/assets/images/yumulab-top-poster.jpg">
+  <HomeHero slot="banner" links={links.navigation} />
+  <SocialLinks links={links.social} />
   <div class="content-grid">
     <div class="main-column">
       <section id="home-news" aria-labelledby="home-news-heading">

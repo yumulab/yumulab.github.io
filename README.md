@@ -60,13 +60,15 @@ tags: [event]
 
 トップページのサムネイルは、本文にある最初の画像を自動で使います。画像がない記事には共通のプレースホルダーを表示します。別の画像を使う場合だけ、フロントマターに `thumbnail: /assets/images/2026/example.jpg` を追加してください。
 
-トップページの紹介文とリンク先は `index.md` で管理します。`src/components/HomeIntroduction.astro` が、研究室案内と SNS をテキストリンクとして表示します。余白・文字サイズなどのデザインは同コンポーネントで編集できます。
+トップページのリンク先とラベルは `index.md` の2つのリンク一覧で管理します。`src/lib/home-links.ts` が一覧を読み込み、`src/components/HomeHero.astro` が研究室案内を動画上に、`src/components/SocialLinks.astro` が SNS・外部サービスを動画の下に表示します。`index.md` の紹介文はトップページには表示しません。リンクのデザインは各コンポーネントで編集できます。
 
 画像などの静的ファイルは、従来どおりルートの `assets/` に置きます。準備スクリプトが開発・ビルド時に `public/` へコピーします。`public/` と `dist/` は生成物のため、直接編集しないでください。開発サーバー起動中に静的ファイルを変更した場合は、サーバーを再起動するとコピーが更新されます。
 
 ## トップページの動画
 
 `src/components/HomeHero.astro` が、`assets/yumulab-top.mp4` を無音・ループで再生し、`assets/images/yumulab-logo-transparent.png` を重ねて表示します。ロゴは CSS で白く表示し、元画像は保持しています。一時停止・再生ボタンがあり、端末の「動きを減らす」設定が有効な場合は、動画を自動で読み込まず静止画を表示します。JavaScript が無効な場合や動画を再生できない場合も静止画を表示します。
+
+SNS の SVG ロゴは [Simple Icons](https://github.com/simple-icons/simple-icons) の `icons/` から取得しています。保存先は `assets/images/social/` で、同フォルダの `LICENSE.txt` にライセンスを収録しています。
 
 静止画は `assets/images/yumulab-top-poster.jpg` です。動画を差し替える際は、静止画も差し替えてください。FFmpeg が利用できる環境では、次のコマンドで生成できます（ビルド時に FFmpeg は不要です）。
 
