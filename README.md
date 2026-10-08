@@ -66,7 +66,7 @@ tags: [event]
 
 ## トップページの動画
 
-`src/components/HomeHero.astro` が、`assets/yumulab-top.mp4` を無音・ループで再生し、`assets/images/yumulab-logo-transparent.png` を重ねて表示します。ロゴは CSS で白く表示し、元画像は保持しています。端末の「動きを減らす」設定が有効な場合は、動画を自動で読み込まず静止画を表示します。JavaScript が無効な場合や動画を再生できない場合も静止画を表示します。
+`src/components/HomeHero.astro` が、`assets/yumulab-top.mp4` を無音・ループで再生します。トップページのメニューバーは半透明の背景で動画上に重なります。`src/layouts/SiteLayout.astro` が `assets/images/yumulab-logo-transparent.png` をメニューバーの左端に表示し、トップページでは CSS で白く表示します。端末の「動きを減らす」設定が有効な場合は、動画を自動で読み込まず静止画を表示します。JavaScript が無効な場合や動画を再生できない場合も静止画を表示します。
 
 SNS の SVG ロゴは [Simple Icons](https://github.com/simple-icons/simple-icons) の `icons/` から取得しています。保存先は `assets/images/social/` で、同フォルダの `LICENSE.txt` にライセンスを収録しています。
 
