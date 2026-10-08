@@ -6,7 +6,7 @@ interface Props { links: HomeLink[] }
 const { links } = Astro.props;
 const icons: Record<string, string> = {
   'twitter.com': 'x', 'x.com': 'x', 'instagram.com': 'instagram',
-  'facebook.com': 'facebook', 'speakerdeck.com': 'speakerdeck', 'youtube.com': 'youtube',
+  'facebook.com': 'facebook', 'speakerdeck.com': 'speakerdeck', 'note.com': 'note', 'youtube.com': 'youtube',
 };
 const services = links.map(link => ({
   ...link,
