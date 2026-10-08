@@ -1,0 +1,526 @@
+{
+  "version": 1,
+  "sourceCommit": "7f8ae4cd2c75655944b48105fd9a87d15c9ad080",
+  "sitemapSource": "https://www.yumulab.org/sitemap.xml",
+  "sitemapSnapshotDate": "2026-10-08",
+  "canonicalOrigin": "https://yumulab.org",
+  "posts": [
+    {
+      "path": "_posts/2021-04-01-hello.md",
+      "url": "/info/2021/04/01/hello.html",
+      "sha256": "df1e8c3caca59d22b277d9f8c3856e0900c659fa92ada0e2fa5ef246cf719019"
+    },
+    {
+      "path": "_posts/2021-07-26-web.md",
+      "url": "/info/2021/07/26/web.html",
+      "sha256": "a15e78114714b4abbe37e7de524ac0e51424457e8b95d12c52cc95e0ec3745eb"
+    },
+    {
+      "path": "_posts/2021-12-10-wiss2021.md",
+      "url": "/conference/2021/12/10/wiss2021.html",
+      "sha256": "c102e771fce6199e562046bd51646df581072322dd7890e72146dfce1dd76bab"
+    },
+    {
+      "path": "_posts/2021-12-11-heroes.md",
+      "url": "/award/2021/12/11/heroes.html",
+      "sha256": "7fcc5d8c3cab5d2546eb4f992169fdb6a97d1df01e8e677e0352f5d6264c1eff"
+    },
+    {
+      "path": "_posts/2022-01-01-repository.md",
+      "url": "/info/2022/01/01/repository.html",
+      "sha256": "2b3b89fd92abe891de4f089c0e5ff6eed4665c5ba7323cd939e22a414faba870"
+    },
+    {
+      "path": "_posts/2022-01-27-presentation.md",
+      "url": "/event/2022/01/27/presentation.html",
+      "sha256": "a9cc2015f5dd64dc77f0941938432ac0b1cfc29137bb6b47ad997f2fa777b9b2"
+    },
+    {
+      "path": "_posts/2022-02-01-team.md",
+      "url": "/event/2022/02/01/team.html",
+      "sha256": "eee8db2f5e862508d82047f602e9f99ac808ffd69efc69ec21a866ba2e475b47"
+    },
+    {
+      "path": "_posts/2022-02-28-interaction.md",
+      "url": "/conference/2022/02/28/interaction.html",
+      "sha256": "9fe775d69dad7c97aeb1b25dcadedf2afaa5a69fa64c0185406e69b111787ff6"
+    },
+    {
+      "path": "_posts/2022-03-05-sechack.md",
+      "url": "/event/2022/03/05/sechack.html",
+      "sha256": "a2a12166d220ef72f82b0b30de2d8b9edb30307c66e0de29bb8acbe6e59528ee"
+    },
+    {
+      "path": "_posts/2022-03-06-md.md",
+      "url": "/event/2022/03/06/md.html",
+      "sha256": "619cdb04e5a410a9483dff8368d85ac5d1c09a9e7633676f4de746e75ed651dd"
+    },
+    {
+      "path": "_posts/2022-03-11-award.md",
+      "url": "/award/2022/03/11/award.html",
+      "sha256": "7cd636edb2f9550425e15e0fff40755cc52820b7d3e87d37340895856b6622c3"
+    },
+    {
+      "path": "_posts/2022-03-18-graduate.md",
+      "url": "/event/2022/03/18/graduate.html",
+      "sha256": "9c18914d3629ebfaa925e06e41927a119ac9b598de818b22a931aafdc75a7132"
+    },
+    {
+      "path": "_posts/2022-04-01-gmo.md",
+      "url": "/grant/2022/04/01/gmo.html",
+      "sha256": "488254cda0679bb0589fb02d587bbeb059cf7c0b46d783aa2d5b87b300bb9f71"
+    },
+    {
+      "path": "_posts/2022-04-12-start.md",
+      "url": "/info/2022/04/12/start.html",
+      "sha256": "6b3d87e98fcc483401bb35227d70df5a293fc4f4af8e5d4dbb37d3079f75f1d2"
+    },
+    {
+      "path": "_posts/2022-07-23-ldd22sec.md",
+      "url": "/event/2022/07/23/ldd22sec.html",
+      "sha256": "918178df6b7e37e3f3864177551b734ed0d389e73994936468935a1371b467f0"
+    },
+    {
+      "path": "_posts/2022-07-26-plan.md",
+      "url": "/event/2022/07/26/plan.html",
+      "sha256": "fc5e30d5d5cc90746c4905808a1fc5790565854bd6b866772c7a285ab36c644d"
+    },
+    {
+      "path": "_posts/2022-09-01-ec2022.md",
+      "url": "/conference/2022/09/01/ec2022.html",
+      "sha256": "dae8767515f217cfc8f7038d706b7c76282b907d12e13d3317e04aa677baac9d"
+    },
+    {
+      "path": "_posts/2022-09-14-codeblueaccept.md",
+      "url": "/event/2022/09/14/codeblueaccept.html",
+      "sha256": "0707bc3507184f6c5af2e6f4ea14132bd505970de5b139100650dec24264c262"
+    },
+    {
+      "path": "_posts/2022-09-25-demola.md",
+      "url": "/event/2022/09/25/demola.html",
+      "sha256": "81f7c29de5c54cd609fb47f7ca445b949af0ae2ef660e3cfe07200d7fa0cdb5f"
+    },
+    {
+      "path": "_posts/2022-10-15-ipsjhokkaido.md",
+      "url": "/conference/2022/10/15/ipsjhokkaido.html",
+      "sha256": "3e234a48b5b835c2f0803491ea277048e9cabdab9e8a42355d0a71955b71d200"
+    },
+    {
+      "path": "_posts/2022-10-22-sechackreturns.md",
+      "url": "/event/2022/10/22/sechackreturns.html",
+      "sha256": "a3dc04f08f880c47ff7c2ca5f885b4ea464510b7da6c2458a23f1f46049cbf7e"
+    },
+    {
+      "path": "_posts/2022-10-26-css2022.md",
+      "url": "/conference/2022/10/26/css2022.html",
+      "sha256": "e19b6cfda0b59e3308ab54ba48f8ee00baae434beb0a91c613582e71b113fa87"
+    },
+    {
+      "path": "_posts/2022-10-27-codeblue.md",
+      "url": "/event/2022/10/27/codeblue.html",
+      "sha256": "86a454e80e31ba72aea2cd95cb72cfad9425e5cc074a3b93b343a4bba76be4e0"
+    },
+    {
+      "path": "_posts/2022-10-28-css-codeblue-report.md",
+      "url": "/report/2022/10/28/css-codeblue-report.html",
+      "sha256": "60d72ded1c62e257219262badcd9e7c61adbcf73f33e0850771267d498549d8c"
+    },
+    {
+      "path": "_posts/2022-11-26-hic.md",
+      "url": "/award/2022/11/26/hic.html",
+      "sha256": "0dc637288c922c6f511599464680ef06e5487f372f357415ec2d9f445a04b437"
+    },
+    {
+      "path": "_posts/2022-12-09-iots-report.md",
+      "url": "/report/2022/12/09/iots-report.html",
+      "sha256": "763636790a72ca98ae070ba7bc80874a91db6e52a8d64559ddef380c23b52f26"
+    },
+    {
+      "path": "_posts/2022-12-09-iots.md",
+      "url": "/award/2022/12/09/iots.html",
+      "sha256": "879217b66be03f46829f6712d0686d40e6563f138e6e34f3da3ed1296fbfeb8e"
+    },
+    {
+      "path": "_posts/2023-01-31-gradpresen.md",
+      "url": "/event/2023/01/31/gradpresen.html",
+      "sha256": "4ea9fd62b83a34f53c788cb3ff9392d56e4c2f13ab00f16d6bc08a6b1824d985"
+    },
+    {
+      "path": "_posts/2023-03-01-ubi77.md",
+      "url": "/conference/2023/03/01/ubi77.html",
+      "sha256": "02f5f6db2021767bb18221bf92a3c4d72ee2467d22a342df32f5ff75cc6d250f"
+    },
+    {
+      "path": "_posts/2023-03-04-hic.md",
+      "url": "/event/2023/03/04/hic.html",
+      "sha256": "3ac1629e3f6a39138d04b878058ec99fa7bfa669ced603e85266be17b9930a17"
+    },
+    {
+      "path": "_posts/2023-03-06-csec100.md",
+      "url": "/conference/2023/03/06/csec100.html",
+      "sha256": "00ccdebf1ac4465030e42d7ba0587a48d8159dae986cc4d7b8472d23170d4cd8"
+    },
+    {
+      "path": "_posts/2023-03-09-ubiaward.md",
+      "url": "/award/2023/03/09/ubiaward.html",
+      "sha256": "6c1b9070471ded0cb990044317ad7cd97125c66b315e4da50b884e6d974d7054"
+    },
+    {
+      "path": "_posts/2023-03-10-i2023.md",
+      "url": "/conference/2023/03/10/i2023.html",
+      "sha256": "8dad99d401f9381263765f767891a7921ce468a0af19a51201a0ed47b6322e58"
+    },
+    {
+      "path": "_posts/2023-03-17-grad.md",
+      "url": "/event/2023/03/17/grad.html",
+      "sha256": "5c7797e9cd216e65c4f05cf52f6e5ef15759bf7bb43f4a010f485a41ce0a4192"
+    },
+    {
+      "path": "_posts/2023-03-30-nanakamado.md",
+      "url": "/info/2023/03/30/nanakamado.html",
+      "sha256": "8c90f46aacca72f0dffe915771b4fbb311e3b4b3a3413a7894d94f68955fbe36"
+    },
+    {
+      "path": "_posts/2023-04-18-start.md",
+      "url": "/info/2023/04/18/start.html",
+      "sha256": "2f6ae5540947dcdd8af58cb85a1521eb923cccacf5282efca2158460546e2a23"
+    },
+    {
+      "path": "_posts/2023-05-11-ebitech.md",
+      "url": "/event/2023/05/11/ebitech.html",
+      "sha256": "d7ff43defe3ede4182057130617b404d0c8afdf6103e6015fecb1c347b7d2e95"
+    },
+    {
+      "path": "_posts/2023-06-01-wdc.md",
+      "url": "/award/2023/06/01/wdc.html",
+      "sha256": "38abb3381b3cb7c77b5dbb237e76798a395e18857448136e6d5070713baee609"
+    },
+    {
+      "path": "_posts/2023-07-12-sauna.md",
+      "url": "/event/2023/07/12/sauna.html",
+      "sha256": "7f3c8d75090e1dfd731571a235c94bad077f40c02028627cb8cad887a192fb40"
+    },
+    {
+      "path": "_posts/2023-07-15-snow.md",
+      "url": "/publish/2023/07/15/snow.html",
+      "sha256": "6d268f87ce618441a89a766f028dcdb7735713a8c2870278572186ab21a3ece1"
+    },
+    {
+      "path": "_posts/2023-07-25-plan.md",
+      "url": "/event/2023/07/25/plan.html",
+      "sha256": "e1cfc7243f17d1ffb47be6b68c32d0d6218b1284a47c0aa60a65c87fb0550c7c"
+    },
+    {
+      "path": "_posts/2023-07-27-mierunebbq03.md",
+      "url": "/event/2023/07/27/mierunebbq03.html",
+      "sha256": "c5455f63539baf27f51be227c266c0a0bb559fb21db14220d3a3a78413652128"
+    },
+    {
+      "path": "_posts/2023-08-07-joint.md",
+      "url": "/event/2023/08/07/joint.html",
+      "sha256": "c5872701dfe9ecf4c248b629f16042cbc19b2d9671f7c1649f2264fd265a0a05"
+    },
+    {
+      "path": "_posts/2023-08-10-hackathon.md",
+      "url": "/event/2023/08/10/hackathon.html",
+      "sha256": "08c0fb1c9a93d87ec9fff369ea1e32bc6e0528105939f8f65939ac06d8bb6207"
+    },
+    {
+      "path": "_posts/2023-09-17-mikantech.md",
+      "url": "/event/2023/09/17/mikantech.html",
+      "sha256": "1d69e0400b4680be3824f8dbd94db44dad365683505a187c5af4cdd022d6a2de"
+    },
+    {
+      "path": "_posts/2023-09-29-mierunebbq04.md",
+      "url": "/event/2023/09/29/mierunebbq04.html",
+      "sha256": "143b0913d98dd0298d4d9cf5ed1ea7e1f54273754220eedff5cdadbce9da4451"
+    },
+    {
+      "path": "_posts/2023-10-08-sotensai.md",
+      "url": "/event/2023/10/08/sotensai.html",
+      "sha256": "99ed2df18cceafa0ea77587e9eaadb9629ec91ae4cf37118c9d23b7aa78ef087"
+    },
+    {
+      "path": "_posts/2023-10-14-info2023.md",
+      "url": "/conference/2023/10/14/info2023.html",
+      "sha256": "27844bb5733ef8ff13798bc4e6d2cab80c892cf0d131c56b9dd778ff9e464d70"
+    },
+    {
+      "path": "_posts/2023-10-18-shinsetsu.md",
+      "url": "/award/2023/10/18/shinsetsu.html",
+      "sha256": "6518ddc87585d69818271a22f98e63f644f87844c743b1fbc8959330e87415b9"
+    },
+    {
+      "path": "_posts/2023-10-24-donuts.md",
+      "url": "/event/2023/10/24/donuts.html",
+      "sha256": "2a10de77c9aac8df7129962a36cc87c410d87497f5fa7be79c6156878ccadf4c"
+    },
+    {
+      "path": "_posts/2023-10-29-u16procon.md",
+      "url": "/event/2023/10/29/u16procon.html",
+      "sha256": "48c2111edde17db8f761c09fb88486867c4898c3253c57c1d2357f03059f6a97"
+    },
+    {
+      "path": "_posts/2023-11-07-sakura.md",
+      "url": "/event/2023/11/07/sakura.html",
+      "sha256": "f8d8b863030ae7569dfd04fef8a7ba5672000adddd958feb72040433afe5b9cb"
+    },
+    {
+      "path": "_posts/2023-12-01-ncss23.md",
+      "url": "/conference/2023/12/01/ncss23.html",
+      "sha256": "432b438a3827eb88c12bc230aab8e8f7165986353bd1e99e5881b5e4d3d6d2cc"
+    },
+    {
+      "path": "_posts/2023-12-01-wiss.md",
+      "url": "/conference/2023/12/01/wiss.html",
+      "sha256": "a5301e5f221a5a867a48821df9398205d53c091927260399acfda7a89eb8ea99"
+    },
+    {
+      "path": "_posts/2024-01-19-hcilab.md",
+      "url": "/event/2024/01/19/hcilab.html",
+      "sha256": "b4917e3a09418421efc2e1a3c6120ab17793f2e21b364148e92625a19777dfbd"
+    },
+    {
+      "path": "_posts/2024-01-20-shinsetsu.md",
+      "url": "/event/2024/01/20/shinsetsu.html",
+      "sha256": "1e5a5900e07fdb0742751f56468bdea9c80260e010552e1b32cfe7e4f7d3e4a4"
+    },
+    {
+      "path": "_posts/2024-02-01-gradpresen.md",
+      "url": "/event/2024/02/01/gradpresen.html",
+      "sha256": "8ce961f95e02de843da6f36021844e095b0a248facfadc0d296160c7e7f752ac"
+    },
+    {
+      "path": "_posts/2024-02-23-nomaps.md",
+      "url": "/event/2024/02/23/nomaps.html",
+      "sha256": "25717d5ee3fc51afdce9e44ff66a7a33ddec13bdd5bd0508cf99a45702903351"
+    },
+    {
+      "path": "_posts/2024-02-29-sotsuten.md",
+      "url": "/event/2024/02/29/sotsuten.html",
+      "sha256": "a4e9bb1011e98f3496d9af7d5317b253caeadab2a9310f1be31a7c063d0f0e3c"
+    },
+    {
+      "path": "_posts/2024-03-08-i2024-fujiya.md",
+      "url": "/report/2024/03/08/i2024-fujiya.html",
+      "sha256": "761c703d68172604cf2fbb63e58455ea3714b83f779e314f0432660f0a580168"
+    },
+    {
+      "path": "_posts/2024-03-08-i2024-kamada.md",
+      "url": "/report/2024/03/08/i2024-kamada.html",
+      "sha256": "8356cc3c3f7bad686b1f7b9ed78ae9d5c1e59c274283201e94f2d436bab231d0"
+    },
+    {
+      "path": "_posts/2024-03-08-i2024-oka.md",
+      "url": "/report/2024/03/08/i2024-oka.html",
+      "sha256": "c9978942d6ed0bcbbc76d9de7c83a989fbe0a2e72e9f39ae28ef09d3c872e17c"
+    },
+    {
+      "path": "_posts/2024-03-08-i2024.md",
+      "url": "/conference/2024/03/08/i2024.html",
+      "sha256": "cf9ef66b8b08616a4d68e4f178d67f4545439a167568601e37bb9d7e5a4d777f"
+    },
+    {
+      "path": "_posts/2024-03-14-iot64.md",
+      "url": "/award/2024/03/14/iot64.html",
+      "sha256": "eb7d3b5b91ade8d5dc598b088d063c11f87ffd05acb2fd31f3f32d2e92e814db"
+    },
+    {
+      "path": "_posts/2024-03-15-grad.md",
+      "url": "/event/2024/03/15/grad.html",
+      "sha256": "343385bfa018f7288816d9610bd269f2ac8fea2ddefdbbc8db74458a7620162d"
+    },
+    {
+      "path": "_posts/2024-03-15-gradaward.md",
+      "url": "/award/2024/03/15/gradaward.html",
+      "sha256": "cd1196fd6ae6cf6d2e09c44c853d6fa68f868380bbea479cc0f123997873910d"
+    },
+    {
+      "path": "_posts/2024-03-19-ec71-inui.md",
+      "url": "/report/2024/03/19/ec71-inui.html",
+      "sha256": "965d7931cc343ace79a70d7f525bc3d8a09f526d286d76fb0221d1d90d3fd119"
+    },
+    {
+      "path": "_posts/2024-03-19-ec71-koizumi.md",
+      "url": "/report/2024/03/19/ec71-koizumi.html",
+      "sha256": "b1f01c313f030603cbfc48cd5e09db332911b9c4ebb658df5b66e46d7f15f307"
+    },
+    {
+      "path": "_posts/2024-03-19-ec71-tsujinaga.md",
+      "url": "/report/2024/03/19/ec71-tsujinaga.html",
+      "sha256": "890e6d86444db82ab337cfa86f1489b3c225d4fe3dd00e236838e8ef25a0d22e"
+    },
+    {
+      "path": "_posts/2024-03-19-ec71.md",
+      "url": "/conference/2024/03/19/ec71.html",
+      "sha256": "ca055372472332ecc204ee21bcbb80936da4918dd8eb10be0e8a58e449e647b5"
+    },
+    {
+      "path": "_posts/2024-03-30-summary.md",
+      "url": "/summary/2024/03/30/summary.html",
+      "sha256": "f1685c6ce95c09f401c77dfe49ae4ccea4f72ca9ea0dbcafc3e5b75a18688a6d"
+    },
+    {
+      "path": "_posts/2024-04-23-start.md",
+      "url": "/info/2024/04/23/start.html",
+      "sha256": "29033845aeecf565ea5c51bba9c5b182aebc5593a177bf9822878d418af3a278"
+    },
+    {
+      "path": "_posts/2024-04-29-NThakodate.md",
+      "url": "/event/2024/04/29/NThakodate.html",
+      "sha256": "ba5e9db0eb61d61a01ce492bf7858dba44e323f5aacd2155799826169a800c0e"
+    },
+    {
+      "path": "_posts/2024-06-07-ec71award.md",
+      "url": "/award/2024/06/07/ec71award.html",
+      "sha256": "05d5a037a3d11247b6bce7d50a6bfca29f662f53db27a2cff9432773662781b1"
+    },
+    {
+      "path": "_posts/2024-07-23-plan.md",
+      "url": "/event/2024/07/23/plan.html",
+      "sha256": "fa5c277186fefafd730c5c7a70ea418cbbb9bfb2b13a212980f50873120cdc40"
+    },
+    {
+      "path": "_posts/2024-08-07-music.md",
+      "url": "/event/2024/08/07/music.html",
+      "sha256": "0afa3e0cfb2319389324c24f731e2ba78bcf205554618ac253b3616a38ef2315"
+    },
+    {
+      "path": "_posts/2024-09-04-ec2024.md",
+      "url": "/conference/2024/09/04/ec2024.html",
+      "sha256": "bed940d569be4ea62097ca5b700d62bb3dee41774fc202d2db9e980baae3806f"
+    },
+    {
+      "path": "_posts/2024-09-06-cdioarm.md",
+      "url": "/conference/2024/09/06/cdioarm.html",
+      "sha256": "fade99d20b05bb109e0d6ebd586e4670dc574ab680831be1d54107a326c1fbaf"
+    },
+    {
+      "path": "_posts/2024-09-15-nomaps-geek.md",
+      "url": "/event/2024/09/15/nomaps-geek.html",
+      "sha256": "276914a5c360014f9d1a8c20bbd7161fc5944cc57b0ec866caf9f42b2acf3a82"
+    },
+    {
+      "path": "_posts/2024-09-18-camp.md",
+      "url": "/event/2024/09/18/camp.html",
+      "sha256": "b8a818bc08b9d84a383862c0515e67f26a7d74bd4f0d360aff9ff673337f5167"
+    },
+    {
+      "path": "_posts/2024-10-13-sotensai.md",
+      "url": "/event/2024/10/13/sotensai.html",
+      "sha256": "a5dd69de062395c1cef777924e6ecc391f93844fb8dd32198a2efd493b274f94"
+    },
+    {
+      "path": "_posts/2024-11-08-sensorcomm.md",
+      "url": "/conference/2024/11/08/sensorcomm.html",
+      "sha256": "4259c5ae857e545bfd1f08425aeaf82de8e3396b8e7b3109b5d6e846415f3e22"
+    },
+    {
+      "path": "_posts/2024-12-01-ipsjhokkaido.md",
+      "url": "/conference/2024/12/01/ipsjhokkaido.html",
+      "sha256": "88529e0912c2fce2c0401020cc900d0373b972089e53acc6c81a471aa4e61511"
+    },
+    {
+      "path": "_posts/2024-12-13-wiss.md",
+      "url": "/conference/2024/12/13/wiss.html",
+      "sha256": "ad8a64304dedc23de4d60bf3ea6a0ccae4ac423e29308d55a241ad5738b0cfb3"
+    },
+    {
+      "path": "_posts/2024-12-21-heroes.md",
+      "url": "/award/2024/12/21/heroes.html",
+      "sha256": "04a6d34b9f58cdcc9a1742eb5002ea2d3c104caf7de18f63241205b22310bca9"
+    },
+    {
+      "path": "_posts/2025-01-31-gradpresen.md",
+      "url": "/event/2025/01/31/gradpresen.html",
+      "sha256": "b96bf6a836f44660e0100984a9717fbdcc87cd5ff80486ff3646a709cb391c24"
+    },
+    {
+      "path": "_posts/2025-02-08-sotsuten.md",
+      "url": "/event/2025/02/08/sotsuten.html",
+      "sha256": "18401e629fe43e2e48709bc68a5d6c55e8f2054184b55f37607d1caf3b05146f"
+    },
+    {
+      "path": "_posts/2025-02-23-lce08.md",
+      "url": "/event/2025/02/23/lce08.html",
+      "sha256": "01d2698e69141b5cbebccba6d76642be5192e2695e8d041c41651a6ed4b9e5c5"
+    },
+    {
+      "path": "_posts/2025-02-26-ubisympo.md",
+      "url": "/conference/2025/02/26/ubisympo.html",
+      "sha256": "966a02afb36594fbd9d55581e906aa6a3fdcf5732828ddf50a0101678f064574"
+    },
+    {
+      "path": "_posts/2025-02-28-ubi85.md",
+      "url": "/conference/2025/02/28/ubi85.html",
+      "sha256": "db1e4ffa09aabbedf86c41018ca5e9b7eba17de0f53fb072baa637a5c7bbd43e"
+    },
+    {
+      "path": "_posts/2025-03-06-i2025.md",
+      "url": "/conference/2025/03/06/i2025.html",
+      "sha256": "9f85137e732b3b40c90fd1a31bd3bb231b300429c0fc07e64e6d0e17bf6dbcad"
+    },
+    {
+      "path": "_posts/2025-03-19-ec75.md",
+      "url": "/conference/2025/03/19/ec75.html",
+      "sha256": "2929acacdc5c52bf85557501a9ebc156d05a387a11d03ce8c0fb7db925a08e25"
+    },
+    {
+      "path": "_posts/2025-06-19-hci213.md",
+      "url": "/conference/2025/06/19/hci213.html",
+      "sha256": "3b396f92dfed3e12b9b76546ccb21ba41e1edde4b1dba1ca4b9a3e527313b23e"
+    },
+    {
+      "path": "_posts/2025-08-29-ec2025.md",
+      "url": "/conference/2025/08/29/ec2025.html",
+      "sha256": "cf8b9f82231456ef9104e99a9baf463e5fa20dace99e5d23466d3efa32679780"
+    },
+    {
+      "path": "_posts/2025-08-31-costep.md",
+      "url": "/cevent/2025/08/31/costep.html",
+      "sha256": "16f839f053f4296168ee76243cb9dcc1db227f3b1b347643ab831516c7d65fb4"
+    },
+    {
+      "path": "_posts/2026-02-10-gradpresen.md",
+      "url": "/event/2026/02/10/gradpresen.html",
+      "sha256": "787f3bd8e9840d3a30e02a738992fd92ca3e54b5e1b172826126b186cd37b35a"
+    }
+  ],
+  "pages": [
+    {
+      "path": "index.md",
+      "url": "/",
+      "sha256": "53e880502d342598102453ca8ecead568660b3100d6566012f8f2f74b5495f02"
+    },
+    {
+      "path": "about.md",
+      "url": "/about.html",
+      "sha256": "4d73121c042c48e8712940ae76ce878d55555aa78f57f4d7b779075b4a4e7ca7"
+    },
+    {
+      "path": "people.md",
+      "url": "/people.html",
+      "sha256": "8347f35b4fab4518a206ed12d1ec9e43c6a8a958d2af3190f408bd8e79edcca5"
+    },
+    {
+      "path": "collaboration.md",
+      "url": "/collaboration.html",
+      "sha256": "7b31d3d5de27ce1bf8c7289051c716b03df0ff15ad4242e1173fa4da1717c28e"
+    },
+    {
+      "path": "yumura.md",
+      "url": "/yumura.html",
+      "sha256": "469c85fd7999ce1192699651ad4b3e3eef07db5e8a4bf592f7f045acf6668b45"
+    },
+    {
+      "path": "publications.html",
+      "url": "/publications.html",
+      "sha256": "4dbf01fa1507c1dababbb6e99e7d0438a3ce466916aa2369f500f43419546f05"
+    },
+    {
+      "path": "research.html",
+      "url": "/research.html",
+      "sha256": "79af16262b6ba6bf793dfe5e2565a6274b5220066b4ee84d6c3655be523e0e59"
+    }
+  ]
+}

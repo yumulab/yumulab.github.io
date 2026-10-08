@@ -1,0 +1,13 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import PostList from '../components/PostList.astro';
+import { getPosts } from '../lib/content';
+const posts = await getPosts();
+const years = [...new Set(posts.map(post => post.date.slice(0, 4)))];
+---
+
+<SiteLayout title="Archives" url="/archives.html">
+  <h1 class="page-title">Archives</h1>
+  <nav class="archive-tabs" aria-label="記事一覧"><a href="/archives.html" aria-current="page">Archives</a><a href="/categories.html">Categories</a><a href="/tags.html">Tags</a></nav>
+  {years.map(year => <section class="archive-section" aria-labelledby={`year-${year}`}><h2 id={`year-${year}`}>{year}</h2><PostList compact posts={posts.filter(post => post.date.startsWith(year))} /></section>)}
+</SiteLayout>

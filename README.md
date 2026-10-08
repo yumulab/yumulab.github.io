@@ -1,200 +1,87 @@
-<div align="center">
-  <br>
+# 湯村研究室 Web サイト
 
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat">
-    <img alt="jekyll-theme-yat →~ jekyll" src="https://user-images.githubusercontent.com/9413601/106478481-346fdf00-64e4-11eb-9385-1ab5329c3234.png" width="600">
-  </a>
+北海道情報大学 湯村研究室の Web サイトです。[Astro](https://astro.build/) で静的サイトを生成し、GitHub Pages で公開します。公開先は [www.yumulab.org](https://www.yumulab.org/) です。
 
-  <h1>JEKYLL YAT THEME</h1>
+Jekyll からの移行にあたり、既存記事の Markdown、フロントマター、ファイル名と公開 URL を維持しています。記事や固定ページは、引き続き元のファイルで編集できます。
 
-</div>
+## 開発
 
-<h4 align="center">
-  <a href="https://jekyllrb.com/" target="_blank"><code>Jekyll</code></a> theme for elegant writers.
-</h4>
+Node.js 24 と npm を使用します。
 
-<p align="center">
-  <a href="https://jeffreytse.github.io/jekyll-theme-yat">
-    <img src="https://github.com/jeffreytse/jekyll-theme-yat/workflows/Github%20Pages/badge.svg"
-      alt="Github Pages" />
-  </a>
-
-  <a href="http://badge.fury.io/rb/jekyll-theme-yat">
-    <img src="https://badge.fury.io/rb/jekyll-theme-yat.svg"
-      alt="Gem Version" />
-  </a>
-
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"
-      alt="License: MIT" />
-  </a>
-
-  <a href="https://liberapay.com/jeffreytse">
-    <img src="http://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay"
-      alt="Donate (Liberapay)" />
-  </a>
-
-  <a href="https://patreon.com/jeffreytse">
-    <img src="https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square"
-      alt="Donate (Patreon)" />
-  </a>
-
-  <a href="https://ko-fi.com/jeffreytse">
-  <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
-  alt="Donate (Ko-fi)" />
-  </a>
-</p>
-
-<div align="center">
-  <sub>Built with ❤︎ by
-  <a href="https://jeffreytse.net">jeffreytse</a> and
-  <a href="https://github.com/jeffreytse/jekyll-theme-yat/graphs/contributors">contributors </a>
-  </sub>
-</div>
-
-<br>
-
-Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
-_YAT (Yet Another Theme)_ is a modern responsive theme. It's quite
-clear, clean and neat for writers and posts. **If you are an elegant
-writer and focus on content, don't miss it.**
-
-<p align="center">
-Like this elegant theme? You can give it a star or sponsor me!<br>
-I will respect your crucial support and say THANK YOU!
-</p>
-
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/91842897-6a840b00-ec87-11ea-95ca-52abcc1ac063.png" alt="demo-screenshot" width="100%"/>
-
-</p>
-
-<h4 align="center">BANNER</h4>
-
-<p align="center">
-
-  <img src="https://user-images.githubusercontent.com/9413601/123897812-ae729a00-d996-11eb-96b8-b76ba926f555.gif" alt="demo-screenshot" width="100%"/>
-
-</p>
-
-## Features
-
-- Support beautiful **Night Mode**.
-- Modern responsive web design.
-- Full layouts `home`, `post`, `tags`, `archive` and `about`.
-- Uses font awesome 5 for icons.
-- Beautiful page banner with image and video.
-- Beautiful Syntax Highlight using [highlight.js][highlight-js].
-- RSS support using [Jekyll Feed][jekyll-feed] gem.
-- Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
-- Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
-- Complex and flexible table support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- MathJAX and LaTeX optional support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Media (Youtube, Spotify, etc.) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Google Translation support.
-- New post tag support.
-
-Also, visit the [Live Demo][yat-live-demo] site for the theme.
-
-## Installation
-
-There are three ways to install:
-
-- As a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
-- As a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible).
-- Forking/directly copying all of the theme files into your project.
-
-### Gem-based Theme Method
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "jekyll-theme-yat"
+```sh
+npm ci
+npm run dev
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+開発サーバーの URL は起動時に表示されます（通常は `http://localhost:4321`）。
 
-```yaml
-theme: jekyll-theme-yat
+| コマンド | 内容 |
+| --- | --- |
+| `npm ci` | `package-lock.json` に従って依存関係をインストール |
+| `npm run dev` | 開発サーバーを起動 |
+| `npm run check` | Astro と TypeScript の検査 |
+| `npm test` | 記事の読み込みと既存 URL の互換性を検証 |
+| `npm run build` | 公開用ファイルを `dist/` に生成 |
+| `npm run verify` | ビルド後のページ、リンク、既存コンテンツの互換性を検証 |
+| `npm run preview` | `dist/` のビルド結果をローカルで確認 |
+
+変更後は以下を実行します。
+
+```sh
+npm run check
+npm test
+npm run build
+npm run verify
+npm run preview
 ```
 
-And then execute:
+## 記事・ページの更新
 
-```bash
-$ bundle
+お知らせは `_posts/YYYY-MM-DD-slug.md` を編集・追加します。既存のフロントマターと Markdown をそのまま使用します。
+
+```md
+---
+layout: post
+title: 記事のタイトル
+categories: event
+tags: [event]
+---
+
+記事の本文。
+
+![写真](/assets/images/2026/example.jpg)
 ```
 
-Or install it yourself as:
+この記事を `_posts/2026-10-08-example.md` として保存すると、公開 URL は `/event/2026/10/08/example.html` になります。既存記事の URL を維持するため、公開済み記事のファイル名、日付、`categories`、`permalink` は変更しないでください。任意の `description` を指定すると、一覧の抜粋やページの説明に使用します。未指定の場合は本文から生成します。
 
-```bash
-$ gem install jekyll-theme-yat
+`about.md`、`people.md`、`collaboration.md`、`yumura.md` などの固定ページ、および `research.html`、`publications.html` も元の場所で編集します。`index.md` のフロントマターはホームページに使用します。開発サーバーはこれらのコンテンツファイルの変更を監視し、ページを自動で再読み込みします。
+
+既存記事の `{{ "/assets/images/example.jpg" | relative_url }}` も読み込み時に解釈します。引用符付きのパスに対する `relative_url` に対応しており、元の Markdown ファイルを書き換えません。新規の記事では `/assets/...` 形式のパスを直接使用できます。
+
+画像などの静的ファイルは、従来どおりルートの `assets/` に置きます。準備スクリプトが開発・ビルド時に `public/` へコピーします。`public/` と `dist/` は生成物のため、直接編集しないでください。開発サーバー起動中に静的ファイルを変更した場合は、サーバーを再起動するとコピーが更新されます。
+
+## 実装と URL の互換性
+
+サイト名や説明などの設定は `src/site.config.ts`、Astro のビルド設定は `astro.config.mjs` にあります。ページとレイアウトは `src/pages/`、`src/layouts/` で管理し、ナビゲーションは `src/layouts/SiteLayout.astro` で編集します。
+
+記事は Jekyll と同じ `/:categories/:year/:month/:day/:title.html` の形式で生成し、固定ページの `.html` URL も維持します。互換性の基準となる既存記事のパス、URL、内容のハッシュは `tests/fixtures/legacy-content.json` に保存しています。通常のテストと CI は既存 URL を検証しつつ、記事本文の編集や新規記事の追加を許容します。
+
+移行時点のソースファイルが一切変更されていないことを確認する場合のみ、ビルド後に次を実行します。この比較は移行確認用で、日常の記事更新時にハッシュの基準データを更新する必要はありません。
+
+```sh
+npm run verify -- --check-source-hashes
 ```
 
-### Remote Theme Method with GitHub Pages
+Jekyll 用の設定、テンプレート、Ruby 依存関係は削除済みです。レイアウトや機能の変更は Astro 側で行います。
 
-Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
+## GitHub Pages への公開
 
-To install:
+`.github/workflows/deploy.yml` が `master` 向けの Pull Request と `master` への push を検証します。検査、テスト、ビルド、生成結果の検証が成功した `master` のみを GitHub Pages に公開します。Actions 画面から手動実行する場合も、公開対象は `master` に限定しています。
 
-Add this line to your Jekyll site's `Gemfile`:
+リポジトリの **Settings → Pages → Build and deployment → Source** は **GitHub Actions** に設定します。カスタムドメインは既存の `www.yumulab.org` を維持してください。ルートの `CNAME` が準備スクリプトによって `public/CNAME` にコピーされます。設定方法の詳細は [Astro の GitHub Pages 公開ガイド](https://docs.astro.build/en/guides/deploy/github/) を参照してください。
 
-```ruby
-gem "github-pages", group: :jekyll_plugins
-```
+公開には GitHub Actions の `GITHUB_TOKEN` を使用します。従来の `GH_TOKEN` を使う Jekyll ワークフローと、`gh-pages` ブランチへのビルド結果の push は使用しません。ローカルでのビルドや `master` への merge だけでは、リモートの公開は実行されません。GitHub への push 後に Actions の実行結果を確認してください。
 
-And add this line to your Jekyll site's `_config.yml`:
+## ライセンス
 
-```yaml
-# theme: owner/name --> Don't forget to remove/comment the gem-based theme option
-remote_theme: "jeffreytse/jekyll-theme-yat"
-```
-
-And then execute:
-
-```bash
-$ bundle
-```
-
-### GitHub Pages without limitation
-
-GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins/themes](https://pages.github.com/versions/). **In other words, the third-party gems will not work normally**.
-
-To use the third-party gem in GitHub Pages without limitation:
-
-Here is a GitHub Action named [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) for Jekyll site deployment conveniently. 👍
-
-## Usage
-
-Add or update your available layouts, includes, sass and/or assets.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-When your theme is released, only the files in `_data`, `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-yat.gemspec` accordingly.
-
-## Contributing
-
-Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
-
-You can start by [opening an issue](https://github.com/jeffreytse/jekyll-theme-yat/issues/new) describing the problem that you're looking to resolve and we'll go from there.
-
-## License
-
-This theme is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php) © JeffreyTse.
-
-<!-- External links -->
-
-[jekyll]: https://jekyllrb.com/
-[yat-git-repo]: https://github.com/jeffreytse/jekyll-theme-yat/
-[yat-live-demo]: https://jeffreytse.github.io/jekyll-theme-yat/
-[jekyll-spaceship]: https://github.com/jeffreytse/jekyll-spaceship
-[jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
-[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
-[jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[highlight-js]: https://github.com/highlightjs/highlight.js
+従来のテーマは [Jekyll YAT Theme](https://github.com/jeffreytse/jekyll-theme-yat) を使用しています。テーマ由来のコードのライセンスと著作権表示は [LICENSE.txt](LICENSE.txt) を参照してください。

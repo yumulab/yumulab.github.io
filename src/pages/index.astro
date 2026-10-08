@@ -1,0 +1,36 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import PostList from '../components/PostList.astro';
+import { getHome, getPosts } from '../lib/content';
+
+const [home, posts] = await Promise.all([getHome(), getPosts()]);
+const categories = [...new Set(posts.flatMap(post => post.categories))].sort();
+---
+
+<SiteLayout title={home.title} description={home.description} url="/" image={home.banner}>
+  <section slot="banner" class="home-banner" aria-labelledby="home-heading">
+    {home.banner && <img class="banner-image" src={home.banner} alt="" fetchpriority="high" />}
+    <div class="wrapper banner-content">
+      <h1 id="home-heading">北海道情報大学 情報メディア学部 情報メディア学科 湯村研究室</h1>
+      <p>Spatial Interaction Laboratory</p>
+    </div>
+  </section>
+  <div class="content-grid">
+    <div class="main-column">
+      <div class="prose home-introduction" set:html={home.html} />
+      <section aria-label="研究室からのお知らせ">
+        <PostList posts={posts} />
+      </section>
+    </div>
+    <aside class="sidebar">
+      <nav aria-label="記事の分類">
+        <h2 class="sidebar-title">Categories</h2>
+        <ul class="category-list">
+          <li><a href="/archives.html">すべての記事 <span>{posts.length}</span></a></li>
+          {categories.map(category => <li><a href={`/categories.html#${encodeURIComponent(category)}`}>{category}<span>{posts.filter(post => post.categories.includes(category)).length}</span></a></li>)}
+        </ul>
+        <a class="sidebar-more" href="/tags.html">Tags →</a>
+      </nav>
+    </aside>
+  </div>
+</SiteLayout>

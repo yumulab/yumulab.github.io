@@ -1,0 +1,33 @@
+{
+  "name": "yumulab-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "prepare:assets": "node scripts/prepare-assets.mjs",
+    "dev": "npm run prepare:assets && astro dev",
+    "build": "npm run prepare:assets && astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "verify": "node --import tsx scripts/verify-build.ts"
+  },
+  "dependencies": {
+    "astro": "^7.3.7",
+    "markdown-it": "^14.1.0",
+    "yaml": "^2.8.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^24.0.0",
+    "@types/sax": "^1.2.7",
+    "cheerio": "^1.1.2",
+    "sax": "^1.6.1",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

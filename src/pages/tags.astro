@@ -1,0 +1,14 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import PostList from '../components/PostList.astro';
+import { getPosts } from '../lib/content';
+const posts = await getPosts();
+const tags = [...new Set(posts.flatMap(post => post.tags))].sort();
+---
+
+<SiteLayout title="Tags" url="/tags.html">
+  <h1 class="page-title">Tags</h1>
+  <nav class="archive-tabs" aria-label="記事一覧"><a href="/archives.html">Archives</a><a href="/categories.html">Categories</a><a href="/tags.html" aria-current="page">Tags</a></nav>
+  <ul class="index-links">{tags.map(tag => <li><a href={`#${encodeURIComponent(tag)}`}>#{tag}</a></li>)}</ul>
+  {tags.map(tag => <section class="archive-section"><h2 id={tag}>#{tag}</h2><PostList compact posts={posts.filter(post => post.tags.includes(tag))} /></section>)}
+</SiteLayout>

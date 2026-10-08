@@ -1,0 +1,53 @@
+---
+import type { GetStaticPaths } from 'astro';
+import type { Page, Post } from '../lib/content';
+import { getPages, getPosts } from '../lib/content';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ArticleContents from '../components/ArticleContents.astro';
+
+export const getStaticPaths = (async () => {
+  const [pages, posts] = await Promise.all([getPages(), getPosts()]);
+  const specialPages = new Set(['/404.html', '/archives.html', '/categories.html', '/tags.html']);
+  return [
+    ...pages.filter(page => !specialPages.has(page.url)).map(page => ({ page })),
+    ...posts.map((page, index) => ({ page, previous: posts[index + 1], next: posts[index - 1] })),
+  ].map(props => ({
+    params: { path: props.page.url.replace(/^\//, '').replace(/\.html$/, '') },
+    props,
+  }));
+}) satisfies GetStaticPaths;
+
+interface Props {
+  page: Page | Post;
+  previous?: Post;
+  next?: Post;
+}
+const { page, previous, next } = Astro.props;
+const post = 'date' in page ? page : undefined;
+const dateLabel = post ? new Intl.DateTimeFormat('en-US', {
+  month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC',
+}).format(new Date(`${post.date}T00:00:00Z`)) : undefined;
+---
+
+<SiteLayout title={page.title} description={page.description} url={page.url} image={page.banner} articleDate={post?.date}>
+  <div class="content-grid">
+    <article class="main-column">
+      {post ? (
+        <header class="post-header">
+          <h1>{post.title}</h1>
+          <time class="post-meta" datetime={post.date}>{dateLabel}</time>
+          {post.tags.length > 0 && <div class="post-tags">{post.tags.map(tag => <a href={`/tags.html#${encodeURIComponent(tag)}`}>#{tag}</a>)}</div>}
+        </header>
+      ) : <h1 class="visually-hidden">{page.title}</h1>}
+      <div class="prose" set:html={page.html} />
+      {post && (
+        <nav class="post-navigation" aria-label="前後の記事">
+          <div>{previous && <a href={previous.url} rel="prev"><span>← 前の記事</span>{previous.title}</a>}</div>
+          <div>{next && <a href={next.url} rel="next"><span>次の記事 →</span>{next.title}</a>}</div>
+        </nav>
+      )}
+      {post && <a class="archive-link" href="/archives.html">すべての記事を見る</a>}
+    </article>
+    <ArticleContents headings={page.headings} />
+  </div>
+</SiteLayout>
