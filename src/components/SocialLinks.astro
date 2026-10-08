@@ -14,8 +14,7 @@ const services = links.map(link => ({
 }));
 ---
 
-<section class="social-links" aria-labelledby="social-heading">
-  <h2 id="social-heading">研究室の発信</h2>
+<section class="social-links" aria-label="SNS・外部サービス">
   <ul>
     {services.map(({ href, label, icon }) => (
       <li>
@@ -30,7 +29,6 @@ const services = links.map(link => ({
 
 <style>
   .social-links { padding-bottom: 28px; margin-bottom: 48px; border-bottom: 1px solid var(--line); }
-  h2 { margin: 0 0 16px; color: #666; font-size: 0.9rem; font-weight: 400; }
   ul { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 32px; margin: 0; padding: 0; list-style: none; }
   li { max-width: 100%; }
   a { display: flex; align-items: center; gap: 10px; min-height: 44px; padding-block: 6px; color: #333; font-size: 1.05rem; line-height: 1.6; }
