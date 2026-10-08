@@ -2,7 +2,7 @@
 layout: post
 title: 辻永さんがSecHack365 ReturnsにてLT登壇
 subtitle: 
-categories: event
+permalink: /event/2022/10/22/sechackreturns.html
 tags: [event]
 ---
 

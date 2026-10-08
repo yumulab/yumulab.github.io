@@ -2,7 +2,7 @@
 layout: post
 title: 2022年度 卒業研究発表会
 subtitle: 
-categories: event
+permalink: /event/2023/01/31/gradpresen.html
 tags: [event]
 ---
 ![gradpresen-1]({{ "/assets/images/2023/gradpresen01.jpg" | relative_url }})

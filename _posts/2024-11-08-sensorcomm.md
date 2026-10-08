@@ -2,7 +2,7 @@
 layout: post
 title: SENSORCOMM 2024で発表
 subtitle: 
-categories: conference
+permalink: /conference/2024/11/08/sensorcomm.html
 tags: [conference]
 ---
 ![sensorcomm2024-1]({{ "/assets/images/2024/sensorcomm/01.jpg" | relative_url }})

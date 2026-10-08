@@ -2,7 +2,7 @@
 layout: post
 title: IOTS2022参加記
 subtitle: 
-categories: report
+permalink: /report/2022/12/09/iots-report.html
 tags: [report]
 ---
 3年生の秋葉 貴文、辻永 泰輔です。12月8〜9日に情報処理学会第15回インターネットと運用技術シンポジウム(IOTS2022)参加してきたので、参加記をまとめます。

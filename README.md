@@ -43,8 +43,7 @@ npm run preview
 ---
 layout: post
 title: 記事のタイトル
-categories: event
-tags: [event]
+tags: [event, research]
 ---
 
 記事の本文。
@@ -52,7 +51,9 @@ tags: [event]
 ![写真](/assets/images/2026/example.jpg)
 ```
 
-この記事を `_posts/2026-10-08-example.md` として保存すると、公開 URL は `/event/2026/10/08/example.html` になります。既存記事の URL を維持するため、公開済み記事のファイル名、日付、`categories`、`permalink` は変更しないでください。任意の `description` を指定すると、ページの説明（メタデータ）に使用します。未指定の場合は本文から生成します。
+この記事を `_posts/2026-10-08-example.md` として保存すると、公開 URL は `/2026/10/08/example.html` になります。分類は `tags` の配列で管理し、複数のタグを付けられます。公開済み記事には従来の URL を `permalink` として保存しています。この値は変更しないでください。タグの追加・変更は記事の URL に影響しません。任意の `description` を指定すると、ページの説明（メタデータ）に使用します。未指定の場合は本文から生成します。
+
+カテゴリはタグへ統合済みです。タグ一覧は `/tags.html` で表示します。旧 `/categories.html` もタグ一覧を表示し、以前のカテゴリへのリンクを受け付けます。読み込み処理は旧形式の `categories` / `category` を持つ記事にも対応し、分類はタグに集約します。
 
 `about.md`、`people.md`、`collaboration.md`、`yumura.md` などの固定ページ、および `research.html`、`publications.html` も元の場所で編集します。`index.md` のフロントマターはホームページに使用します。開発サーバーはこれらのコンテンツファイルの変更を監視し、ページを自動で再読み込みします。
 
@@ -82,9 +83,9 @@ ffmpeg -y -ss 0.7 -i assets/yumulab-top.mp4 -frames:v 1 -q:v 3 assets/images/yum
 
 サイト名や説明などの設定は `src/site.config.ts`、Astro のビルド設定は `astro.config.mjs` にあります。ページとレイアウトは `src/pages/`、`src/layouts/` で管理し、ナビゲーションは `src/layouts/SiteLayout.astro` で編集します。
 
-記事は Jekyll と同じ `/:categories/:year/:month/:day/:title.html` の形式で生成し、固定ページの `.html` URL も維持します。互換性の基準となる既存記事のパス、URL、内容のハッシュは `tests/fixtures/legacy-content.json` に保存しています。通常のテストと CI は既存 URL を検証しつつ、記事本文の編集や新規記事の追加を許容します。
+既存記事は `permalink` により、Jekyll の `/:categories/:year/:month/:day/:title.html` 形式の公開 URL を維持します。固定ページの `.html` URL も維持します。新規記事は、`permalink` を指定しない場合は `/:year/:month/:day/:title.html` で公開します。互換性の基準となる既存記事のパス、URL、内容のハッシュは `tests/fixtures/legacy-content.json` に保存しています。通常のテストと CI は既存 URL を検証しつつ、記事本文の編集や新規記事の追加を許容します。
 
-移行時点のソースファイルが一切変更されていないことを確認する場合のみ、ビルド後に次を実行します。この比較は移行確認用で、日常の記事更新時にハッシュの基準データを更新する必要はありません。
+移行時点のソースファイルが一切変更されていないことを確認する場合のみ、ビルド後に次を実行します。この比較は Jekyll 移行確認用で、タグ統合などでフロントマターを編集した記事は差分として検出されます。日常の記事更新時にハッシュの基準データを更新する必要はありません。
 
 ```sh
 npm run verify -- --check-source-hashes

@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import { load } from 'cheerio';
-import { getHome, getPages, getPosts, parsePost, placeholderThumbnail, renderBody, resolveLiquid } from '../src/lib/content';
+import { getHome, getPages, getPosts, parsePost, parseSource, placeholderThumbnail, renderBody, resolveLiquid } from '../src/lib/content';
 
 interface LegacyEntry { path: string; url: string; sha256: string }
 const fixture = JSON.parse(await readFile(new URL('./fixtures/legacy-content.json', import.meta.url), 'utf8')) as {
@@ -19,12 +19,22 @@ test('every legacy article and content page retains its original URL', () => {
   assert.equal(new Set(posts.map(post => post.url)).size, posts.length);
 });
 
-test('legacy case-sensitive slugs and the cevent category remain intact', () => {
+test('legacy case-sensitive slugs and the cevent URL remain intact', () => {
   assert.equal(posts.find(post => post.source.endsWith('2024-04-29-NThakodate.md'))?.url,
     '/event/2024/04/29/NThakodate.html');
   const legacy = fixture.posts.find(post => post.url.startsWith('/cevent/'))!;
   assert.ok(legacy);
   assert.equal(posts.find(post => post.source === legacy.path)?.url, legacy.url);
+});
+
+test('migrated articles use tag arrays and explicit original permalinks', async () => {
+  for (const entry of fixture.posts) {
+    const { data } = parseSource(await readFile(entry.path, 'utf8'), entry.path);
+    assert.ok(!Object.hasOwn(data, 'categories') && !Object.hasOwn(data, 'category'), entry.path);
+    assert.ok(Array.isArray(data.tags), entry.path);
+    assert.equal(new Set(data.tags).size, data.tags.length, entry.path);
+    assert.equal(data.permalink, entry.url, entry.path);
+  }
 });
 
 test('quoted Jekyll relative_url expressions become root-relative links', () => {
@@ -81,16 +91,36 @@ test('the existing WISS image typo is repaired while leaving Markdown input unch
 
 const example = (metadata = '', body = 'Article body') => `---\nlayout: post\ntitle: Example\ncategories: research events\ntags: [demo]\n${metadata}---\n${body}\n`;
 
-test('new article metadata supports categories, publication flags and explicit URLs', () => {
+test('legacy category metadata imports as tags while preserving URLs and publication flags', () => {
   const post = parsePost(example(), '_posts/2020-01-02-CamelCase.md')!;
   assert.equal(post.url, '/research/events/2020/01/02/CamelCase.html');
-  assert.deepEqual(post.tags, ['demo']);
+  assert.deepEqual(post.tags, ['demo', 'research', 'events']);
+  assert.ok(!('categories' in post));
   assert.equal(parsePost(example('published: false\n'), '_posts/2020-01-02-draft.md'), null);
   assert.equal(parsePost(example(), '_posts/9999-01-02-future.md'), null);
   assert.equal(parsePost(example('date: 2020-02-03\nslug: revised\n'), '_posts/2020-01-02-original.md')?.url,
     '/research/events/2020/02/03/revised.html');
   assert.equal(parsePost(example('permalink: /existing/custom.html\n'), '_posts/2020-01-02-original.md')?.url,
     '/existing/custom.html');
+});
+
+test('multiple tags are unique and do not determine the article URL', () => {
+  const raw = '---\ntitle: Example\ntags: [conference, award, conference, " 研究 ", ""]\n---\nArticle body\n';
+  const source = '_posts/2020-01-02-example.md';
+  const post = parsePost(raw, source)!;
+  assert.deepEqual(post.tags, ['conference', 'award', '研究']);
+  assert.equal(post.url, '/2020/01/02/example.html');
+  const fixed = raw.replace('\n---\n', '\npermalink: /award/2020/01/02/example.html\n---\n');
+  assert.equal(parsePost(fixed, source)?.url, '/award/2020/01/02/example.html');
+  assert.equal(parsePost(fixed.replace('tags: [conference, award, conference, " 研究 ", ""]', 'tags: [event, publish]'), source)?.url,
+    '/award/2020/01/02/example.html');
+});
+
+test('the old cevent category imports as event without changing its URL', () => {
+  const raw = example().replace('categories: research events', 'categories: cevent').replace('tags: [demo]', 'tags: [event]');
+  const post = parsePost(raw, '_posts/2020-01-02-example.md')!;
+  assert.equal(post.url, '/cevent/2020/01/02/example.html');
+  assert.deepEqual(post.tags, ['event']);
 });
 
 test('invalid dates and unsafe or incompatible article URLs fail the build', () => {

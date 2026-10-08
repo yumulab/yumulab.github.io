@@ -2,7 +2,7 @@
 layout: post
 title: 秋葉さん、辻永さんが北海道ITクリエータ発掘・育成事業「新雪」に採択
 subtitle: 
-categories: award
+permalink: /award/2023/10/18/shinsetsu.html
 tags: [award]
 ---
 ![shinsetsu]({{ "/assets/images/2023/shinsetsu.jpg" | relative_url }})

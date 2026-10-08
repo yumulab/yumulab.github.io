@@ -2,7 +2,7 @@
 layout: post
 title: 論文レポジトリを公開しました
 subtitle: 
-categories: info
+permalink: /info/2022/01/01/repository.html
 tags: [info]
 ---
 北海道情報大学 湯村研究室 論文レポジトリを公開しました。現在は教員の論文を抜粋して掲載していますが、これから学生発表論文をどんどん載せていきます！

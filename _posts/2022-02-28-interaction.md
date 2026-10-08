@@ -2,7 +2,7 @@
 layout: post
 title: インタラクション2022で久保田さんがインタラクティブ発表
 subtitle: 
-categories: conference
+permalink: /conference/2022/02/28/interaction.html
 tags: [conference, c.kubota]
 ---
 ![インタラクション2022]({{ "/assets/images/2022/interaction2022.jpg" | relative_url }})

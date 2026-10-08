@@ -2,7 +2,7 @@
 layout: post
 title: Computer Security Symposium2022 ＆ CODEBLUE2022参加記
 subtitle: 
-categories: report
+permalink: /report/2022/10/28/css-codeblue-report.html
 tags: [report]
 ---
 4年生の多木優馬です。10月24日から10月28日までComputer Security Symposium(CSS)とCODEBLUEに参加してきたので、参加記をまとめます。

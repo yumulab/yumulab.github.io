@@ -21,7 +21,7 @@ ${posts.map((post) => `<entry>
 <published>${post.date}T00:00:00Z</published><updated>${post.date}T00:00:00Z</updated>
 <summary>${xml(post.description)}</summary>
 <content type="html" xml:base="${site.url}${xml(post.url)}">${xml(post.html)}</content>
-${post.categories.map((category) => `<category term="${xml(category)}"/>`).join('')}
+${post.tags.map((tag) => `<category term="${xml(tag)}"/>`).join('')}
 </entry>`).join('\n')}
 </feed>`;
   return new Response(feed, { headers: { 'Content-Type': 'application/atom+xml; charset=utf-8' } });
