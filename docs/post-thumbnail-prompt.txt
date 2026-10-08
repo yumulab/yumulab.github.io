@@ -1,0 +1,13 @@
+Generated with the built-in image_gen tool on 2026-10-08.
+Web asset: assets/images/placeholders/post-thumbnail.jpg
+The generated PNG was resized to 960 pixels wide and encoded as JPEG for the website.
+
+Use case: stylized-concept
+Asset type: shared placeholder thumbnail for news articles on a Japanese university Spatial Interaction Laboratory website.
+Primary request: create a tasteful abstract illustration suggesting the connection between physical space and digital information.
+Scene/backdrop: quiet warm off-white studio background.
+Subject: a small centered arrangement of translucent frosted geometric blocks, delicate connecting lines, and a few orange glowing nodes, suggesting spatial sensing and interaction without representing a specific research project.
+Style/medium: refined soft 3D editorial illustration, matte surfaces, subtle shadows, understated and academic.
+Composition/framing: wide horizontal 16:9 image; a simple central motif with generous surrounding space, recognizable when displayed as a small thumbnail.
+Color palette: off-white, light neutral gray, and restrained burnt-orange accents matching the website.
+Constraints: no people, no text, no lettering, no logos, no watermark, no border, opaque background.

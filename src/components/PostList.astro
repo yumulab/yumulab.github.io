@@ -20,13 +20,18 @@ const dateLabel = (date: string) => new Intl.DateTimeFormat('en-US', {
           <a class="post-link" href={post.url}>{post.title}</a>
         </>
       ) : (
-        <article>
-          <h2 class="post-list-title"><a href={post.url}>{post.title}</a></h2>
-          <time class="post-meta" datetime={post.date}>{dateLabel(post.date)}</time>
-          {post.description && <p class="post-excerpt">{post.description}</p>}
-          <div class="post-list-bottom">
-            <a class="read-more" href={post.url} aria-label={`${post.title} の続きを読む`}>Read More <span aria-hidden="true">→</span></a>
-            {post.tags.length > 0 && <div class="post-tags">{post.tags.map(tag => <a href={`/tags.html#${encodeURIComponent(tag)}`}>#{tag}</a>)}</div>}
+        <article class="post-card">
+          <a class="post-thumbnail" href={post.url} tabindex="-1" aria-hidden="true">
+            <img src={post.thumbnail} alt="" width="480" height="270" loading="lazy" decoding="async" />
+          </a>
+          <div class="post-card-content">
+            <h2 class="post-list-title"><a href={post.url}>{post.title}</a></h2>
+            <time class="post-meta" datetime={post.date}>{dateLabel(post.date)}</time>
+            {post.description && <p class="post-excerpt">{post.description}</p>}
+            <div class="post-list-bottom">
+              <a class="read-more" href={post.url} aria-label={`${post.title} の続きを読む`}>Read More <span aria-hidden="true">→</span></a>
+              {post.tags.length > 0 && <div class="post-tags">{post.tags.map(tag => <a href={`/tags.html#${encodeURIComponent(tag)}`}>#{tag}</a>)}</div>}
+            </div>
           </div>
         </article>
       )}

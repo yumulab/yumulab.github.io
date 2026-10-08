@@ -117,6 +117,14 @@ for (const [file, $] of documents) {
 const $home = documents.get('index.html')!;
 const homeLinks = new Set($home('a[href]').toArray().map(link => $home(link).attr('href')));
 for (const post of posts) assert.ok(homeLinks.has(post.url), `Homepage omits ${post.url}`);
+assert.equal($home('.post-thumbnail img').length, posts.length, 'Every homepage article must have a thumbnail.');
+for (const post of posts) {
+  const thumbnail = $home('.post-thumbnail').toArray().find(link => $home(link).attr('href') === post.url);
+  assert.ok(thumbnail, `Missing thumbnail link for ${post.url}`);
+  const image = $home(thumbnail).find('img');
+  assert.equal(image.attr('src'), post.thumbnail, `Wrong thumbnail for ${post.url}`);
+  assert.equal(image.attr('loading'), 'lazy', `Thumbnail must load lazily: ${post.url}`);
+}
 assert.ok(homeLinks.has('/collaboration.html'), 'Homepage navigation must use the published collaboration URL.');
 assert.ok(!homeLinks.has('/collaboration.md'), 'Homepage still links to unpublished collaboration Markdown.');
 
