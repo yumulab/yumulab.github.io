@@ -1,8 +1,9 @@
 ---
 import type { HomeLink } from '../lib/home-links';
+import SocialLinks from './SocialLinks.astro';
 
-interface Props { links: HomeLink[] }
-const { links } = Astro.props;
+interface Props { links: HomeLink[]; socialLinks: HomeLink[] }
+const { links, socialLinks } = Astro.props;
 const heroPoster = '/assets/images/yumulab-top-poster.jpg';
 ---
 
@@ -31,6 +32,7 @@ const heroPoster = '/assets/images/yumulab-top-poster.jpg';
       ))}
     </nav>
   </div>
+  <SocialLinks links={socialLinks} />
 </section>
 
 <script>
@@ -67,7 +69,8 @@ const heroPoster = '/assets/images/yumulab-top-poster.jpg';
     position: relative;
     isolation: isolate;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
     width: 100%;
     aspect-ratio: 16 / 9;
     min-height: 500px;
@@ -86,7 +89,7 @@ const heroPoster = '/assets/images/yumulab-top-poster.jpg';
     background: linear-gradient(0deg, rgb(11 10 24 / 80%), transparent 75%), linear-gradient(90deg, rgb(11 10 24 / 25%), transparent 70%);
     pointer-events: none;
   }
-  .hero-content { padding-block: 56px; }
+  .hero-content { padding-block: 160px 32px; }
   .hero-content p { margin: 0; font-size: clamp(0.75rem, 1.1vw, 0.95rem); letter-spacing: 0.06em; text-shadow: 0 1px 4px rgb(0 0 0 / 40%); }
   .hero-links { display: flex; flex-wrap: wrap; gap: 16px 28px; margin-top: 28px; }
   .hero-links a { display: flex; align-items: center; justify-content: space-between; gap: 22px; min-height: 44px; padding-bottom: 8px; border-bottom: 1px solid rgb(255 255 255 / 65%); color: #fff; font-size: 0.9rem; }
@@ -95,7 +98,7 @@ const heroPoster = '/assets/images/yumulab-top-poster.jpg';
   .hero-video[hidden] { display: none; }
   @media (max-width: 760px) {
     .home-hero { aspect-ratio: 4 / 3; min-height: 540px; max-height: none; }
-    .hero-content { padding-block: 40px; }
+    .hero-content { padding-block: 160px 24px; }
     .hero-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 20px; margin-top: 24px; }
     .hero-links a { font-size: 0.8rem; gap: 10px; }
   }

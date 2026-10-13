@@ -15,7 +15,7 @@ const services = links.map(link => ({
 ---
 
 <section class="social-links" aria-label="SNS・外部サービス">
-  <ul>
+  <ul class="wrapper">
     {services.map(({ href, label, icon }) => (
       <li>
         <a href={href}>
@@ -28,15 +28,15 @@ const services = links.map(link => ({
 </section>
 
 <style>
-  .social-links { padding-bottom: 28px; margin-bottom: 48px; border-bottom: 1px solid var(--line); }
-  ul { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 32px; margin: 0; padding: 0; list-style: none; }
+  .social-links { flex-shrink: 0; padding-block: 12px; border-top: 1px solid rgb(255 255 255 / 25%); background: rgb(11 10 24 / 55%); }
+  ul { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 32px; margin-block: 0; padding: 0; list-style: none; }
   li { max-width: 100%; }
-  a { display: flex; align-items: center; gap: 10px; min-height: 44px; padding-block: 6px; color: #333; font-size: 1.05rem; line-height: 1.6; }
-  img { flex: 0 0 26px; width: 26px; height: 26px; object-fit: contain; }
-  a:hover { color: var(--accent); text-decoration: none; }
+  a { display: flex; align-items: center; gap: 10px; min-height: 44px; padding-block: 6px; color: #fff; font-size: 1.05rem; line-height: 1.6; }
+  img { flex: 0 0 26px; width: 26px; height: 26px; object-fit: contain; filter: brightness(0) invert(1); }
+  a:hover { color: #fff; text-decoration: none; }
   a:hover span { text-decoration: underline; }
+  a:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
   @media (max-width: 760px) {
-    .social-links { margin-bottom: 36px; }
     ul { gap: 8px 24px; }
     a { font-size: 1rem; }
   }

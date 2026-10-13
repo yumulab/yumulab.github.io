@@ -2,7 +2,6 @@
 import SiteLayout from '../layouts/SiteLayout.astro';
 import PostList from '../components/PostList.astro';
 import HomeHero from '../components/HomeHero.astro';
-import SocialLinks from '../components/SocialLinks.astro';
 import { getHome, getPosts } from '../lib/content';
 import { getHomeLinks } from '../lib/home-links';
 import { site } from '../site.config';
@@ -13,8 +12,7 @@ const links = getHomeLinks(home.html);
 ---
 
 <SiteLayout title={home.title} description={site.description} url="/" image="/assets/images/yumulab-top-poster.jpg">
-  <HomeHero slot="banner" links={links.navigation} />
-  <SocialLinks links={links.social} />
+  <HomeHero slot="banner" links={links.navigation} socialLinks={links.social} />
   <section id="home-news" aria-labelledby="home-news-heading">
     <h2 id="home-news-heading" class="home-news-heading">News <span>研究室からのお知らせ</span></h2>
     <PostList posts={latestPosts} />
