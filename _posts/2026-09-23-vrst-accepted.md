@@ -15,4 +15,8 @@ VRST2026は2026年11月16日(月)〜18日(水)に宮城県仙台市で開催さ�
 
 - [VRST2026 開催案内（ACM SIGCHI）](https://sigchi.org/events/vrst-2026/)
 
-Xの投稿：[2026-09-23の投稿](https://x.com/yumulab/status/2102763966745526312)
+Xの投稿：
+
+<blockquote class="twitter-tweet" data-lang="ja" data-dnt="true"><p lang="ja" dir="ltr">The 32nd ACM Symposium on Virtual Reality Software and Technology <a href="https://x.com/hashtag/VRST2026?src=hash&amp;ref_src=twsrc%5Etfw">#VRST2026</a> のデモセッションに、清水 怜良さん(修士2年)、上村 宙さん(4年)が主著の2件の発表が採択されました🙌 <a href="https://x.com/hashtag/johodai?src=hash&amp;ref_src=twsrc%5Etfw">#johodai</a> <a href="https://x.com/hashtag/yumulab?src=hash&amp;ref_src=twsrc%5Etfw">#yumulab</a> <a href="https://t.co/ctQLghK2Sa">pic.twitter.com/ctQLghK2Sa</a></p>&mdash; 北海道情報大学 湯村研究室 (@yumulab) <a href="https://x.com/yumulab/status/2102763966745526312?ref_src=twsrc%5Etfw">2026年9月23日</a></blockquote>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
