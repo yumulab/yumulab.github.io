@@ -5,16 +5,22 @@ interface Props {
   posts: Post[];
   compact?: boolean;
   showTags?: boolean;
+  showThumbnails?: boolean;
 }
-const { posts, compact = false, showTags = false } = Astro.props;
+const { posts, compact = false, showTags = false, showThumbnails = false } = Astro.props;
 const dateLabel = (date: string) => date.replaceAll('-', '.');
 ---
 
-<ul class:list={['post-list', { 'post-list-compact': compact }]}>
+<ul class:list={['post-list', { 'post-list-compact': compact, 'post-list-thumbnails': compact && showThumbnails }]}>
   {posts.map(post => (
     <li>
       {compact ? (
         <>
+          {showThumbnails && (
+            <a class="post-thumbnail" href={post.url} tabindex="-1" aria-hidden="true">
+              <img src={post.thumbnail} alt="" width="480" height="360" loading="lazy" decoding="async" />
+            </a>
+          )}
           <time class="post-meta" datetime={post.date}>{dateLabel(post.date)}</time>
           <span class="post-list-entry">
             <a class="post-link" href={post.url}>{post.title}</a>

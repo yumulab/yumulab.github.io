@@ -12,7 +12,7 @@ const years = [...new Set(posts.map(post => post.date.slice(0, 4)))];
   {years.map(year => (
     <section class="archive-section" aria-labelledby={`year-${year}`}>
       <h2 id={`year-${year}`}>{year}</h2>
-      <PostList compact showTags posts={posts.filter(post => post.date.startsWith(year))} />
+      <PostList compact showTags showThumbnails posts={posts.filter(post => post.date.startsWith(year))} />
     </section>
   ))}
 </SiteLayout>
