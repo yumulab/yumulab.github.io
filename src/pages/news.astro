@@ -9,6 +9,11 @@ const years = [...new Set(posts.map(post => post.date.slice(0, 4)))];
 
 <SiteLayout title="News" url="/news.html" description="北海道情報大学 湯村研究室の活動・研究発表・イベントのお知らせ。">
   <h1 class="page-title">News</h1>
+  <nav aria-label="年別の記事一覧">
+    <ul class="index-links">
+      {years.map(year => <li><a href={`#year-${year}`}>{year}</a></li>)}
+    </ul>
+  </nav>
   {years.map(year => (
     <section class="archive-section" aria-labelledby={`year-${year}`}>
       <h2 id={`year-${year}`}>{year}</h2>
