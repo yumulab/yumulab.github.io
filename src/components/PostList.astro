@@ -4,8 +4,9 @@ import type { Post } from '../lib/content';
 interface Props {
   posts: Post[];
   compact?: boolean;
+  showTags?: boolean;
 }
-const { posts, compact = false } = Astro.props;
+const { posts, compact = false, showTags = false } = Astro.props;
 const dateLabel = (date: string) => date.replaceAll('-', '.');
 ---
 
@@ -15,7 +16,10 @@ const dateLabel = (date: string) => date.replaceAll('-', '.');
       {compact ? (
         <>
           <time class="post-meta" datetime={post.date}>{dateLabel(post.date)}</time>
-          <a class="post-link" href={post.url}>{post.title}</a>
+          <span class="post-list-entry">
+            <a class="post-link" href={post.url}>{post.title}</a>
+            {showTags && post.tags.length > 0 && <span class="post-tags">{post.tags.map(tag => <a href={`/tags.html#${encodeURIComponent(tag)}`}>#{tag}</a>)}</span>}
+          </span>
         </>
       ) : (
         <article class="post-card">
